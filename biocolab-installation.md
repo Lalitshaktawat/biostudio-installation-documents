@@ -503,7 +503,7 @@ https://<your domain>/dashboard
 
 
 
-:information_desk_person: **Please contact** :email: [support@bioturing.com](mailto:support@bioturing.com) to add :heavy_plus_sign: more  **protocols** and **types** , If you are not able to find in the list based on your choice. :blush: **We are always happy to add more variety of protocols and types.**
+:bell: **Please contact** :email: [support@bioturing.com](mailto:support@bioturing.com) to add :heavy_plus_sign: more  **protocols** and **types** , If you are not able to find in the list based on your choice. :blush: **We are always happy to add more variety of protocols and types.**
 
 
 | **SAML : Identity and Access Management** |
@@ -1148,7 +1148,7 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 </span>
 </div>
 
-:information_desk_person: **Please contact** :e-mail: [**support@bioturing.com**] **in case you need any support or have any inquiry for us.** 
+:bell: **Please contact** :e-mail: [**support@bioturing.com**] **in case you need any support or have any inquiry for us.** 
 
 > **We are supporting all kind of service provider including on-premise**
 ```R
@@ -1583,4 +1583,4 @@ helm search repo bioturing
 <img alt="Protocol" src="/EKS_PIC/pvc-done.png" class="lazy" width="100%"> 
 
 :o: **Kindly setup Load balancer (ALB) with your DNS.**
-:information_desk_person: **Please contact** :e-mail: [**support@bioturing.com**] for any inquiry.
+:o: **Please contact** :e-mail: [**support@bioturing.com**] for any inquiry.
