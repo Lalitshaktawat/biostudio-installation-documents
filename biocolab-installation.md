@@ -1,32 +1,32 @@
-![BioColab logo](/idiag/logo.png)
+![BioStudio logo](./idiag/logo.png)
 
-# Installation Steps: [BioTuring BioColab]
+# <p> <span style="color:blue"> Installation Steps: </span> <span style="color:green"> [BioTuring BioStudio] </span> </p>
 
 # Introduction
 
-
 >**Software to tackle biomedical challenges:**
-
 
 <div class="warning" style='background-color:#E9D8FD; color: #69337A; border-left: solid #805AD5 4px; border-radius: 4px; padding:0.7em;'>
 <span>
 <p style='margin-top:1em; text-align:justify'; text-justify:inter-word;>
-<code><b>Colaboratory</b></code> , or <code><b>BioColab</b></code> for short, is a product from <b style="color: darkblue"><u>Bioturing</b></u>.<code><b>BioColab</b></code> has a variety of features and <b style="color: black"> pre-built notebooks </b>, for user to download and use. We are providing all types of user friendly <b style="color: black"> tools </b> that helps, users to post their data and analyze the reports. Our product can be used to write and execute arbitrary python, R code, Golang, Julia, RStudio, VS Code and many more through the browser, and is especially well suited to data analysis and education. More technically, Colab is a hosted Jupyter notebook service that requires no setup to use. <b style="color: black"> Users can build their own notebook based on their requirements</b>.
+<code><b>Colaboratory</b></code> , or <code><b>BioStudio</b></code> for short, is a product from <b style="color: darkblue"><u>Bioturing</b></u>.<code><b>BioStudio</b></code> has a variety of features and <b style="color: black"> pre-built notebooks </b>, for user to download and use. We are providing all types of user friendly <b style="color: black"> tools </b> that helps, users to post their data and analyze the reports. Our product can be used to write and execute arbitrary python, R code, Golang, Julia, RStudio, VS Code and many more through the browser, and is especially well suited to data analysis and education. More technically, <b> BioStudio </b> is a hosted Jupyter notebook service that requires no setup to use. <b style="color: black"> Users can build their own notebook based on their requirements</b>.
+
+**We are keep adding new features and functionalities to BioStudio.**
 </p>
 </span>
 </div>
 
 
 # System Requirements
->**Before installing the BioColab, some pre-installation steps are required:**
+>**Before installing the BioStudio, some pre-installation steps are required:**
 
 || **Basic recommendation**| **Optional**|
 |---------------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| **CPU**             | 16 core| This is basic requirement to start  BioColab and based on requirement, Resources as well as machine can be added.  |
+| **CPU**             | 16 core| This is basic requirement to start  BioStudio and based on requirement, Resources as well as machine can be added.  |
 | **RAM**             | 64 Gb | As above                                                                                                           |
 | **HDD**             | / partition can be 100 GB | As above.                                                                                      |
 |                     | Data Volume : 1TB| As above.                                                                                                |
-| **OS**              | Any OS. Ubuntu 20.04 and above.| BioColab is more supportive with Linux OS. For better performance linux OS is recommended.|
+| **OS**              | Any OS. Ubuntu 20.04 and above.| BioStudio is more supportive with Linux OS. For better performance linux OS is recommended.|
 | **AWS Instance**    | Support any type of instance type. Depend on needs| AWS g5xlarge in case using GPU.                                          |
 |**Platform**         | Docker / Kubernetes                                                                                                        |
 
@@ -34,18 +34,18 @@
 
 | **Note**            |                                                                                                                   |
 |---------------------|-------------------------------------------------------------------------------------------------------------------|
-|                     | In case we want to use **GPU** based **Notebooks** with BioColab. We need to install NVIDIA and below would be a requirement.        |
+|                     | In case we want to use **GPU** based **Notebooks** with BioStudio. We need to install NVIDIA and below would be a requirement.        |
 |                     | The system has one or multiple NVIDIA GPU(s) (at least 16 GB memory per GPU) - with Turing architecture or above. |
-|                     | BioColab supports any Linux OS. We are recommending Ubuntu 20.04 or above.                                        |
+|                     | BioStudio supports any Linux OS. We are recommending Ubuntu 20.04 or above.                                        |
 |                     | SSL can be configured later also.                                                                                 |
 |                     | Please contact support@bioturing.com to get the token for your company.                                           |
 |                     |                                                                                                                   |
 | **Security**        |                                                                                                                   |
-|                     | The BioColab platform uses HTTPS protocol to securely communicate over the network.                               |
+|                     | The BioStudio platform uses HTTPS protocol to securely communicate over the network.                               |
 |                     | All of the users need to be authenticated using a BioTuring account or the company's **SSO** to access the platform.      |
 |                     | We highly recommend setting up a private VPC network for IP restriction.                                          |
 |                     | The data stays behind the company firewall.                                                                       |
-|                     | The BioColab platform does not track any usage logs.                                                              |
+|                     | The BioStudio platform does not track any usage logs.                                                              |
 |                     |                                                                                                                   |
 | **Data visibility** |                                                                                                                   |
 |                     | Data can be uploaded to Personal Workspace or Data Sharing group.                                                 |
@@ -60,22 +60,22 @@
 <span>
 <p style='margin-top:1em; text-align:justify'; text-justify:inter-word;>
 <span style='font-size:20px;'>&#128276;</span> <b>Note:</b> Our software can be installed with minimum capacity of instance / server. The ideal system that we recommend for most companies is <b style="color: black">  AWS c5a.8xlarge</b> for <b style="color: black"> CPU </b> based. Instance can be chosen based on requirement. If the notebook is based on GPU, we can select GPU based instance.
-Our Product is containerized based applications. Kindly select the machine based on your requirements. <b style="color: black"> BioColab </b> can be run on <b style="color: black"> Docker </b> using Docker engine and <b style="color: black"> Kubernetes</b>.
+Our Product is containerized based applications. Kindly select the machine based on your requirements. <b style="color: black"> BioStudio </b> can be run on <b style="color: black"> Docker </b> using Docker engine and <b style="color: black"> Kubernetes</b>.
 
-<b style="color: purple">:sparkles: <u>Important note</u> :sparkles::</b> We can install <b style="color: black"> BBrowserX talk2data </b> :link: [BBrowserX](https://github.com/bioturing/bbrowserx-wiki/wiki/Installation-guide) and <b style="color: black"> BioColab </b> on the same server. Installation process is the same to run our <b>installation script</b> for <b>BioColab</b>. Step by step Instructions to install BioColab are given below. Only changes on domain name for BioColab. <b>Kindly do not use BBrowserX talk2data domain name during this installation, In case you are planing to install BBrowserX and BioColab on same machine.</b>
+<b style="color: purple">:sparkles: <u>Important note</u> :sparkles::</b> We can install <b style="color: black"> BBrowserX talk2data </b> :link: [BBrowserX](https://github.com/bioturing/bbrowserx-wiki/wiki/Installation-guide) and <b style="color: black"> BioStudio </b> on the same server. Installation process is the same to run our <b>installation script</b> for <b>BioStudio</b>. Step by step Instructions to install BioStudio are given below. Only changes on domain name for BioStudio. <b>Kindly do not use BBrowserX talk2data domain name during this installation, In case you are planing to install BBrowserX and BioStudio on same machine.</b>
 
-:dizzy: <b>Biocolab token can be updated later, after installation</b>.
-:dizzy: <b>Contact point to get BioColab token is</b> :email: [support@bioturing.com](mailto:support@bioturing.com)
-:dizzy: <b>SSL certificate can be installed later, If BioColab planned to install on separate instance.</b>
+:dizzy: <b>BioStudio token can be updated later, after installation</b>.
+:dizzy: <b>Contact point to get BioStudio token is</b> :email: [support@bioturing.com](mailto:support@bioturing.com)
+:dizzy: <b>SSL certificate can be installed later, If BioStudio planned to install on separate instance.</b>
 
-User can access <b>BioColab application using two ways</b>, In case installed BBrowserx and BioColab on the <b>same machine</b>.
+User can access <b>BioStudio application using two ways</b>, In case installed BBrowserx and BioStudio on the <b>same machine</b>.
 
-:one: Browse the BioColab application `http://<Your server IP>:<Port Number>`.
-:two: Use BioColab Desktop application - using IP address.
+:one: Browse the BioStudio application `http://<Your server IP>:<Port Number>`.
+:two: Use BioStudio Desktop application - using IP address.
 
 <b>Bioturing Launcher</b> :link: [Desktop Application](https://colablocal.bioturing.com/document/bioturing-launcher)
 
-:bell:If <b>BioColab</b> will install on separate server. BioColab can be accessed using any browser by <b>IP address</b> or <b>Domain name</b>.
+:bell:If <b>BioStudio</b> will install on separate server. BioStudio can be accessed using any browser by <b>IP address</b> or <b>Domain name</b>.
 </p>
 </span>
 </div>
@@ -84,7 +84,7 @@ User can access <b>BioColab application using two ways</b>, In case installed BB
 ## Download and Install 
 > **Note:** We suggest starting from scratch to avoid package/driver conflicts. For Tag naming conversion, kindly select based on your architecture.
 
-:large_orange_diamond: Login to AWS console with admin user account to launch an Ec2 instance.
+:large_orange_diamond: Login to AWS console with admin user account to launch an EC2 instance.
 
 **Note:** It’s up to the client. How they are going to manage infrastructure, Load, Network, Access and traffic …etc.
 
@@ -98,7 +98,7 @@ User can access <b>BioColab application using two ways</b>, In case installed BB
 :large_orange_diamond: Search **VPC** on the search box.
 
 <br>
-<img alt="VPC Search" src="/idiag/VPC-Search.png" class="lazy" width="100%">
+<img alt="VPC Search" src="./idiag/VPC-Search.png" class="lazy" width="100%">
 
 <br>
 <br>
@@ -106,52 +106,52 @@ User can access <b>BioColab application using two ways</b>, In case installed BB
 :large_orange_diamond: Select the appropriate **region** for VPC.
 
 <br>
-<img alt="Region Selection" src="/idiag/region-selection.png" class="lazy" width="100%">
+<img alt="Region Selection" src="./idiag/region-selection.png" class="lazy" width="100%">
 
 <br>
 <br>
 
 :large_orange_diamond: Click on **Create VPC**.
 <br>
-<img alt="Create VPC" src="/idiag/Create_VPC1.png" class="lazy" width="100%">
+<img alt="Create VPC" src="./idiag/Create_VPC1.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Fill-out **Name tag** , **IPv4 CIDR** block details.
 <br>
-<img alt="Create VPC fill" src="/idiag/Create-VPC2.png" class="lazy" width="100%">
+<img alt="Create VPC fill" src="./idiag/Create-VPC2.png" class="lazy" width="100%">
 
 <br>
 
 :large_orange_diamond: Mentioned **Tags** and select **Create VPC** push button.
 <br>
-<img alt="Create VPC click" src="/idiag/Create-VPC3.png" class="lazy" width="100%">
+<img alt="Create VPC click" src="./idiag/Create-VPC3.png" class="lazy" width="100%">
 <br>
 :large_orange_diamond: **Verify** VPC creation successfully completed.
 <br>
-<img alt="VPC creation succeed" src="/idiag/VPC-Created-Successfully.png" class="lazy" width="100%">
+<img alt="VPC creation succeed" src="./idiag/VPC-Created-Successfully.png" class="lazy" width="100%">
 <br>
 
 ## Create a Subnet
 
 :large_orange_diamond: Time to create Subnet. Click on **Create subnet**.
 <br>
-<img alt="Create Subnet" src="/idiag/Create-subnet1.png" class="lazy" width="100%">
+<img alt="Create Subnet" src="./idiag/Create-subnet1.png" class="lazy" width="100%">
 <br>
 :large_orange_diamond: Select **VPC ID** and type **Subnet name**.
 <br>
-<img alt="Create Subnet fill" src="/idiag/Create-subnet2.png" class="lazy" width="100%">
+<img alt="Create Subnet fill" src="./idiag/Create-subnet2.png" class="lazy" width="100%">
 <br>
 :large_orange_diamond: Fill **CIDR block**, type **Tag Key** and **Value** then Click on **Create subnet**.
 <br>
-<img alt="Create Subnet fill CIDR" src="/idiag/Create_subnet-3.png" class="lazy" width="100%">
+<img alt="Create Subnet fill CIDR" src="./idiag/Create_subnet-3.png" class="lazy" width="100%">
 <br>
 :large_orange_diamond: Subnet created successfully.
 <br>
-<img alt="Subnet Succeed" src="/idiag/Subnet-created-successfully.png" class="lazy" width="100%">
+<img alt="Subnet Succeed" src="./idiag/Subnet-created-successfully.png" class="lazy" width="100%">
 <br>
 :large_orange_diamond: Check Subnet detail.
 <br>
-<img alt="Subnet Detail" src="/idiag/Subnet-detail.png" class="lazy" width="100%">
+<img alt="Subnet Detail" src="./idiag/Subnet-detail.png" class="lazy" width="100%">
 
 ## Create Internet Gateway
 
@@ -161,33 +161,33 @@ User can access <b>BioColab application using two ways</b>, In case installed BB
 
 :large_orange_diamond: **Router Table**.
 <br>
-<img alt="Subnet Detail" src="/idiag/Router_table.png" class="lazy" width="100%">
+<img alt="Subnet Detail" src="./idiag/Router_table.png" class="lazy" width="100%">
 <br>
 :large_orange_diamond: Select **Internet gateway** and Click on **Create internet gateway**.
 <br>
-<img alt="internet gateway creation" src="/idiag/Create-IG.png" class="lazy" width="100%">
+<img alt="internet gateway creation" src="./idiag/Create-IG.png" class="lazy" width="100%">
 <br>
 :large_orange_diamond: Fill **Name Tag**, **Key** and **Value** then Click **Create internet gateway**.
 <br>
-<img alt="IG creation step" src="/idiag/Create-IG1.png" class="lazy" width="100%">
+<img alt="IG creation step" src="./idiag/Create-IG1.png" class="lazy" width="100%">
 <br>
 :large_orange_diamond: Internet gateway created successfully.
 <br>
-<img alt="IG creation Succeed" src="/idiag/IG-Created-success.png" class="lazy" width="100%">
+<img alt="IG creation Succeed" src="./idiag/IG-Created-success.png" class="lazy" width="100%">
 <br>
 
 ## Internet Gateway attached to VPC
 
 :large_orange_diamond: In Internet gateway Click on **Action** and select **Attached to VPC**.
 <br>
-<img alt="IG attached to VPC" src="/idiag/IG-Attached-to-vpc1.png" class="lazy" width="100%">
-<img alt="IG attached to VPC done" src="/idiag/Attached-to-vpc2.png" class="lazy" width="100%">
-<img alt="IG attached to VPC done" src="/idiag/Attached-to-vpc-final-step.png" class="lazy" width="100%">
+<img alt="IG attached to VPC" src="./idiag/IG-Attached-to-vpc1.png" class="lazy" width="100%">
+<img alt="IG attached to VPC done" src="./idiag/Attached-to-vpc2.png" class="lazy" width="100%">
+<img alt="IG attached to VPC done" src="./idiag/Attached-to-vpc-final-step.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Internet gateway attached to VPC completed.
 <br>
-<img alt="IG attached to VPC done" src="/idiag/IG-attached-to-vpc-done.png" class="lazy" width="100%">
+<img alt="IG attached to VPC done" src="./idiag/IG-attached-to-vpc-done.png" class="lazy" width="100%">
 <br>
 :large_orange_diamond: Now Update Route Table for **Subnet association** and add **Route** to use Internet gateway to router table.
 :large_orange_diamond: Update **Route Table** for **Subnet association**.
@@ -196,17 +196,17 @@ User can access <b>BioColab application using two ways</b>, In case installed BB
 
 :large_orange_diamond: Select **Subnet associations** from **Route tables** :arrow_forward: Second tab.
 <br>
-<img alt="Subnet association selection" src="/idiag/Subnet_associated-with-router.png" class="lazy" width="100%">
+<img alt="Subnet association selection" src="./idiag/Subnet_associated-with-router.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Clieck on **Edit subnet associations** and select Subnet name, which you would like to associate then Click on **Save associations** button.
 <br>
-<img alt="Subnet association done" src="/idiag/Subnet_associated_save.png" class="lazy" width="100%">
+<img alt="Subnet association done" src="./idiag/Subnet_associated_save.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Subnet association completed.
 <br>
-<img alt="Association success" src="/idiag/Subnet_associated_success.png" class="lazy" width="100%">
+<img alt="Association success" src="./idiag/Subnet_associated_success.png" class="lazy" width="100%">
 <br>
 
 ## Update Router table to use Internet gateway.
@@ -214,94 +214,94 @@ User can access <b>BioColab application using two ways</b>, In case installed BB
 :large_orange_diamond: Select **Routes** from **Route tables** :arrow_forward: First tab.
 :large_orange_diamond: Click on **Edit routes**
 <br>
-<img alt="IG to Route step1" src="/idiag/Ig-to-Router1.png" class="lazy" width="100%">
+<img alt="IG to Route step1" src="./idiag/Ig-to-Router1.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Fill the value **0.0.0.0/0** and select Internet gateway name as showing on below screenshot.
 :large_orange_diamond: Click on **Save change**.
 <br>
-<img alt="IG to Route step2" src="/idiag/Ig-to-Router2.png" class="lazy" width="100%">
+<img alt="IG to Route step2" src="./idiag/Ig-to-Router2.png" class="lazy" width="100%">
 <br>
 :large_orange_diamond: Router table updated.
 <br>
-<img alt="IG to Route step2" src="/idiag/Ig-to-Router3.png" class="lazy" width="100%">
+<img alt="IG to Route step2" src="./idiag/Ig-to-Router3.png" class="lazy" width="100%">
 <br>
 
 ## Create ec2 Instance
 
 :large_orange_diamond: Click on Search Bar and type ec2.
 <br>
-<img alt="ec2 search" src="/idiag/ec2-search.png" class="lazy" width="100%">
+<img alt="ec2 search" src="./idiag/ec2-search.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Click on **instances (running)**.
 <br>
-<img alt="ec2 instance" src="/idiag/instance1.png" class="lazy" width="100%">
+<img alt="ec2 instance" src="./idiag/instance1.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Click on **Launch instances**.
 <br>
-<img alt="ec2 launch" src="/idiag/Launch-in1.png" class="lazy" width="100%">
+<img alt="ec2 launch" src="./idiag/Launch-in1.png" class="lazy" width="100%">
 <br>
 
 
 :large_orange_diamond: Type **name** of instance.
 <br>
-<img alt="ec2 name" src="/idiag/In2.png" class="lazy" width="100%">
+<img alt="ec2 name" src="./idiag/In2.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Select **Operating System**. Here, We are selecting **ubuntu**.
 <br>
-<img alt="ec2 os" src="/idiag/In4.png" class="lazy" width="100%">
+<img alt="ec2 os" src="./idiag/In4.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Select **g5.8xlarge** instance.
 :mag: Select instance type based on your requirements.
 <br>
-<img alt="ec2 Instance type" src="/idiag/In5.png" class="lazy" width="100%">
+<img alt="ec2 Instance type" src="./idiag/In5.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Create a **Keypair** to connect to ec2 instance. Type **Key pair name** and Click on **Create key pair**.
 <br>
-<img alt="ec2 Key pair" src="/idiag/In6-keypair 002.png" class="lazy" width="100%">
+<img alt="ec2 Key pair" src="./idiag/In6-keypair 002.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: **Key pair** will download.
 <br>
-<img alt="ec2 Keypair download" src="/idiag/keypair-download.png" class="lazy" width="100%">
+<img alt="ec2 Keypair download" src="./idiag/keypair-download.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: On the **Network settings** select correct **VPC** and **Subnet ID**
 <br>
-<img alt="ec2 Netset" src="/idiag/select_subnet.png" class="lazy" width="100%">
+<img alt="ec2 Netset" src="./idiag/select_subnet.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: On the **firewall (Security groups)** section. Create new security group by giving appropriate name.
 <br>
-<img alt="ec2 SG" src="/idiag/Security-GR1.png" class="lazy" width="100%">
+<img alt="ec2 SG" src="./idiag/Security-GR1.png" class="lazy" width="100%">
 <br>
 
 
 :large_orange_diamond: Allow **SSH** , **HTTP** and **HTTPS**. Source will be **0.0.0.0/0**.
 <br>
-<img alt="ec2 Sg1" src="/idiag/Security-GR2 002.png" class="lazy" width="100%">
+<img alt="ec2 Sg1" src="./idiag/Security-GR2 002.png" class="lazy" width="100%">
 <br>
 
 :o: **Configure Storage**
 :large_orange_diamond: **Root Volume is 100GB**
 :large_orange_diamond: **EBS Volume is 1000GB ~ 1TB**
 <br>
-<img alt="ec2 Storage" src="/idiag/Security-GR3andDisk.png" class="lazy" width="100%">
+<img alt="ec2 Storage" src="./idiag/Security-GR3andDisk.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Click on **Launch instance**.
 <br>
-<img alt="ec2 final step" src="/idiag/launch_instance1-final-step.png" class="lazy" width="100%">
+<img alt="ec2 final step" src="./idiag/launch_instance1-final-step.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Instance creation will be **in progress**.
 <br>
-<img alt="ec2 Launched" src="/idiag/Instance_Created.png" class="lazy" width="100%">
+<img alt="ec2 Launched" src="./idiag/Instance_Created.png" class="lazy" width="100%">
 <br>
 
 
@@ -309,39 +309,39 @@ User can access <b>BioColab application using two ways</b>, In case installed BB
 
 :large_orange_diamond: Click on **Elastic IPs** and Click on **Allocate Elastic IP address**.
 <br>
-<img alt="Elastic IP assign step1" src="/idiag/Easltic-ip1.png" class="lazy" width="100%">
+<img alt="Elastic IP assign step1" src="./idiag/Easltic-ip1.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Select **Network Boarder Group** and take Elastic IP address.
 <br>
-<img alt="Elastic IP assign step1" src="/idiag/ElasticIp2.png" class="lazy" width="100%">
-<img alt="ec2 search" src="/idiag/ElasticIpAllocate.png" class="lazy" width="100%">
+<img alt="Elastic IP assign step1" src="./idiag/ElasticIp2.png" class="lazy" width="100%">
+<img alt="ec2 search" src="./idiag/ElasticIpAllocate.png" class="lazy" width="100%">
 <br>
 :large_orange_diamond: Click on **Associate Elastic IP address**.
  <br>
-<img alt="ec2 search" src="/idiag/EasticIP-allocated.png" class="lazy" width="100%">
+<img alt="ec2 search" src="./idiag/EasticIP-allocated.png" class="lazy" width="100%">
 <br> 
-<img alt="ec2 search" src="/idiag/EaslticIP_all1.png" class="lazy" width="100%">
+<img alt="ec2 search" src="./idiag/EaslticIP_all1.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Select **Instance** and **Private IP address**.
 <br>
-<img alt="ec2 Assign" src="/idiag/EaslticIP_all2.png" class="lazy" width="100%">
+<img alt="ec2 Assign" src="./idiag/EaslticIP_all2.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Click on **Associate**.
 <br>
-<img alt="ec2 search" src="/idiag/EaslticIP_all3 002.png" class="lazy" width="100%">
+<img alt="ec2 search" src="./idiag/EaslticIP_all3 002.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Elastic IP address associated successfully.
 <br>
-<img alt="ec2 search" src="/idiag/EaslticIP_all5.png" class="lazy" width="100%">
+<img alt="ec2 search" src="./idiag/EaslticIP_all5.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Take connection string and **SSH** to **ec2 Instnace**.
 <br>
-<img alt="ec2 search" src="/idiag/Connecting-string.png" class="lazy" width="100%">
+<img alt="ec2 search" src="./idiag/Connecting-string.png" class="lazy" width="100%">
 <br>
 
 ## Installation Started.
@@ -358,8 +358,8 @@ ssh -i "lalit-biocolab-keypair.pem" ubuntu@3.98.231.253
 
 | **Item**                 | **Note**                                                            | **Size** |
 |--------------------------|---------------------------------------------------------------------|----------|
-| BioColab Token           | To access our product.                                              |          |
-| Application Domain       | Access BioColab on Browser.                                         |          |
+| BioStudio Token           | To access our product.                                              |          |
+| Application Domain       | Access BioStudio on Browser.                                         |          |
 | META_DATA Volume         | This will use by Bioproxy to store database. [**/biocolab/metadata**]  | 40GB     |
 | SSL Volume               | Using by BioProxy. [**/biocolab/configs**]                                  | 1GB      |
 | Data Volume              | Using to store user data. [**/biocolab/userdata**]                                   | 500GB    |
@@ -372,13 +372,14 @@ ssh -i "lalit-biocolab-keypair.pem" ubuntu@3.98.231.253
 # Download script:
 # Note: Installation script version would be changed based on updates.
 # Our Team will get you updates and keep in touch with you during installation.
-wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.40.tar.gz
+
+wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.46.tar.gz
 
 # uncompress .gz
-tar xvf v1.0.40.tar.gz
+tar xvf v1.0.46.tar.gz
 
 # Switch to installlation folder
-cd installation-1.0.40/
+cd installation-1.0.46/
 
 # Create required folder structure before execution.
 mkdir -p /biocolab/metadata
@@ -395,24 +396,24 @@ docker ps -a
 # Configure SSO login
 http://<Your Domain>/dashboard/
 ```
-:large_orange_diamond: Download **v1.0.40.tar.gz**, which content script to install **BioColab**.
+:large_orange_diamond: Download **v1.0.46.tar.gz**, which content script to install **BioStudio**.
 <br>
-<img alt="wget-script" src="/idiag/install-step1.png" class="lazy" width="100%">
+<img alt="wget-script" src="./idiag/install-step1.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Execute **script.**
 <br>
-<img alt="Script execution" src="/idiag/install-step2.png" class="lazy" width="100%">
+<img alt="Script execution" src="./idiag/install-step2.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Follow to provide values.
 <br>
-<img alt="step1-provideinfo" src="/idiag/install-step4.png" class="lazy" width="100%">
+<img alt="step1-provideinfo" src="./idiag/install-step4.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Change the IP, **If we have many.**
 <br>
-<img alt="Installation-step2" src="/idiag/Installation-step2.png" class="lazy" width="100%">
+<img alt="Installation-step2" src="./idiag/Installation-step2.png" class="lazy" width="100%">
 <br>
 
 <div class="warning" style='background-color: LightGray; color: #69337A; border-left: solid #805AD5 4px; border-radius: 4px; padding:0.7em;'>
@@ -428,15 +429,15 @@ http://<Your Domain>/dashboard/
 ```
 :large_orange_diamond: Verify both **container UP and running.**
 <br>
-<img alt="docker-image" src="/idiag/docker-image.png" class="lazy" width="100%">
+<img alt="docker-image" src="./idiag/docker-image.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Browser **BioColab.**
+:large_orange_diamond: Browser **BioStudio.**
 <br>
-<img alt="brows-site" src="/idiag/brows-site.png" class="lazy" width="100%">
+<img alt="brows-site" src="./idiag/brows-site.png" class="lazy" width="100%">
 <br>
 
-## Register for **root Admin.**
+## Register for root Admin.
 
 ```R
 https://<your domain>/dashboard
@@ -447,17 +448,17 @@ https://<your domain>/dashboard
 ```
 :large_orange_diamond: **Account Registration**.
 <br>
-<img alt="registration-admin-account" src="/idiag/reg-ad.png" class="lazy" width="100%">
+<img alt="registration-admin-account" src="./idiag/reg-ad.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Crearte **Admin Account.**
 <br>
-<img alt="registration_form" src="/idiag/registration_form.png" class="lazy" width="100%">
+<img alt="registration_form" src="./idiag/registration_form.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Login to **dashboard.**
 <br>
-<img alt="loin-admin" src="/idiag/loin-admin.png" class="lazy" width="100%">
+<img alt="loin-admin" src="./idiag/loin-admin.png" class="lazy" width="100%">
 <br>
 
 <div class="warning" style='background-color: LightGray; color: #69337A; border-left: solid #805AD5 4px; border-radius: 4px; padding:0.7em;'>
@@ -474,20 +475,29 @@ https://<your domain>/dashboard
 # Login with Dashboard using admin credential.
 # Select Machines Tab form left-side menu.
 # Select + Add New Machine.
+
+Name: You can select any name to this machine. This is a private IP of your machine, That can be find in /etc/hosts file on BioStudio pods.
+
+I already added a machine so I will go with update machine.
 ```
+
+<img alt="Script execution" src="./idiag/mip.png" class="lazy" width="100%">
+
+<br>
 
 :large_orange_diamond: Please fill **Update machine Metadata.**
 <br>
-<img alt="Machine update" src="/idiag/machine-update.png" class="lazy" width="100%">
+<img alt="Machine update" src="./idiag/machine-update.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Please add volume **Update machine Metadata.**
 ```R
 # Machines --> Click on + sign to add volume.
+# You can use any name for volume but volume path always be /home
 # Now WORKSPACE is ready to use.
 ```
 <br>
-<img alt="Volume added" src="/idiag/volume-add.png" class="lazy" width="100%">
+<img alt="Volume added" src="./idiag/volume-add.png" class="lazy" width="100%">
 <br>
 
 
@@ -592,12 +602,12 @@ https://<your domain>/dashboard
 :high_brightness: Select **SSO** on :arrow_left: left side menu.
 :high_brightness: Click on :arrow_right: **+ Add New SSO** push button.
 <br>
-<img alt="New SSO" src="/SSO_IMG/new-sso.png" class="lazy" width="100%">
+<img alt="New SSO" src="./SSO_IMG/new-sso.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: **New SSO configuration.** 
 <br>
-<img alt="Protocol" src="/SSO_IMG/protocol.png" class="lazy" width="100%">
+<img alt="Protocol" src="./SSO_IMG/protocol.png" class="lazy" width="100%">
 <br>
 | **Option**               | **Description**                                                                                                                                |
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -606,8 +616,8 @@ https://<your domain>/dashboard
 | **App name**             | Specified application name. You can provide any name.                                                                                          |
 | **Display Name**         | Name that you would like to use for SSO configuration. You can provide any name.                                                               |
 | **Allow SSO Domains**    | This option allow you to restrict access to an application. Only selected domain are allow to access this application. Kindly provide your domain name, if you wish to allow to access user's belongs to your domain.                       |
-| **Callback HTTPS URL**   | We must use this URL to configure SSO, if BioColab configured **with** SSL access. So that once Authentication Successful. User will allow to access BioColab application.              |
-| **Callback HTTP URL**    | We must use this URL to configure SSO, If BioColab configured **without** SSL. So that once Authentication Successful. User will allow to access BioColab application.            |
+| **Callback HTTPS URL**   | We must use this URL to configure SSO, if BioStudio configured **with** SSL access. So that once Authentication Successful. User will allow to access BioStudio application.              |
+| **Callback HTTP URL**    | We must use this URL to configure SSO, If BioStudio configured **without** SSL. So that once Authentication Successful. User will allow to access BioStudio application.            |
 | **Type**                 | Select what type of IDP service provider you are going to use. value will be changed based on selected Protocol.                                 |
 | **Subtype**              | If you have more type of IDP. Type vlaue in Subtype.                                                                                            |
 | **Disable SSL**          | By default SSL is disabled. If you would like to auth. with server's keys. Enable it and you can have public and private key to configure SSO. |
@@ -626,16 +636,16 @@ https://<your domain>/dashboard
 ```R
 SAML is an XML-based authentication protocol in which Identity Providers (IdP) -- entities that manage and store user credentials -- exchange digitally signed XML documents (SAML Assertions) allowing an end-user to access a **Service Provider **(SP).
 Here IDP could be Aliyum IDaas, KeyCloak, auth0, or any of IDP service provider, which come under default.
-BioColab is comes under service provider.
+BioStudio is comes under service provider.
 ```
 
 <br>
-<img alt="saml config" src="/SSO_IMG/SSO-CONF.png" class="lazy" width="100%">
+<img alt="saml config" src="./SSO_IMG/SSO-CONF.png" class="lazy" width="100%">
 <br>
 
 :large_blue_diamond: **SAML Protocol Configured.** 
 <br>
-<img alt="saml saved" src="/SSO_IMG/SAML-SAVED.png" class="lazy" width="100%">
+<img alt="saml saved" src="./SSO_IMG/SAML-SAVED.png" class="lazy" width="100%">
 <br>
 
 :large_blue_diamond: **SAML Protocol view metadata.** 
@@ -643,14 +653,14 @@ BioColab is comes under service provider.
 # Once clicked on Submit button. You can view metadata by clicking + ( Plus sign)
 ```
 <br>
-<img alt="saml metadata" src="/SSO_IMG/SSOmetadata.png" class="lazy" width="100%">
+<img alt="saml metadata" src="./SSO_IMG/SSOmetadata.png" class="lazy" width="100%">
 <br>
 <br>
 
 :large_blue_diamond: **SAML metadata.**
 
 <br>
-<img alt="saml metadata detail" src="/SSO_IMG/ssometada-desc.png" class="lazy" width="100%">
+<img alt="saml metadata detail" src="./SSO_IMG/ssometada-desc.png" class="lazy" width="100%">
 <br>
 <br>
 
@@ -669,7 +679,7 @@ BioColab is comes under service provider.
 ```
 
 <br>
-<img alt="saml update" src="/SSO_IMG/SMAL-update.png" class="lazy" width="100%">
+<img alt="saml update" src="./SSO_IMG/SMAL-update.png" class="lazy" width="100%">
 <br>
 
 ```R
@@ -677,7 +687,7 @@ BioColab is comes under service provider.
 ```
 
 <br>
-<img alt="saml update" src="/SSO_IMG/update-sson.png" class="lazy" width="100%">
+<img alt="saml update" src="./SSO_IMG/update-sson.png" class="lazy" width="100%">
 <br>
 
 ```R
@@ -687,7 +697,7 @@ BioColab is comes under service provider.
 
 
 <br>
-<img alt="saml delete" src="/SSO_IMG/delete-sson.png" class="lazy" width="100%">
+<img alt="saml delete" src="./SSO_IMG/delete-sson.png" class="lazy" width="100%">
 <br>
 <br>
 
@@ -700,7 +710,7 @@ OpenID Connect is an interoperable authentication protocol based on the OAuth 2.
 :large_blue_diamond: **OPENID configured.**
 
 <br>
-<img alt="Open ID" src="/SSO_IMG/openid.png" class="lazy" width="100%">
+<img alt="Open ID" src="./SSO_IMG/openid.png" class="lazy" width="100%">
 <br>
 <br>
 
@@ -715,7 +725,7 @@ The OAuth 2.0 is the industry protocol for authorization. It allows a user to gr
 :large_blue_diamond: **OAUTH2 configured with Google.**
 
 <br>
-<img alt="Oauth2 detail google" src="/SSO_IMG/oauth2google.png" class="lazy" width="100%">
+<img alt="Oauth2 detail google" src="./SSO_IMG/oauth2google.png" class="lazy" width="100%">
 <br>
 <br>
 
@@ -723,14 +733,14 @@ The OAuth 2.0 is the industry protocol for authorization. It allows a user to gr
 :large_blue_diamond: **OAUTH2 configured with Azure.**
 
 <br>
-<img alt="Oauth2 detail Azure" src="/SSO_IMG/OAUTH2Azure.png" class="lazy" width="100%">
+<img alt="Oauth2 detail Azure" src="./SSO_IMG/OAUTH2Azure.png" class="lazy" width="100%">
 <br>
 <br>
 
 > In above explanation, We configured four types of SSO. It will appears to users during login to decide login method.
 
 <br>
-<img alt="Final SSO" src="/SSO_IMG/finalsso.png" class="lazy" width="100%">
+<img alt="Final SSO" src="./SSO_IMG/finalsso.png" class="lazy" width="100%">
 <br>
 <br>
 
@@ -745,83 +755,83 @@ NOTE: Kindly follow the instructions and steps based on your infrastructure / IT
 ```
 
 <br>
-<img alt="loin-okta" src="/idiag/okta-account1.png" class="lazy" width="100%">
+<img alt="loin-okta" src="./idiag/okta-account1.png" class="lazy" width="100%">
 <br>
 <br>
 
 :large_orange_diamond: Click on **Create App Integration**.
 <br>
-<img alt="smal select" src="/idiag/oktastep2.png" class="lazy" width="100%">
+<img alt="smal select" src="./idiag/oktastep2.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Select **SAML 2.0**.
 <br>
-<img alt="Okta-app" src="/idiag/Okta-step3.png" class="lazy" width="100%">
+<img alt="Okta-app" src="./idiag/Okta-step3.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Write **App name**.
 <br>
-<img alt="App name" src="/idiag/Oktastep4.png" class="lazy" width="100%">
+<img alt="App name" src="./idiag/Oktastep4.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Upload application **logo** ( If you wish ).
 <br>
-<img alt="Okta logo" src="/idiag/Okta-step5.png" class="lazy" width="100%">
+<img alt="Okta logo" src="./idiag/Okta-step5.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: On Biocolab dashboard login. Select SSO :arrow_right: Add New SSO.
+:large_orange_diamond: On BioStudio dashboard login. Select SSO :arrow_right: Add New SSO.
 <br>
-<img alt="SSO login" src="/idiag/new_sso_login.png" class="lazy" width="100%">
+<img alt="SSO login" src="./idiag/new_sso_login.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Copy **callback URL** from **New SSO login** and update on Okta.
 <br>
-<img alt="callback UR" src="/idiag/Oktaste7-fill-value.png" class="lazy" width="100%">
+<img alt="callback UR" src="./idiag/Oktaste7-fill-value.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Scroll down and click on **Next**.
 <br>
-<img alt="SSO next" src="/idiag/okta-step8-next.png" class="lazy" width="100%">
+<img alt="SSO next" src="./idiag/okta-step8-next.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Follow **Step3: I'm an Okta customer adding an internal app**.
 <br>
-<img alt="Okta -step3" src="/idiag/okta-step9.png" class="lazy" width="100%">
+<img alt="Okta -step3" src="./idiag/okta-step9.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Click on **Finish**.
 <br>
-<img alt="Okta - Finish" src="/idiag/okta-step10-finish.png" class="lazy" width="100%">
+<img alt="Okta - Finish" src="./idiag/okta-step10-finish.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: **SAML** config data is ready.
 <br>
-<img alt="loin-admin" src="/idiag/view-saml.png" class="lazy" width="100%">
+<img alt="loin-admin" src="./idiag/view-saml.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: **View SAML setup instructions**.
 <br>
-<img alt="SAML Setup" src="/idiag/add-smal.png" class="lazy" width="100%">
+<img alt="SAML Setup" src="./idiag/add-smal.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Get the value from Okta and fill on **SSO BioColab**. Click on **Submit**.
+:large_orange_diamond: Get the value from Okta and fill on **SSO BioStudio**. Click on **Submit**.
 <br>
-<img alt="fill SSO" src="/idiag/Fill-sso.png" class="lazy" width="100%">
+<img alt="fill SSO" src="./idiag/Fill-sso.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: User assignment to Application.
 <br>
-<img alt="Create user account" src="/idiag/okta-test-user-creation.png" class="lazy" width="100%">
+<img alt="Create user account" src="./idiag/okta-test-user-creation.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Assign User to Application.
 <br>
-<img alt="loin-admin" src="/idiag/okta-user-assignment.png" class="lazy" width="100%">
+<img alt="loin-admin" src="./idiag/okta-user-assignment.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Login to **BioColab**.
+:large_orange_diamond: Login to **BioStudio**.
 <br>
-<img alt="loin-admin" src="/idiag/sso-login-test.png" class="lazy" width="100%">
+<img alt="loin-admin" src="./idiag/sso-login-test.png" class="lazy" width="100%">
 <br>
 
 
@@ -831,13 +841,13 @@ NOTE: Kindly follow the instructions and steps based on your infrastructure / IT
 
 
 <br>
-<img alt="loin-admin" src="/idiag/SSO-successful-login.png" class="lazy" width="100%">
+<img alt="loin-admin" src="./idiag/SSO-successful-login.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Access BioColab services.
+:large_orange_diamond: Access BioStudio services.
 
 <br>
-<img alt="BioColab-img" src="/idiag/BioColab-img.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="./idiag/BioColab-img.png" class="lazy" width="100%">
 <br>
 
 ## SSL setup.
@@ -862,22 +872,22 @@ II] Login to server and follow below steps.
 
 :large_orange_diamond: SSL using  WebUI
 <br>
-<img alt="ssl-setup" src="/idiag/SSL-setup.png" class="lazy" width="100%">
+<img alt="ssl-setup" src="./idiag/SSL-setup.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: SSL direct upload on server location.
 <br>
-<img alt="ssl-setup" src="/idiag/tls-cer.png" class="lazy" width="100%">
+<img alt="ssl-setup" src="./idiag/tls-cer.png" class="lazy" width="100%">
 <br>
 
-## Kubernetes Setup for BioColab
+## Kubernetes Setup for BioStudio
 > Helm chart version : **1.0.42**
 
 ```R
 # Before installing the BioTuring System on Linux/K8S, some pre-installation steps are required:
 # System: K8s
-# A token obtained from BioTuring for BioColab.
-# BioColab supporting GPU and CPU type of instance / Machine. 
+# A token obtained from BioTuring for BioStudio.
+# BioStudio supporting GPU and CPU type of instance / Machine. 
 # Kindly select GPU, If you wish to use Prebuilt GPU based notebook or wish to generate GPU based note book.
 ```
 
@@ -996,9 +1006,9 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 | **Key**                                    | **Type** | **Default**        | **Description**      |
 |--------------------------------------------|----------|--------------------|----------------------|
 | image.biocolab.repository                  | string   | bioturing/biocolab | biocolab repository  |
-| image.biocolab.tag                         | int      | 1.0.15             | biocolab image tag   |
+| image.biocolab.tag                         | int      | 1.0.24             | biocolab image tag   |
 | image.bioproxy.repository                  | string   | bioturing/biocolab | bioproxy repository  |
-| image.bioproxy.tag                         | int      | 1.0.15             | bioproxy image tag   |
+| image.bioproxy.tag                         | int      | 1.0.25             | bioproxy image tag   |
 | imagePullSecrets                           | object   | {}                 | secrets              |
 | secret.data.allowips                       | string   | ""                 | allow ip             |
 | secret.data.cbtoken                        | string   | ""                 | Colab token          |
@@ -1077,18 +1087,18 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 # Click on install.
 ```
 <br>
-<img alt="BioColab version" src="/idiag/Biocolab-version.png" class="lazy" width="100%">
+<img alt="BioColab version" src="./idiag/Biocolab-version.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Select **namespace** and type name of **Statefulset**.
 :large_orange_diamond: Click on **Next**
 <br>
-<img alt="Type name" src="/idiag/biocolab-step1-namespace.png" class="lazy" width="100%">
+<img alt="Type name" src="./idiag/biocolab-step1-namespace.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Verify ***Tag*** and ***repository***.
 <br>
-<img alt="tag verification" src="/idiag/verify-image-tag.png" class="lazy" width="100%">
+<img alt="tag verification" src="./idiag/verify-image-tag.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: **Update values**:
@@ -1101,29 +1111,29 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 ```
 
 <br>
-<img alt="PVC and domain" src="/idiag/pvc-domain.png" class="lazy" width="100%">
+<img alt="PVC and domain" src="./idiag/pvc-domain.png" class="lazy" width="100%">
 <br>
 <br>
 
-:large_orange_diamond: BioColab will start installation based on helm chart.
+:large_orange_diamond: BioStudio will start installation based on helm chart.
 <br>
-<img alt="ssl-setup" src="/idiag/helm-installed.png" class="lazy" width="100%">
+<img alt="ssl-setup" src="./idiag/helm-installed.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Verify **statefulset**.
 <br>
-<img alt="ssl-setup" src="/idiag/stateful-set.png" class="lazy" width="100%">
+<img alt="ssl-setup" src="./idiag/stateful-set.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Verify **ingress**.
 <br>
-<img alt="ssl-setup" src="/idiag/ingress.png" class="lazy" width="100%">
+<img alt="ssl-setup" src="./idiag/ingress.png" class="lazy" width="100%">
 <br>
 
 
 :large_orange_diamond: Browse **your domain**.
 <br>
-<img alt="ssl-setup" src="/idiag/biocolab-web.png" class="lazy" width="100%">
+<img alt="ssl-setup" src="./idiag/biocolab-web.png" class="lazy" width="100%">
 <br>
 
 :small_orange_diamond: Before access **WORKSPACE**. It is necessary to access dashboard and create machine and well as create volume to be mounted.
@@ -1134,16 +1144,16 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 # For any support and enquiry. Drop a mail to us support@bioturing.com
 ```
 
-![BioColab logo](/EKS_PIC/logo.png)
+![BioStudio logo](./EKS_PIC/logo.png)
 
-# <p style="color: #006400"> [ BioColab Deployments on Kubernetes ]</p>
+# <p style="color: #006400"> [ BioStudio Deployments on Kubernetes ]</p>
 
 # <p style="color: #000080"> Introduction </p>
 
 <div class="warning" style='background-color:#E9D8FD; color: #69337A; border-left: solid #805AD5 4px; border-radius: 4px; padding:0.7em;'>
 <span>
 <p style='margin-top:1em; text-align:justify'; text-justify:inter-word;>
-<code><b>BioColab on K8s</b></code> BioColab software is compatible and easy to install on all kind of <b style="color: darkblue">Operating System </b> as well as on <b style="color: darkblue"> Docker, Kubernetes, Standalone machine, Cloud, On-premises, VM and all type of infrastructure platform</b>.</b> We are happy to inform that we are a leading brands company to provide all of our <b style="color: blue"><u>Softwares as a Service (SaaS)</b></u>. It is directly ready to use for end users.
+<code><b>BioStudio on K8s</b></code> BioStudio software is compatible and easy to install on all kind of <b style="color: darkblue">Operating System </b> as well as on <b style="color: darkblue"> Docker, Kubernetes, Standalone machine, Cloud, On-premises, VM and all type of infrastructure platform</b>.</b> We are happy to inform that we are a leading brands company to provide all of our <b style="color: blue"><u>Softwares as a Service (SaaS)</b></u>. It is directly ready to use for end users.
 </p>
 </span>
 </div>
@@ -1152,7 +1162,7 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 
 > **We are supporting all kind of service provider including on-premise**
 ```R
-BioColab on K8s. Install Software on Kubernetes Clusters with the Helm.
+BioStudio on K8s. Install Software on Kubernetes Clusters with the Helm.
 ```
 
 ## AWS EKS Cluster
@@ -1160,21 +1170,21 @@ BioColab on K8s. Install Software on Kubernetes Clusters with the Helm.
 :passport_control: **Login to AWS console.** 
 :o: **Serach for EKS in serach bar.** 
 
-<img alt="Search" src="/EKS_PIC/eks-search.png" class="lazy" width="100%"> 
+<img alt="Search" src="./EKS_PIC/eks-search.png" class="lazy" width="100%"> 
 
 <b></b>
 
 :o: **select create on Add Cluster.** 
 <b></b>
 
-<img alt="create" src="/EKS_PIC/select-add-cluster-create.png" class="lazy" width="100%"> 
+<img alt="create" src="./EKS_PIC/select-add-cluster-create.png" class="lazy" width="100%"> 
 
 <b></b>
 
 :o: **Configure Cluster.** 
 <b></b>
 
-<img alt="Configure" src="/EKS_PIC/select-cluster-nameandKube-version.png" class="lazy" width="100%"> 
+<img alt="Configure" src="./EKS_PIC/select-cluster-nameandKube-version.png" class="lazy" width="100%"> 
 
 <b></b>
 
@@ -1184,20 +1194,20 @@ role --> Create role
 ``` 
 <b></b>
 
-<img alt="Create role" src="/EKS_PIC/role-create-role.png" class="lazy" width="100%"> 
+<img alt="Create role" src="./EKS_PIC/role-create-role.png" class="lazy" width="100%"> 
 
 <b></b>
 
 :o: **Select AWS service and EKS on use case.** 
 <b></b>
 
-<img alt="eks" src="/EKS_PIC/aws-service-eks.png" class="lazy" width="100%"> 
+<img alt="eks" src="./EKS_PIC/aws-service-eks.png" class="lazy" width="100%"> 
 
 <b></b>
 
 :o: **Select EKS -Cluster.** 
 <b></b>
-<img alt="eks-pic" src="/EKS_PIC/eks-ekscluster-next.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/eks-ekscluster-next.png" class="lazy" width="100%"> 
 <b></b>
  
 :o: **Add permission.** 
@@ -1205,91 +1215,91 @@ role --> Create role
 AmzonEKSClusterPolicy
 ``` 
 :arrow_right: **click on next.** 
-<img alt="eks-pic" src="/EKS_PIC/autao-add-permission.png" class="lazy" width="100%">
+<img alt="eks-pic" src="./EKS_PIC/autao-add-permission.png" class="lazy" width="100%">
 
 <b></b>
 
 :o: **Fill Role detail.** 
 :arrow_right: **Create role.** 
 <b></b>
-<img alt="eks-pic" src="/EKS_PIC/eksrole-detail.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/add-tag-crearte-role.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/eksrole-detail.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/add-tag-crearte-role.png" class="lazy" width="100%"> 
 <b></b>
 
 :o: **Role created .** 
-<img alt="eks-pic" src="/EKS_PIC/role-creation-done.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/role-creation-done.png" class="lazy" width="100%"> 
 
 <b></b>
 
 
 :o: **Select appropriate role that we created earlier..** 
 
-<img alt="eks-pic" src="/EKS_PIC/role-view-oneks.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/role-view-oneks.png" class="lazy" width="100%"> 
 
 <b></b>
 :o: **provide appropriate tag.** 
 :arrow_right: **click on next.** 
-<img alt="eks-pic" src="/EKS_PIC/eks-cluster-tag.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/eks-cluster-tag.png" class="lazy" width="100%"> 
 
 <b></b>
 
 :o: **Specify networking. VPC and Networking.** 
 :link: [Amazon EKS VPC and subnet requirements and considerations](https://docs.aws.amazon.com/eks/latest/userguide/network_reqs.html)
 
-<img alt="eks-pic" src="/EKS_PIC/eks-vpc-subnet-default.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/eks-vpc-subnet-default.png" class="lazy" width="100%"> 
 
 <b></b>
 :o: **Select Security Group.** 
 :arrow_right: **click on next.** 
 
-<img alt="eks-pic" src="/EKS_PIC/Cluster-endpoint-next.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/Cluster-endpoint-next.png" class="lazy" width="100%"> 
 
 <b></b>
 :o: **Select Configuring logging.** 
 
-<img alt="eks-pic" src="/EKS_PIC/configure-login.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/configure-login.png" class="lazy" width="100%"> 
 
 <b></b>
 :o: **Select Add-ons.** 
 :arrow_right: **click on next.** 
 
-<img alt="eks-pic" src="/EKS_PIC/select-addons.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/select-addons.png" class="lazy" width="100%"> 
 
 :arrow_right: **Select Version of Add-ons and click on next.** 
 
-<img alt="eks-pic" src="/EKS_PIC/configure-addons-serting.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/configure-addons-next.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/configure-addons-serting.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/configure-addons-next.png" class="lazy" width="100%"> 
 <b></b>
 
 :o: **Click on Create.** 
 
-<img alt="eks-pic" src="/EKS_PIC/scrill-down-create.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/scrill-down-create.png" class="lazy" width="100%"> 
 <b></b>
 
 
 :blush: **You are done to create cluster. Wait for a while to setup this.**
-<img alt="eks-pic" src="/EKS_PIC/cluster-creation-under-progress.png" class="lazy" width="100%">
+<img alt="eks-pic" src="./EKS_PIC/cluster-creation-under-progress.png" class="lazy" width="100%">
 
 :gift: **Kubernetes Cluster is Active now.**
-<img alt="eks-pic" src="/EKS_PIC/eks-cluster-ready.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/eks-cluster-ready.png" class="lazy" width="100%"> 
 
 :link: [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 ```R
 Kindly select the OS version installation according to your Operating System.
 ``` 
-<img alt="eks-pic" src="/EKS_PIC/aws-cli-intallation-on-window.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/aws-cli-accept-licence.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/aws-cli-setup-location.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/aws-cli-install-final-step.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/aws-cli-installation-in-progress.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/aws-cli-install-completed-finish.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/aws-cli-intallation-on-window.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/aws-cli-accept-licence.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/aws-cli-setup-location.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/aws-cli-install-final-step.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/aws-cli-installation-in-progress.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/aws-cli-install-completed-finish.png" class="lazy" width="100%"> 
 
 :o: Test AWS cli
 
-<img alt="eks-pic" src="/EKS_PIC/aws-cli-version-test.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/aws-cli-clusater-check.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/aws-eks-cluster-status.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/kubectl-version.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/aws-cli-version-test.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/aws-cli-clusater-check.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/aws-eks-cluster-status.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/kubectl-version.png" class="lazy" width="100%"> 
 
 :o: **Installing Kubectl command utility.** 
 :link: [Chocolatey](https://chocolatey.org/install#individual)
@@ -1297,9 +1307,10 @@ Kindly select the OS version installation according to your Operating System.
 There are many ways to install Kubectl command utility too. Here we are using window machine, So just to prefer Choco.
 ``` 
 
-<img alt="eks-pic" src="/EKS_PIC/choco-install.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/Choco-install-002.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/kubectl-command-install.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/choco-install.png" class="lazy" width="100%"> 
+
+<img alt="eks-pic" src="./EKS_PIC/kubectl-command-install.png" class="lazy" width="100%"> 
+
 <b></b>
 
 :o: **Adding worker node to Kubernete cluster.** 
@@ -1308,7 +1319,7 @@ EKS --> Compute --> Add node group.
 In order to add node to the cluster. We need to add node group. Each node group can content different kind of node ( compute resources ). We can add many node group based on requirements.
 ``` 
 
-<img alt="eks-pic" src="/EKS_PIC/compute-add-node.png" class="lazy" width="100%">
+<img alt="eks-pic" src="./EKS_PIC/compute-add-node.png" class="lazy" width="100%">
 
 :o: **Configure node group.** 
 
@@ -1316,32 +1327,32 @@ In order to add node to the cluster. We need to add node group. Each node group 
 In node group configuration, We need to provide node name as well as must create Node IAM role. to handle worker node. Once click on IAM console. A new window will open to create new IAM role.
 ```
 
-<img alt="eks-pic" src="/EKS_PIC/node-gr-config.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/node-gr-config.png" class="lazy" width="100%"> 
 
 :o: **Click on Create role.** 
 
-<img alt="eks-pic" src="/EKS_PIC/createrolefor-node.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/createrolefor-node.png" class="lazy" width="100%"> 
 
 :o: **Select AWS service.** 
 ```R
 Use cases for other AWS services. EC2
 ```
-<img alt="eks-pic" src="/EKS_PIC/node-role-policy.png" class="lazy" width="100%">
+<img alt="eks-pic" src="./EKS_PIC/node-role-policy.png" class="lazy" width="100%">
 
 ```R
 Add three tick mark policy that role.
 ```
-<img alt="eks-pic" src="/EKS_PIC/eks-policy-for-node.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/eks-node-policy-ec2.png" class="lazy" width="100%">
+<img alt="eks-pic" src="./EKS_PIC/eks-policy-for-node.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/eks-node-policy-ec2.png" class="lazy" width="100%">
 
 :o: **Click on Create role.** 
 
-<img alt="eks-pic" src="/EKS_PIC/node-role-created.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/node-role-created.png" class="lazy" width="100%"> 
 
 ```R
 Once role is ready. Now time to assign this role to node group.
 ```
-<img alt="eks-pic" src="/EKS_PIC/attach-iamroleTo-nodeconfig.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/attach-iamroleTo-nodeconfig.png" class="lazy" width="100%"> 
 
 
 ```R
@@ -1351,21 +1362,21 @@ You have two option to create Ec2 instance.
 ```
 :one: **Launch from EKS node configuration wizard.**
 
-<img alt="eks-pic" src="/EKS_PIC/node-gr-conf.png" class="lazy" width="100%">
+<img alt="eks-pic" src="./EKS_PIC/node-gr-conf.png" class="lazy" width="100%">
 
 :o: **Click on Next.** 
-<img alt="eks-pic" src="/EKS_PIC/create-node-next.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/secondway-node-creation.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/create-node-next.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/secondway-node-creation.png" class="lazy" width="100%"> 
 
 :o: **Click on Next.** 
-<img alt="eks-pic" src="/EKS_PIC/node-group-scale.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/node-group-scale.png" class="lazy" width="100%"> 
 
 :o: **Click on Next.** 
-<img alt="eks-pic" src="/EKS_PIC/add-node-gr-networl.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/add-node-gr-networl.png" class="lazy" width="100%"> 
 
 :o: **Click on Create.** 
-<img alt="eks-pic" src="/EKS_PIC/create-node-gr-final.png" class="lazy" width="100%">
-<img alt="eks-pic" src="/EKS_PIC/node-under-creation.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/create-node-gr-final.png" class="lazy" width="100%">
+<img alt="eks-pic" src="./EKS_PIC/node-under-creation.png" class="lazy" width="100%"> 
 
 :arrows_counterclockwise: **Wait for a while to add node to the Cluster.**
 
@@ -1379,41 +1390,41 @@ You have two option to create Ec2 instance.
 
 
 
-<img alt="eks-pic" src="/EKS_PIC/create-template.png" class="lazy" width="100%">
-<img alt="eks-pic" src="/EKS_PIC/node-creation.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/create-template.png" class="lazy" width="100%">
+<img alt="eks-pic" src="./EKS_PIC/node-creation.png" class="lazy" width="100%"> 
  
-<img alt="eks-pic" src="/EKS_PIC/launch-template.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/keypair.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/create-template-01.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/launch-template.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/keypair.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/create-template-01.png" class="lazy" width="100%"> 
 
 :o: **Once followed to provide all the value. Click on create launch template.**
 
-<img alt="eks-pic" src="/EKS_PIC/Template-created.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/Template-created.png" class="lazy" width="100%"> 
 
 :o: **Once template ready. Add to the node group.**
 
-<img alt="eks-pic" src="/EKS_PIC/add-launch-template.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/add-launch-template.png" class="lazy" width="100%"> 
 
-<img alt="eks-pic" src="/EKS_PIC/resources-addedto-cluster.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/resources-addedto-cluster.png" class="lazy" width="100%"> 
 
 :o: **In order to use PVC creation. We must have driver installed with cluster.**
 
 :o: **Click on Add-ons tab.**
-<img alt="eks-pic" src="/EKS_PIC/addon-click.png" class="lazy" width="100%">
+<img alt="eks-pic" src="./EKS_PIC/addon-click.png" class="lazy" width="100%">
 
 :o: **Click on Get more Add-ons.**
-<img alt="eks-pic" src="/EKS_PIC/ebs-driver-creation.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/ebs-driver-creation.png" class="lazy" width="100%"> 
 
 :o: **Select Amazon EBS CSI Driver.**
-<img alt="eks-pic" src="/EKS_PIC/selectaddo.png" class="lazy" width="100%">
+<img alt="eks-pic" src="./EKS_PIC/selectaddo.png" class="lazy" width="100%">
 
 :o: **Click on next.**
 
-<img alt="eks-pic" src="/EKS_PIC/addnxt.png" class="lazy" width="100%">
-<img alt="eks-pic" src="/EKS_PIC/consel.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/addnxt.png" class="lazy" width="100%">
+<img alt="eks-pic" src="./EKS_PIC/consel.png" class="lazy" width="100%"> 
 
 :o: **Click on Create.**
-<img alt="eks-pic" src="/EKS_PIC/ebs-csi-driver-addon-cluster.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/ebs-csi-driver-addon-cluster.png" class="lazy" width="100%"> 
 
 
 
@@ -1423,25 +1434,25 @@ You have two option to create Ec2 instance.
 
 :o: **Copy the OpenID Connect provider URL.**
 :arrow_right: **Search IAM and click on role**
-<img alt="eks-pic" src="/EKS_PIC/iam.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/iam.png" class="lazy" width="100%"> 
 
 :arrow_right: **Select Identity provider on Access management.**
-<img alt="eks-pic" src="/EKS_PIC/id.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/id.png" class="lazy" width="100%"> 
 
 :arrow_right: **Click on Add provider.**
-<img alt="eks-pic" src="/EKS_PIC/id.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/id.png" class="lazy" width="100%"> 
 
 
 :arrow_right: **Click on OpenID Connect.**
-<img alt="eks-pic" src="/EKS_PIC/opidc.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/opidc.png" class="lazy" width="100%"> 
 
 :arrow_right: **Paste Provider URL tht we copied earlier from Cluster.**
 :arrow_right: **Click on Get thumbprint.**
-<img alt="eks-pic" src="/EKS_PIC/gt.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/gt.png" class="lazy" width="100%"> 
 
 :arrow_right: **Audience, enter sts.amazonaws.com and choose Add provider.**
 
-<img alt="eks-pic" src="/EKS_PIC/aud.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/aud.png" class="lazy" width="100%"> 
 
 :o: **Create Amazon EBS CSI driver IAM role.**
 
@@ -1451,37 +1462,37 @@ You have two option to create Ec2 instance.
 IAM --> Roles --> Create role
 ```
 
-<img alt="eks-pic" src="/EKS_PIC/crw.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/create-openid-role.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/openid-next.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/openid-driver-permission-asignment.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/crw.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/create-openid-role.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/openid-next.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/openid-driver-permission-asignment.png" class="lazy" width="100%"> 
 
-<img alt="eks-pic" src="/EKS_PIC/OpenID-Create_role-1.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/OpenID-Create_role_Completed.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/OpenID-Create_role-1.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/OpenID-Create_role_Completed.png" class="lazy" width="100%"> 
 
 :arrow_right: **Edit trust relationship policy.**
 :arrow_right: **Click on Edit trust policy. Add the following line after comma**
 :bell: **Change the value based on your OpenID**
-<img alt="eks-pic" src="/EKS_PIC/num.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/num.png" class="lazy" width="100%"> 
 
 ```R
 "oidc.eks.ca-central-1.amazonaws.com/id/7B6A410BCEF7466327A6CE441E164591:sub": "system:serviceaccount:kube-system:ebs-csi-controller-sa" 
 ```
-<img alt="eks-pic" src="/EKS_PIC/etp.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/etp.png" class="lazy" width="100%"> 
 
 :arrow_right: **Click on Update policy.**
 
-<img alt="eks-pic" src="/EKS_PIC/up.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/up.png" class="lazy" width="100%"> 
 
 :bell: **Make sure user should have permissions "AmazonEC2FullAccess".**
 
-<img alt="eks-pic" src="/EKS_PIC/mk.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/mk.png" class="lazy" width="100%"> 
 
 :o: **Update EBS CSI Driver fro IAM Role.**
 
-<img alt="eks-pic" src="/EKS_PIC/upcs.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/editad.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="/EKS_PIC/ebs-driver-updateforrole.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/upcs.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/editad.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/ebs-driver-updateforrole.png" class="lazy" width="100%"> 
 
 :arrow_right: **Test.**
 ```R
@@ -1495,7 +1506,7 @@ kubectl config current-context
 
 ```
 
-<img alt="eks-pic" src="/EKS_PIC/pvt.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/pvt.png" class="lazy" width="100%"> 
 
 :arrow_right: **Troubleshoot.** 
 ```R
@@ -1508,7 +1519,7 @@ kubectl delete pods -n kube-system -l=app=ebs-csi-controller
 
 
 
-<img alt="eks-pic" src="/EKS_PIC/rs.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="./EKS_PIC/rs.png" class="lazy" width="100%"> 
 
 ```R
 ========
@@ -1574,13 +1585,25 @@ helm repo update
 helm search repo bioturing
 ```
 
-<img alt="Protocol" src="/EKS_PIC/hel.png" class="lazy" width="100%"> 
+<img alt="Protocol" src="./EKS_PIC/hel.png" class="lazy" width="100%"> 
 
 
-:bell: **I downloaded latest version of BioColab and adjusted values accordingly.** 
+:bell: **I downloaded latest version of BioStudio and adjusted values accordingly.** 
 
-<img alt="Protocol" src="/EKS_PIC/done-wihout-lb.png" class="lazy" width="100%"> 
-<img alt="Protocol" src="/EKS_PIC/pvc-done.png" class="lazy" width="100%"> 
+<img alt="Protocol" src="./EKS_PIC/done-wihout-lb.png" class="lazy" width="100%"> 
+<img alt="Protocol" src="./EKS_PIC/pvc-done.png" class="lazy" width="100%"> 
 
 :o: **Kindly setup Load balancer (ALB) with your DNS.**
 :o: **Please contact** :e-mail: [**support@bioturing.com**] for any inquiry.
+
+# <p style="color: #000080"> Machine name on K8s </p>
+
+```R
+# We must use local DNS service name to add machine.
+
+<Service Name>.<Namespace>.svc.cluster.local
+
+# bioc-test-release-biocolab-colab.bioc-test.svc.cluster.local
+
+# biocolab-preprod-biocolab-colab.bioturing-preprod.svc.cluster.local
+```
