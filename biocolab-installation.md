@@ -145,7 +145,9 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 <br>
 <img alt="Create Subnet fill" src="./idiag/Create-subnet2.png" class="lazy" width="100%">
 <br>
+
 :large_orange_diamond: Fill **CIDR block**, type **Tag Key** and **Value** then Click on **Create subnet**.
+
 <br>
 <img alt="Create Subnet fill CIDR" src="./idiag/Create_subnet-3.png" class="lazy" width="100%">
 <br>
