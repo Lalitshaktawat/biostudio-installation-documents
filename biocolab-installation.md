@@ -1596,7 +1596,7 @@ helm search repo bioturing
 :o: **Kindly setup Load balancer (ALB) with your DNS.**
 :o: **Please contact** :e-mail: [**support@bioturing.com**] for any inquiry.
 
-# <p style="color: #000080"> Machine name on K8s </p>
+# <p style="color: green"> [ Machine name on K8s ] </p>
 
 ```R
 # We must use local DNS service name to add machine.
