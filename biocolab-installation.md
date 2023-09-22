@@ -458,13 +458,13 @@ cd /biocolab
 # Note: Installation script version would be changed based on updates.
 # Our Team will get you updates and keep in touch with you during installation.
 
-wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.46.tar.gz
+wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.47.tar.gz
 
 # uncompress .gz
-tar xvf v1.0.46.tar.gz
+tar xvf v1.0.47.tar.gz
 
 # Switch to installlation folder
-cd installation-1.0.46/
+cd installation-1.0.47/
 
 # Execute installation script
 bash install.biocolab.docker.sh
@@ -476,7 +476,7 @@ docker ps -a
 http://<Your Domain>/dashboard/
 ```
 
-:large_orange_diamond: Download **v1.0.46.tar.gz**, which content script to install **BioStudio.**
+:large_orange_diamond: Download **v1.0.47.tar.gz**, which content script to install **BioStudio.**
 
 <br>
 <img alt="wget-script" src="./idiag/install-step1.png" class="lazy" width="100%">
@@ -2082,6 +2082,23 @@ Driver can be intalled manually.
 Kindly visit below site and choose driver according to OS.
 
 https://developer.nvidia.com/cuda-downloads
+
+root@biocolab-server:/lalit-test-nvidia-driver# sh cuda_12.2.2_535.104.05_linux.run
+===========
+= Summary =
+===========
+
+Driver:   Installed
+Toolkit:  Installed in /usr/local/cuda-12.2/
+
+Please make sure that
+ -   PATH includes /usr/local/cuda-12.2/bin
+ -   LD_LIBRARY_PATH includes /usr/local/cuda-12.2/lib64, or, add /usr/local/cuda-12.2/lib64 to /etc/ld.so.conf and run ldconfig as root
+
+To uninstall the CUDA Toolkit, run cuda-uninstaller in /usr/local/cuda-12.2/bin
+To uninstall the NVIDIA Driver, run nvidia-uninstall
+Logfile is /var/log/cuda-installer.log
+root@biocolab-server:/lalit-test-nvidia-driver# 
 ```
 
 ## Conda uninstallation.
@@ -2091,7 +2108,25 @@ Sometime, we need to reinstall cuda tool kits. Please follow URL below to uninst
 
 https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
 
+root@biocolab-server:/usr/local/cuda-12.2/bin# pwd
+/usr/local/cuda-12.2/bin
+root@biocolab-server:/usr/local/cuda-12.2/bin# ls -lhrt cuda*
+-rwxr-xr-x 1 root root   15M Sep 22 05:47 cuda-gdb
+-rwxr-xr-x 1 root root  789K Sep 22 05:47 cuda-gdbserver
+-rwxr-xr-x 1 root root  6.6M Sep 22 05:49 cudafe++
+-rwxr-xr-x 1 root root 1023K Sep 22 05:49 cuda-uninstaller
+root@biocolab-server:/usr/local/cuda-12.2/bin#
+
+To uninstall cuda driver. Just run uninstallation script.
+
+cd /usr/local/cuda-12.2/bin
+
+root@biocolab-server:/usr/local/cuda-12.2/bin# ./cuda-uninstaller
+ Successfully uninstalled 
+
 ```
+
+<img alt="Troubleshoot" src="./TR_SHOOT/tru.png" class="lazy" width="100%"> 
 
 ## Containers are failed to start automatically.
 
