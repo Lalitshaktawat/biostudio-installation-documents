@@ -2,7 +2,7 @@
 
 # <p> <span style="color:blue"> Installation Steps: </span> <span style="color:green"> [BioTuring BioStudio] </span> </p>
 
-# Introduction
+## Introduction
 
 >**Software to tackle biomedical challenges:**
 
@@ -53,6 +53,15 @@
 |                     | In the Data Sharing group, only people in the group can able to see the data.                                             |
 |                     | In the Data Sharing group, only people with sufficient permissions can able to manipulate the data.                       |
 
+## Network requirements
+
+| Domain             | Explain                                                            |
+|--------------------|--------------------------------------------------------------------|
+| *.bioturing.com    | We need to retrieve data from the BioTuring ecosystem server.      |
+| *.anaconda.org     | We need to retrieve packages from the Anaconda server.             |
+| *repo.anaconda.com | We need to retrieve packages from the Anaconda repo server.        |
+| Amazon S3          | We need to retrieve resources from the BioTuring ecosystem server. |
+
 
 :point_right: **Please contact** :email: [support@bioturing.com](mailto:support@bioturing.com) to get the **token** for your company.
 
@@ -81,8 +90,10 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 </div>
 
 
-## Download and Install 
+# Download and Install 
 > **Note:** We suggest starting from scratch to avoid package/driver conflicts. For Tag naming conversion, kindly select based on your architecture.
+
+# New Server Set up on AWS.
 
 :large_orange_diamond: Login to AWS console with admin user account to launch an EC2 instance.
 
@@ -111,7 +122,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 <br>
 <br>
 
-:large_orange_diamond: Click on **Create VPC**.
+:large_orange_diamond: Click on **Create VPC.**
 <br>
 <img alt="Create VPC" src="./idiag/Create_VPC1.png" class="lazy" width="100%">
 <br>
@@ -135,18 +146,18 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 
 ## Create a Subnet
 
-:large_orange_diamond: Time to create Subnet. Click on **Create subnet**.
+:large_orange_diamond: Time to create Subnet. Click on **Create subnet.**
 <br>
 <img alt="Create Subnet" src="./idiag/Create-subnet1.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Select **VPC ID** and type **Subnet name**.
+:large_orange_diamond: Select **VPC ID** and type **Subnet name.**
 
 <br>
 <img alt="Create Subnet fill" src="./idiag/Create-subnet2.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Fill **CIDR block**, type **Tag Key** and **Value** then Click on **Create subnet**.
+:large_orange_diamond: Fill **CIDR block**, type **Tag Key** and **Value** then Click on **Create subnet.**
 
 <br>
 <img alt="Create Subnet fill CIDR" src="./idiag/Create_subnet-3.png" class="lazy" width="100%">
@@ -169,7 +180,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 
 :o: Time to create **Internet Gateway.**
 
-:large_orange_diamond: **Router Table**.
+:large_orange_diamond: **Router Table.**
 
 <br>
 <img alt="Subnet Detail" src="./idiag/Router_table.png" class="lazy" width="100%">
@@ -181,7 +192,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 <img alt="internet gateway creation" src="./idiag/Create-IG.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Fill **Name Tag**, **Key** and **Value** then Click **Create internet gateway**.
+:large_orange_diamond: Fill **Name Tag**, **Key** and **Value** then Click **Create internet gateway.**
 
 <br>
 <img alt="IG creation step" src="./idiag/Create-IG1.png" class="lazy" width="100%">
@@ -195,9 +206,9 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 
 <br>
 
-## Internet Gateway attached to VPC
+## Internet Gateway attached to VPC.
 
-:large_orange_diamond: In Internet gateway Click on **Action** and select **Attached to VPC**.
+:large_orange_diamond: In Internet gateway Click on **Action** and select **Attached to VPC.**
 
 <br>
 <img alt="IG attached to VPC" src="./idiag/IG-Attached-to-vpc1.png" class="lazy" width="100%">
@@ -213,9 +224,9 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 
 :large_orange_diamond: Now Update Route Table for **Subnet association** and add **Route** to use Internet gateway to router table.
 
-:large_orange_diamond: Update **Route Table** for **Subnet association**.
+:large_orange_diamond: Update **Route Table** for **Subnet association.**
 
-## Subnet association to Router Table
+## Subnet association to Router Table.
 
 :large_orange_diamond: Select **Subnet associations** from **Route tables** :arrow_forward: Second tab.
 
@@ -239,7 +250,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 
 :large_orange_diamond: Select **Routes** from **Route tables** :arrow_forward: First tab.
 
-:large_orange_diamond: Click on **Edit routes**
+:large_orange_diamond: Click on **Edit routes.**
 
 <br>
 <img alt="IG to Route step1" src="./idiag/Ig-to-Router1.png" class="lazy" width="100%">
@@ -247,7 +258,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 
 :large_orange_diamond: Fill the value **0.0.0.0/0** and select Internet gateway name as showing on below screenshot.
 
-:large_orange_diamond: Click on **Save change**.
+:large_orange_diamond: Click on **Save change.**
 
 <br>
 <img alt="IG to Route step2" src="./idiag/Ig-to-Router2.png" class="lazy" width="100%">
@@ -267,13 +278,13 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 <img alt="ec2 search" src="./idiag/ec2-search.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Click on **instances (running)**.
+:large_orange_diamond: Click on **instances (running).**
 
 <br>
 <img alt="ec2 instance" src="./idiag/instance1.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Click on **Launch instances**.
+:large_orange_diamond: Click on **Launch instances.**
 <br>
 <img alt="ec2 launch" src="./idiag/Launch-in1.png" class="lazy" width="100%">
 <br>
@@ -284,7 +295,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 <img alt="ec2 name" src="./idiag/In2.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Select **Operating System**. Here, We are selecting **ubuntu**.
+:large_orange_diamond: Select **Operating System.** Here, We are selecting **ubuntu.**
 
 <br>
 <img alt="ec2 os" src="./idiag/In4.png" class="lazy" width="100%">
@@ -298,7 +309,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 <img alt="ec2 Instance type" src="./idiag/In5.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Create a **Keypair** to connect to ec2 instance. Type **Key pair name** and Click on **Create key pair**.
+:large_orange_diamond: Create a **Keypair** to connect to ec2 instance. Type **Key pair name** and Click on **Create key pair.**
 
 <br>
 <img alt="ec2 Key pair" src="./idiag/In6-keypair 002.png" class="lazy" width="100%">
@@ -339,13 +350,13 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 <img alt="ec2 Storage" src="./idiag/Security-GR3andDisk.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Click on **Launch instance**.
+:large_orange_diamond: Click on **Launch instance.**
 
 <br>
 <img alt="ec2 final step" src="./idiag/launch_instance1-final-step.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Instance creation will be **in progress**.
+:large_orange_diamond: Instance creation will be **in progress.**
 
 <br>
 <img alt="ec2 Launched" src="./idiag/Instance_Created.png" class="lazy" width="100%">
@@ -353,7 +364,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 
 ## Assign Elastic IP to instance
 
-:large_orange_diamond: Click on **Elastic IPs** and Click on **Allocate Elastic IP address**.
+:large_orange_diamond: Click on **Elastic IPs** and Click on **Allocate Elastic IP address.**
 
 <br>
 <img alt="Elastic IP assign step1" src="./idiag/Easltic-ip1.png" class="lazy" width="100%">
@@ -369,7 +380,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 
 <br>
 
-:large_orange_diamond: Click on **Associate Elastic IP address**.
+:large_orange_diamond: Click on **Associate Elastic IP address.**
 
  <br>
 
@@ -381,7 +392,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 
 <br>
 
-:large_orange_diamond: Select **Instance** and **Private IP address**.
+:large_orange_diamond: Select **Instance** and **Private IP address.**
 
 <br>
 
@@ -389,7 +400,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 
 <br>
 
-:large_orange_diamond: Click on **Associate**.
+:large_orange_diamond: Click on **Associate.**
 
 <br>
 <img alt="ec2 search" src="./idiag/EaslticIP_all3 002.png" class="lazy" width="100%">
@@ -401,7 +412,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 <img alt="ec2 search" src="./idiag/EaslticIP_all5.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Take connection string and **SSH** to **ec2 Instnace**.
+:large_orange_diamond: Take connection string and **SSH** to **ec2 Instnace.**
 
 <br>
 <img alt="ec2 search" src="./idiag/Connecting-string.png" class="lazy" width="100%">
@@ -423,16 +434,26 @@ ssh -i "lalit-biocolab-keypair.pem" ubuntu@3.98.231.253
 |--------------------------|---------------------------------------------------------------------|----------|
 | BioStudio Token           | To access our product.                                              |          |
 | Application Domain       | Access BioStudio on Browser.                                         |          |
-| META_DATA Volume         | This will use by Bioproxy to store database. [**/biocolab/metadata**]  | 40GB     |
+| META_DATA Volume         | This will use by Bioproxy to store database. [**/biocolab/metadata**]  | 50GB     |
 | SSL Volume               | Using by BioProxy. [**/biocolab/configs**]                                  | 1GB      |
 | Data Volume              | Using to store user data. [**/biocolab/userdata**]                                   | 500GB    |
-| Application data Volume  | Used to store application binary data.[**/biocolab/appdata**]                    | 40GB     |
+| Application data Volume  | Used to store application binary data.[**/biocolab/appdata**]                    | 50GB     |
 | Ethernet IP Address       | Use to pass IP address during installation (**eth0**) |  |
 
+Run the **install.biocolab.docker.sh** script for docker environment and install require software.
 
-> Run the **install.biocolab.docker.sh** script for docker environment and install require software.
+---
 
 ```R
+# Create required folder structure before execution.
+mkdir -p /biocolab/metadata
+mkdir -p /biocolab/configs
+mkdir -p /biocolab/userdata
+mkdir -p /biocolab/appdata
+
+# Switch to /biocolab folder.
+cd /biocolab
+
 # Download script:
 # Note: Installation script version would be changed based on updates.
 # Our Team will get you updates and keep in touch with you during installation.
@@ -445,12 +466,6 @@ tar xvf v1.0.46.tar.gz
 # Switch to installlation folder
 cd installation-1.0.46/
 
-# Create required folder structure before execution.
-mkdir -p /biocolab/metadata
-mkdir -p /biocolab/configs
-mkdir -p /biocolab/userdata
-mkdir -p /biocolab/appdata
-
 # Execute installation script
 bash install.biocolab.docker.sh
 
@@ -461,11 +476,17 @@ docker ps -a
 http://<Your Domain>/dashboard/
 ```
 
-:large_orange_diamond: Download **v1.0.46.tar.gz**, which content script to install **BioStudio**.
+:large_orange_diamond: Download **v1.0.46.tar.gz**, which content script to install **BioStudio.**
 
 <br>
 <img alt="wget-script" src="./idiag/install-step1.png" class="lazy" width="100%">
 <br>
+
+---
+
+:bell: During execution of this script, It will prompt for input credential. Kindly note that user name is **admin** and keep store the **password** safely, which you are going to input. It needed to be performed admin activities.  
+
+---
 
 :large_orange_diamond: Execute **script.**
 
@@ -473,7 +494,7 @@ http://<Your Domain>/dashboard/
 <img alt="Script execution" src="./idiag/install-step2.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Follow to provide values.
+:large_orange_diamond: Follow **execution** script's instructions and input values accordingly.
 
 <br>
 <img alt="step1-provideinfo" src="./idiag/install-step4.png" class="lazy" width="100%">
@@ -496,9 +517,10 @@ http://<Your Domain>/dashboard/
 
 ```R
 # Please provide the version based on Bioturing instruction.
+# It would be vary based on updates. 
 ```
 
-:large_orange_diamond: Verify both **container UP and running.**
+:large_orange_diamond: Verify both **container status - UP and running.**
 
 <br>
 <img alt="docker-image" src="./idiag/docker-image.png" class="lazy" width="100%">
@@ -506,21 +528,26 @@ http://<Your Domain>/dashboard/
 
 :large_orange_diamond: Browser **BioStudio.**
 
+```R
+# https://<Domain name>
+```
+
 <br>
 <img alt="brows-site" src="./idiag/brows-site.png" class="lazy" width="100%">
 <br>
 
-## Register for root Admin.
+## Register for root admin.
 
 ```R
 https://<your domain>/dashboard
 # It will prompt for Admin Login.
 # Select Account Registration.
 # Create admin account.
+# Root Password is the one, we provided during installation.
 # Login with the Dashboard using that account you registered earlier.
 ```
 
-:large_orange_diamond: **Account Registration**.
+:large_orange_diamond: **Account Registration.**
 
 <br>
 <img alt="registration-admin-account" src="./idiag/reg-ad.png" class="lazy" width="100%">
@@ -534,6 +561,10 @@ https://<your domain>/dashboard
 
 :large_orange_diamond: Login to **dashboard.**
 
+```R
+https://<your domain>/dashboard
+```
+
 <br>
 <img alt="loin-admin" src="./idiag/loin-admin.png" class="lazy" width="100%">
 <br>
@@ -541,7 +572,7 @@ https://<your domain>/dashboard
 <div class="warning" style='background-color: LightGray; color: #69337A; border-left: solid #805AD5 4px; border-radius: 4px; padding:0.7em;'>
 <span>
 <p style='margin-top:1em; text-align:justify'; text-justify:inter-word;>
-<code><b>Workspace machine</b></code> <b style="color: darkblue">It is essential to create machine and mount the volume.</b>
+<code><b> Workspace </b></code> <b style="color: darkblue">It is essential to create machine and mount the volume.</b>
 </p>
 </span>
 </div>
@@ -568,7 +599,7 @@ I already added a machine so I will go with update machine.
 <img alt="Machine update" src="./idiag/machine-update.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Please add volume **Update machine Metadata.**
+:large_orange_diamond: Please **add volume - Update machine Metadata.**
 
 ```R
 # Machines --> Click on + sign to add volume.
@@ -580,7 +611,7 @@ I already added a machine so I will go with update machine.
 <img alt="Volume added" src="./idiag/volume-add.png" class="lazy" width="100%">
 <br>
 
-# <p style="color: #000080"> SSO Protocol </p>
+# <p style="color: #000080"> SSO Set up </p>
 
 > **We are supporting three types of protocol below:**
 
@@ -686,7 +717,7 @@ I already added a machine so I will go with update machine.
 <img alt="New SSO" src="./SSO_IMG/new-sso.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: **New SSO configuration.** 
+:large_orange_diamond: **New SSO configuration.**
 
 <br>
 <img alt="Protocol" src="./SSO_IMG/protocol.png" class="lazy" width="100%">
@@ -732,7 +763,7 @@ BioStudio is comes under service provider.
 <img alt="saml saved" src="./SSO_IMG/SAML-SAVED.png" class="lazy" width="100%">
 <br>
 
-:large_blue_diamond: **SAML Protocol view metadata.** 
+:large_blue_diamond: **SAML Protocol view metadata.**
 
 ```R
 # Once clicked on Submit button. You can view metadata by clicking + ( Plus sign)
@@ -788,7 +819,7 @@ BioStudio is comes under service provider.
 <br>
 <br>
 
-:large_orange_diamond: **OPENID Protocol.** 
+:large_orange_diamond: **OPENID Protocol.**
 
 ```R
 OpenID Connect is an interoperable authentication protocol based on the OAuth 2.0 framework of specifications (IETF RFC 6749 and 6750). It simplifies the way to verify the identity of users based on the authentication performed by an Authorization Server and to obtain user profile information in an interoperable and REST-like manner.
@@ -801,7 +832,7 @@ OpenID Connect is an interoperable authentication protocol based on the OAuth 2.
 <br>
 <br>
 
-:large_orange_diamond: **OAUTH2 Protocol.** 
+:large_orange_diamond: **OAUTH2 Protocol.**
 
 ```R
 The OAuth 2.0 is the industry protocol for authorization. It allows a user to grant limited access to its protected resources. Designed to work specifically with Hypertext Transfer Protocol (HTTP), OAuth separates the role of the client from the resource owner. The client requests access to the resources controlled by the resource owner and hosted by the resource server. The resource server issues access tokens with the approval of the resource owner. The client uses the access tokens to access the protected resources hosted by the resource server.
@@ -832,9 +863,9 @@ The OAuth 2.0 is the industry protocol for authorization. It allows a user to gr
 <br>
 <br>
 
-:arrow_right: **Below is an example.**
+## SSO set up with Okta
 
-:o: Login to Okta Account for **SAML / OPENID**.
+:o: Login to Okta Account for **SAML / OPENID.**
 :o: We are illustrating for SAML.
 :o: Click on admin account push button and login to your Okta admin account.
   
@@ -847,19 +878,19 @@ NOTE: Kindly follow the instructions and steps based on your infrastructure / IT
 <br>
 <br>
 
-:large_orange_diamond: Click on **Create App Integration**.
+:large_orange_diamond: Click on **Create App Integration.**
 
 <br>
 <img alt="smal select" src="./idiag/oktastep2.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Select **SAML 2.0**.
+:large_orange_diamond: Select **SAML 2.0**
 
 <br>
 <img alt="Okta-app" src="./idiag/Okta-step3.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Write **App name**.
+:large_orange_diamond: Write **App name**
 
 <br>
 <img alt="App name" src="./idiag/Oktastep4.png" class="lazy" width="100%">
@@ -883,19 +914,19 @@ NOTE: Kindly follow the instructions and steps based on your infrastructure / IT
 <img alt="callback UR" src="./idiag/Oktaste7-fill-value.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Scroll down and click on **Next**.
+:large_orange_diamond: Scroll down and click on **Next**
 
 <br>
 <img alt="SSO next" src="./idiag/okta-step8-next.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Follow **Step3: I'm an Okta customer adding an internal app**.
+:large_orange_diamond: Follow **Step3: I'm an Okta customer adding an internal app.**
 
 <br>
 <img alt="Okta -step3" src="./idiag/okta-step9.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Click on **Finish**.
+:large_orange_diamond: Click on **Finish.**
 
 
 <br>
@@ -908,7 +939,7 @@ NOTE: Kindly follow the instructions and steps based on your infrastructure / IT
 <img alt="loin-admin" src="./idiag/view-saml.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: **View SAML setup instructions**.
+:large_orange_diamond: **View SAML setup instructions.**
 
 <br>
 <img alt="SAML Setup" src="./idiag/add-smal.png" class="lazy" width="100%">
@@ -920,19 +951,19 @@ NOTE: Kindly follow the instructions and steps based on your infrastructure / IT
 <img alt="fill SSO" src="./idiag/Fill-sso.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: User assignment to Application.
+:large_orange_diamond: **User assignment to Application.**
 
 <br>
 <img alt="Create user account" src="./idiag/okta-test-user-creation.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Assign User to Application.
+:large_orange_diamond: **Assign User to Application.**
 
 <br>
 <img alt="loin-admin" src="./idiag/okta-user-assignment.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Login to **BioStudio**.
+:large_orange_diamond: Login to **BioStudio.**
 
 <br>
 <img alt="loin-admin" src="./idiag/sso-login-test.png" class="lazy" width="100%">
@@ -941,7 +972,7 @@ NOTE: Kindly follow the instructions and steps based on your infrastructure / IT
 
 :large_orange_diamond: Login Succeed.
 
-:small_orange_diamond: Before access **WORKSPACE**. It is necessary to access dashboard and create machine and well as create volume to be mounted.
+:large_orange_diamond: Before access **WORKSPACE**. It is necessary to access dashboard and create machine and well as create volume to be mounted.
 
 :link: [Machine Creation and volume addition](https://colablocal.bioturing.com/document/installation#machine-creation)
 
@@ -955,6 +986,245 @@ NOTE: Kindly follow the instructions and steps based on your infrastructure / IT
 <br>
 <img alt="BioColab-img" src="./idiag/BioColab-img.png" class="lazy" width="100%">
 <br>
+
+## SSO set up with PingID
+
+:large_orange_diamond: **Add an application to PingID**
+
+<img alt="BioColab-img" src="./SSO_IMG/pingida.png" class="lazy" width="100%">
+
+
+:large_orange_diamond: **Select SAML Application method and click on Configure**
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid2.png" class="lazy" width="100%">
+
+
+:large_orange_diamond: **Login to BioColab Admin Dashboard**
+
+```R
+# https://<Domain name>/dashboard
+```
+
+It will prompt for Admin credentials. Please provide Admin credentials to login.
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid3.png" class="lazy" width="100%">
+
+
+:large_orange_diamond:  Select SSO setting from left side menu and click on **+ Add New SSO**. If you are going to
+set up SSO at the same time.
+
+:bell: Note: If we are going to provide a Callback URL to another team to configure with IDP. Then we must provide dummy values to the mandatory field and click on submit button to save. Later we can update.
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid4.png" class="lazy" width="100%">
+
+:large_orange_diamond: **Copy Callback HTTPS URL that needs to be configured with IDP.**
+
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid5.png" class="lazy" width="100%">
+
+:large_orange_diamond: Select **Manually Enter** and fill **callback URL** to **ACS URLs** and **Entity ID** would be the **last value** of that URL.
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid6.png" class="lazy" width="100%">
+
+:large_orange_diamond: Fill the value based on over instruction.
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid7.png" class="lazy" width="100%">
+
+:large_orange_diamond: **Click on Save button.**
+
+- Now update attribute mapping.
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid8.png" class="lazy" width="100%">
+
+:large_orange_diamond: **Select Configuration Tab and get all required values.**
+
+:one: **Issuer ID**
+
+:two: **Initiate Single Sign-On URL**
+
+:three: **Download singing certificate**
+
+
+<img alt="BioColab-img" src="./SSO_IMG/pingidc.png" class="lazy" width="100%">
+
+:large_orange_diamond: login to Biocolab dashboard admin and fill those values to required fields by **updating SSO settings.**
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid9.png" class="lazy" width="100%">
+
+:large_orange_diamond: I created two users but on the existing set up you might have a user's list already on the portal with a specified group to assign applications.
+
+- On the Identity. I configured two users below.
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid9-1.png" class="lazy" width="100%">
+
+:large_orange_diamond: **Now I created one Group and assigned those user’s to that Group**
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid10.png" class="lazy" width="100%">
+
+<br>
+
+<img alt="BioColab-img" src="./SSO_IMG/pingidg.png" class="lazy" width="100%">
+
+<br>
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid11.png" class="lazy" width="100%">
+
+:large_orange_diamond: **There are many ways to assign users to the group. Like User → Group → Edit – assign. Assign a group to the application.**
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid12.png" class="lazy" width="100%">
+
+:large_orange_diamond: **Now all set and time to test SSO login with those users.**
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid13.png" class="lazy" width="100%">
+
+:large_orange_diamond: **Provide PingID username and password, which we configured with Ping ID.**
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid15.png" class="lazy" width="100%">
+
+<br>
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid16.png" class="lazy" width="100%">
+
+:large_orange_diamond: **User is able to login successfully.**
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid17.png" class="lazy" width="100%">
+
+## SSO set up with Azure AD ( SAML )
+
+```R
+# Login to the dashboard admin
+# https://<domain name>/dashboard
+# provide admin credential, if already registered.
+# If admin not yet registered, Kindly follow the instruction and registered first.
+# NOTE: Make sure root password handy that you passed during BioStudio installation.
+```
+
+- Dashboard login.
+
+- It will prompt for Admin credentials. Please provide Admin credentials to login.
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid3.png" class="lazy" width="100%">
+
+:large_orange_diamond:  Select SSO setting from left side menu and click on **+ Add New SSO**. If you are going to
+set up SSO at the same time.
+
+:bell: Note: If we are going to provide a Callback URL to another team to configure with IDP. Then we must provide dummy values to the mandatory field and click on submit button to save. Later we can update.
+
+<img alt="BioColab-img" src="./SSO_IMG/pingid4.png" class="lazy" width="100%">
+
+:large_orange_diamond: **Copy Callback HTTPS URL that needs to be configured with IDP.**
+
+:bell: I am following to save existing call back URL. Later we will configure this.
+
+
+<img alt="BioColab-img" src="./SSO_IMG/az1a.png" class="lazy" width="100%">
+
+<br>
+
+:large_orange_diamond: **Login to Azure Cloud.**
+
+:large_orange_diamond: **Open  Microsoft Entra ID ( Azure Active Directory )**
+
+<img alt="BioColab-img" src="./SSO_IMG/az2.png" class="lazy" width="100%">
+
+:large_orange_diamond: **Click on Enterprise applications.**
+
+<img alt="BioColab-img" src="./SSO_IMG/az3.png" class="lazy" width="100%">
+
+:large_orange_diamond: Click **+ New application.**
+
+<img alt="BioColab-img" src="./SSO_IMG/az4.png" class="lazy" width="100%">
+
+:large_orange_diamond: Click **+ Create your own application.**
+
+<img alt="BioColab-img" src="./SSO_IMG/az5.png" class="lazy" width="100%">
+
+:large_orange_diamond: **Input your application name.** Click on **Create**
+
+<img alt="BioColab-img" src="./SSO_IMG/az6.png" class="lazy" width="100%">
+
+:large_orange_diamond: **Application has been added.**
+
+<img alt="BioColab-img" src="./SSO_IMG/az7.png" class="lazy" width="100%">
+
+:large_orange_diamond: Click on **Single sign-on.**
+
+<img alt="BioColab-img" src="./SSO_IMG/az8.png" class="lazy" width="100%">
+
+
+:large_orange_diamond: Click on **SAML.**
+
+<img alt="BioColab-img" src="./SSO_IMG/az9.png" class="lazy" width="100%">
+
+:large_orange_diamond: Click on **Edit -- Basic SAML Configuration**
+
+<img alt="BioColab-img" src="./SSO_IMG/az10.png" class="lazy" width="100%">
+
+- Fill required field.
+  
+:one: Identifier (Entity ID) : **Callback URL**
+:two: Reply URL (Assertion Consumer Service URL) : **Callback URL**
+
+:large_orange_diamond: Login to BioStudio dashboard and click on three dot to select **Update SSO setting**
+
+<img alt="BioColab-img" src="./SSO_IMG/az11.png" class="lazy" width="100%">
+
+- Copy callback URL and fill on required fields.
+  
+<img alt="BioColab-img" src="./SSO_IMG/az12.png" class="lazy" width="100%">
+
+<br>
+
+:large_orange_diamond: Click on **Save** button.
+
+<img alt="BioColab-img" src="./SSO_IMG/az13.png" class="lazy" width="100%">
+
+<br>
+
+- Download **Certificate (Base64)**
+- Copy **Login URL**
+- Copy **Microsoft Entra ID Identifier**
+
+<img alt="BioColab-img" src="./SSO_IMG/az14.png" class="lazy" width="100%">
+
+:pencil2: **Certificate (Base64)** = **IDP x509 Public Cert**
+:pencil2: **Login URL** = **IDP SSO URL**
+:pencil2: **Microsoft Entra ID Identifier** = **IDP Issuer URL**
+
+- Fill appropriate values to BioStudio SSO configuration.
+
+:large_orange_diamond: Login to BioStudio dashboard and click on three dot to select **Update SSO setting**
+
+<img alt="BioColab-img" src="./SSO_IMG/az11.png" class="lazy" width="100%">
+
+<br>
+
+<img alt="BioColab-img" src="./SSO_IMG/az15.png" class="lazy" width="100%">
+
+:large_orange_diamond: **Create user and assign application to the user**
+
+:large_orange_diamond: Click on **Users and groups**
+
+<img alt="BioColab-img" src="./SSO_IMG/az16.png" class="lazy" width="100%">
+
+:large_orange_diamond: Click on **+ Add user/group**
+
+:large_orange_diamond: Click on **Add user** and click on **Select**
+
+<img alt="BioColab-img" src="./SSO_IMG/az17.png" class="lazy" width="100%">
+
+:large_orange_diamond: **Click on Assign**
+
+<img alt="BioColab-img" src="./SSO_IMG/az18.png" class="lazy" width="100%">
+
+:large_orange_diamond: **User has been Assign to this application.**
+
+<img alt="BioColab-img" src="./SSO_IMG/az19.png" class="lazy" width="100%">
+
+
+:large_orange_diamond: **Login succeed.**
+
+<img alt="BioColab-img" src="./SSO_IMG/az20.png" class="lazy" width="100%">
 
 ## SSL setup.
 <div class="warning" style='background-color: LightGray; color: #69337A; border-left: solid #805AD5 4px; border-radius: 4px; padding:0.7em;'>
@@ -1200,7 +1470,7 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 
 <br>
 
-:large_orange_diamond: Select **helm chart version**.
+:large_orange_diamond: Select **helm chart version.**
 
 :o:Kindly select **latest version** of **Helm Chart**. Support team will get in touch with you and share latest version tag.
 
@@ -1220,13 +1490,13 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 <img alt="Type name" src="./idiag/biocolab-step1-namespace.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Verify ***Tag*** and ***repository***.
+:large_orange_diamond: Verify ***Tag*** and ***repository***
 
 <br>
 <img alt="tag verification" src="./idiag/verify-image-tag.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: **Update values**:
+:large_orange_diamond: **Update values:**
   
 ```R
 # Change volume size according to your data.
@@ -1245,12 +1515,12 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 <img alt="ssl-setup" src="./idiag/helm-installed.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Verify **statefulset**.
+:large_orange_diamond: Verify **statefulset.**
 <br>
 <img alt="ssl-setup" src="./idiag/stateful-set.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Verify **ingress**.
+:large_orange_diamond: Verify **ingress.**
 <br>
 <img alt="ssl-setup" src="./idiag/ingress.png" class="lazy" width="100%">
 <br>
@@ -1285,7 +1555,7 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 
 :bell: **Please contact** :e-mail: [**support@bioturing.com**] **in case you need any support or have any inquiry for us.** 
 
-> **We are supporting all kind of service provider including on-premise**
+> **We are supporting all kind of service provider including on-premise.**
 
 ```R
 BioStudio on K8s. Install Software on Kubernetes Clusters with the Helm.
@@ -1776,3 +2046,157 @@ helm search repo bioturing
 
 # biocolab-preprod-biocolab-colab.bioturing-preprod.svc.cluster.local
 ```
+
+# Troubleshoot
+
+## Error code 413 ( Not able to upload large file).
+
+:o: **Reason**
+
+```R
+The HTTP 413 Content Too Large response status code signifies that the request entity surpasses the server-defined limits. This issue pertains to resource limitations.
+```
+
+:o: **Resolution**
+
+```R
+That issue can be fixed by updating the (Nginx) load balancer by incorporating the following value:
+
+client_max_body_size = 0
+
+By implementing this configuration, users will have the flexibility to upload files without any imposed size restrictions. Setting this value to zero will exempt the client request a body size check, allowing users to upload files of unlimited sizes.
+```
+
+## Conda installation error.
+
+:o: **Reason**
+
+```R
+There are several reason that conda driver failed to installed. It could be due to network, blocking, Speed, Software incompatibility with OS ...
+```
+
+:o: **Resolution**
+
+```R
+Driver can be intalled manually.
+Kindly visit below site and choose driver according to OS.
+
+https://developer.nvidia.com/cuda-downloads
+
+```
+
+## Containers are failed to start automatically.
+
+:o: **Reason**
+
+```R
+There could be several reasons. It could be port mapping or ports are already in use ...etc
+```
+
+:o: **Resolution**
+
+```R
+Try to identify exact reason by start container manaully by following commands below.
+
+Check docker status
+
+# systemctl status docker.service
+
+# systemctl status docker.service
+
+# docker info 
+
+Check container status
+
+# docker ps -a
+
+Run container manually
+
+# docker start biocolab
+
+# docker start bioproxy
+
+Chcek container log to see if we could see any errors
+
+# docker logs biocolab
+
+# docker logs bioproxy
+
+```
+
+:pencil2: **Please contact** :e-mail: [**support@bioturing.com**] and share your issue.
+
+## Not able to launch server once try to go inside WORKSPACE.
+
+<img alt="Troubleshoot" src="./TR_SHOOT/trw.png" class="lazy" width="100%"> 
+
+<br>
+
+:o: **Reason**
+
+```R
+This issue is related to machine creation is not correct and volume. It could be wrong (Private IP) or wrong DNS.
+```
+
+:o: **Resolution**
+
+```R
+In order to resovle this issue. Please check and make sure that you configured machine private IP / DNS correctly.
+
+Kindly run the following command to check machine IP.
+
+# docker exec biocolab cat /etc/hosts
+
+Check Machine Private IP configured with your DNS. 
+
+Note this IP and cross check with Machine IP creation on Admin dashboard.
+
+http://<Domain name>/dashboard.
+
+Kindly check you must create volume attached with this machine. 
+
+NOTE: volume name can be anything but Volume path should be "/home"
+
+```
+
+## Not able to download notebook.
+
+:o: **Reason**
+
+```R
+There could be several reason behind this issue. Common reason is blocking below sites.
+
+*.bioturing.com
+*.anaconda.org
+*repo.anaconda.com
+Amazon S3
+```
+
+:o: **Resolution**
+
+```R
+Kindly allow below sites.
+*.bioturing.com
+*.anaconda.org
+*repo.anaconda.com
+Amazon S3
+```
+
+## Workspace / any other element access is not showing graphics clear and images are not showing correctly.
+
+:o: **Reason**
+
+```R
+This issue is related to redirection from Load Balancer.
+```
+
+:o: **Resolution**
+
+```R
+Please check redirection rule on Load Balancer.
+
+It should be "/*"
+
+So that load balancer allowed all redirections.
+```
+
