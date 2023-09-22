@@ -2082,6 +2082,14 @@ Driver can be intalled manually.
 Kindly visit below site and choose driver according to OS.
 
 https://developer.nvidia.com/cuda-downloads
+```
+
+## Conda uninstallation.
+
+```R
+Sometime, we need to reinstall cuda tool kits. Please follow URL below to uninstall cuda tool kit.
+
+https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
 
 ```
 
