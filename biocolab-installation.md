@@ -1,6 +1,6 @@
 ![BioStudio logo](./idiag/logo.png)
 
-# <p> <span style="color:blue"> Installation Steps: </span> <span style="color:green"> [BioTuring BioStudio] </span> </p>
+# <p> <span style="color:blue"> Installation Steps: </span> <span style="color:green"> BioTuring BioStudio </span> </p>
 
 ## Introduction
 
@@ -61,6 +61,7 @@
 | *.anaconda.org     | We need to retrieve packages from the Anaconda server.             |
 | *repo.anaconda.com | We need to retrieve packages from the Anaconda repo server.        |
 | Amazon S3          | We need to retrieve resources from the BioTuring ecosystem server. |
+| github.com         | We need to retrieve packages from the Guthub. |
 
 
 :point_right: **Please contact** :email: [support@bioturing.com](mailto:support@bioturing.com) to get the **token** for your company.
@@ -169,7 +170,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 <img alt="Subnet Succeed" src="./idiag/Subnet-created-successfully.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Check Subnet detail.
+:large_orange_diamond: Check **Subnet** detail.
 
 <br>
 <img alt="Subnet Detail" src="./idiag/Subnet-detail.png" class="lazy" width="100%">
@@ -206,7 +207,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 
 <br>
 
-## Internet Gateway attached to VPC.
+## **Internet Gateway** attached to VPC.
 
 :large_orange_diamond: In Internet gateway Click on **Action** and select **Attached to VPC.**
 
@@ -216,7 +217,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 <img alt="IG attached to VPC done" src="./idiag/Attached-to-vpc-final-step.png" class="lazy" width="100%">
 <br>
 
-:large_orange_diamond: Internet gateway attached to VPC completed.
+:large_orange_diamond: **Internet Gateway** attached to VPC completed.
 
 <br>
 <img alt="IG attached to VPC done" src="./idiag/IG-attached-to-vpc-done.png" class="lazy" width="100%">
@@ -458,13 +459,13 @@ cd /biocolab
 # Note: Installation script version would be changed based on updates.
 # Our Team will get you updates and keep in touch with you during installation.
 
-wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.47.tar.gz
+wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.48.tar.gz
 
-# uncompress .gz
-tar xvf v1.0.47.tar.gz
+# uncompressed .gz
+tar xvf v1.0.48.tar.gz
 
-# Switch to installlation folder
-cd installation-1.0.47/
+# Switch to installation folder
+cd installation-1.0.48/
 
 # Execute installation script
 bash install.biocolab.docker.sh
@@ -536,7 +537,7 @@ http://<Your Domain>/dashboard/
 <img alt="brows-site" src="./idiag/brows-site.png" class="lazy" width="100%">
 <br>
 
-## Register for root admin.
+## Register for **root admin**.
 
 ```R
 https://<your domain>/dashboard
@@ -1541,7 +1542,7 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 
 ![BioStudio logo](./EKS_PIC/logo.png)
 
-# <p style="color: #006400"> [ BioStudio Deployments on Kubernetes ]</p>
+# <p style="color: #006400">  BioStudio Deployments on Kubernetes</p>
 
 # <p style="color: #000080"> Introduction </p>
 
@@ -2035,7 +2036,7 @@ helm search repo bioturing
 
 :o: **Please contact** :e-mail: [**support@bioturing.com**] for any inquiry.
 
-# <p style="color: green"> [ Machine name on K8s ] </p>
+# <p style="color: green"> Machine name on K8S </p>
 
 ```R
 # We must use local DNS service name to add machine.
