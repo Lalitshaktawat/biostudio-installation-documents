@@ -72,7 +72,7 @@
 <span style='font-size:20px;'>&#128276;</span> <b>Note:</b> Our software can be installed with minimum capacity of instance / server. The ideal system that we recommend for most companies is <b style="color: black">  AWS c5a.8xlarge</b> for <b style="color: black"> CPU </b> based. Instance can be chosen based on requirement. If the notebook is based on GPU, we can select GPU based instance.
 Our Product is containerized based applications. Kindly select the machine based on your requirements. <b style="color: black"> BioStudio </b> can be run on <b style="color: black"> Docker </b> using Docker engine and <b style="color: black"> Kubernetes</b>.
 
-<b style="color: purple">:sparkles: <u>Important note</u> :sparkles::</b> We can install <b style="color: black"> BBrowserX talk2data </b> :link: [BBrowserX](https://github.com/bioturing/bbrowserx-wiki/wiki/Installation-guide) and <b style="color: black"> BioStudio </b> on the same server. Installation process is the same to run our <b>installation script</b> for <b>BioStudio</b>. Step by step Instructions to install BioStudio are given below. Only changes on domain name for BioStudio. <b>Kindly do not use BBrowserX talk2data domain name during this installation, In case you are planing to install BBrowserX and BioStudio on same machine.</b>
+<b style="color: purple">:sparkles: <u>Important note</u> :sparkles::</b> We can install <b style="color: black"> BBrowserX talk2data (Bioturing ecosystem)</b> :link: [BBrowserX](https://github.com/bioturing/bbrowserx-wiki/wiki/Installation-guide) and <b style="color: black"> BioStudio </b> on the same server. Installation process is the same to run our <b>installation script</b> for <b>BioStudio</b>. Step by step Instructions to install BioStudio are given below. Only changes on domain name for BioStudio. <b>Kindly do not use BBrowserX talk2data domain name during this installation, In case you are planing to install BBrowserX and BioStudio on same machine.</b>
 
 :dizzy: <b>BioStudio token can be updated later, after installation</b>.
 :dizzy: <b>Contact point to get BioStudio token is</b> :email: [support@bioturing.com](mailto:support@bioturing.com)
@@ -80,7 +80,7 @@ Our Product is containerized based applications. Kindly select the machine based
 
 User can access <b>BioStudio application using two ways</b>, In case installed BBrowserx and BioStudio on the <b>same machine</b>.
 
-:one: Browse the BioStudio application `http://<Your server IP>:<Port Number>`.
+:one: Browse the BioStudio application `https://<BioStudio Domain name>` , If you have SSL certificate for BioStudio domain and configured with Nginx else use http protocol.
 :two: Use BioStudio Desktop application - using IP address.
 
 <b>Bioturing Launcher</b> :link: [Desktop Application](https://colablocal.bioturing.com/document/bioturing-launcher)
@@ -459,13 +459,13 @@ cd /biocolab
 # Note: Installation script version would be changed based on updates.
 # Our Team will get you updates and keep in touch with you during installation.
 
-wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.48.tar.gz
+wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.52.tar.gz
 
 # uncompressed .gz
-tar xvf v1.0.48.tar.gz
+tar xvf v1.0.52.tar.gz
 
 # Switch to installation folder
-cd installation-1.0.48/
+cd installation-1.0.52/
 
 # Execute installation script
 bash install.biocolab.docker.sh
@@ -477,7 +477,7 @@ docker ps -a
 http://<Your Domain>/dashboard/
 ```
 
-:large_orange_diamond: Download **v1.0.47.tar.gz**, which content script to install **BioStudio.**
+:large_orange_diamond: Download **v1.0.52.tar.gz**, which content script to install **BioStudio.**
 
 <br>
 <img alt="wget-script" src="./idiag/install-step1.png" class="lazy" width="100%">
@@ -511,7 +511,7 @@ http://<Your Domain>/dashboard/
 <span>
 <p style='margin-top:1em; text-align:justify'; text-justify:inter-word;>
 <code><b>BioProxy version : 1.0.25</b></code> 
-<code><b>BioColab version : 1.0.24</b></code> 
+<code><b>BioColab version : 2.0.50</b></code> 
 </p>
 </span>
 </div>
@@ -532,6 +532,9 @@ http://<Your Domain>/dashboard/
 ```R
 # https://<Domain name>
 ```
+
+:watch: **Kindly wait for a while. BioStudio software will take time to download packages and install.**
+
 
 <br>
 <img alt="brows-site" src="./idiag/brows-site.png" class="lazy" width="100%">
@@ -2050,6 +2053,37 @@ helm search repo bioturing
 
 # Troubleshoot
 
+## Not able to install Docker.
+
+:o: **Reason**
+
+```R
+Ceriticate issue.
+
+ curl: (77) error setting certificate file: /etc/ssl/certs/ca-certificates.crt
+```
+
+:o: **Resolution**
+
+```R
+# echo insecure >> ~/.curlrc
+```
+
+## fstab entry for mount point.
+
+:o: **Reason**
+
+```R
+To auto mount patition.
+```
+
+:o: **Resolution**
+
+```R
+UUID="3ad2185e-82dd-40cd-8d43-1a82a780d0be"     /biocolab   xfs    defaults   0   0
+```
+
+
 ## Error code 413 ( Not able to upload large file).
 
 :o: **Reason**
@@ -2100,6 +2134,13 @@ To uninstall the CUDA Toolkit, run cuda-uninstaller in /usr/local/cuda-12.2/bin
 To uninstall the NVIDIA Driver, run nvidia-uninstall
 Logfile is /var/log/cuda-installer.log
 root@biocolab-server:/lalit-test-nvidia-driver# 
+
+=====================================
+= Solution with cuda version 11.7.1 =
+=====================================
+
+sh cuda_11.7.1_515.65.01_linux.run --no-drm
+
 ```
 
 ## Conda uninstallation.
@@ -2165,6 +2206,8 @@ Chcek container log to see if we could see any errors
 # docker logs biocolab
 
 # docker logs bioproxy
+
+NOTE: Service should be disable which cause port issue. Like NFS.
 
 ```
 
@@ -2244,3 +2287,158 @@ It should be "/*"
 So that load balancer allowed all redirections.
 ```
 
+## Nginx config for BioStudio in case installing on the same server.
+
+**Bioturing ecosystem**
+```R
+server {
+    listen 0.0.0.0:80;
+    server_name <test-domain.com> www.<test-domain.com>;
+    return 301 https://<test-domain.com>$request_uri;
+}
+server {
+    listen 0.0.0.0:443 ssl http2;
+    # listen 0.0.0.0:443;
+    server_name <test-domain.com> www.<test-domain.com>;
+    if ($host = 'www.<test-domain.com>' ) {
+        rewrite  ^/(.*)$  https://<test-domain.com>/$1  permanent;
+    }
+    ssl_certificate /etc/ssl/certs/<test-domain.com>.pem;
+    ssl_certificate_key /etc/pki/tls/private/<test-domain.com>.key;
+    ssl_session_timeout 1d;
+    ssl_session_cache shared:SSL:20m;
+    ssl_prefer_server_ciphers on;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH;
+    ignore_invalid_headers off;
+    client_max_body_size 0;
+    client_body_timeout 1d;
+    proxy_buffering off;
+    proxy_read_timeout 1d;
+    proxy_connect_timeout 1d;
+    proxy_send_timeout 1d;
+    location / {
+        proxy_pass http://127.0.0.1:3000/;
+        proxy_intercept_errors on;
+        error_page 404 /404_not_found;
+    }
+}
+
+```
+
+**BioStudio**
+
+```R
+server {
+    listen 0.0.0.0:80;
+    server_name <testdomain>.com www.<testdomain>.com;
+    return 301 https://<testdomain>.com$request_uri;
+
+    ignore_invalid_headers off;
+    client_max_body_size 0;
+    client_body_timeout 1d;
+    proxy_buffering off;
+    proxy_read_timeout 1d;
+    proxy_connect_timeout 1d;
+    proxy_send_timeout 1d;
+    location / {
+        proxy_pass http://127.0.0.1:8081;
+        proxy_http_version 1.1;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        add_header X-Host $host;
+        proxy_set_header X-Forwarded-Host $http_host;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+    }
+    location ~ /\.ht {
+        deny all;
+    }
+}
+
+server {
+    listen 0.0.0.0:443 ssl http2;
+    server_name <testdomain>.com www.<testdomain>.com;
+    if ($host = 'www.<testdomain>.com' ) {
+        rewrite  ^/(.*)$  https://<testdomain>.com/$1  permanent;
+    }
+    ssl_certificate /etc/ssl/certs/testdomain.pem;
+    ssl_certificate_key /etc/pki/tls/private/testdomain.key;
+    ssl_session_timeout 1d;
+    ssl_session_cache shared:SSL:20m;
+    ssl_prefer_server_ciphers on;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH;
+    ignore_invalid_headers off;
+    client_max_body_size 0;
+    client_body_timeout 1d;
+    proxy_buffering off;
+    proxy_read_timeout 1d;
+    proxy_connect_timeout 1d;
+    proxy_send_timeout 1d;
+    location / {
+        proxy_pass http://127.0.0.1:8081;
+        proxy_http_version 1.1;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        add_header X-Host $host;
+        proxy_set_header X-Forwarded-Host $http_host;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+    }
+    location ~ /\.ht {
+        deny all;
+    }
+}
+
+
+============== OR ============== 
+
+server {
+    listen 0.0.0.0:80;
+    server_name <testdomain>.com www.<testdomain>.com;
+    return 301 https://<testdomain>.com$request_uri;
+}
+
+server {
+    listen 0.0.0.0:443 ssl http2;
+    server_name <testdomain>.com www.<testdomain>.com;
+    if ($host = 'www.<testdomain>.com' ) {
+        rewrite  ^/(.*)$  https://<testdomain>.com/$1  permanent;
+    }
+    ssl_certificate /etc/ssl/certs/testdomain.pem;
+    ssl_certificate_key /etc/pki/tls/private/testdomain.key;
+    ssl_session_timeout 1d;
+    ssl_session_cache shared:SSL:20m;
+    ssl_prefer_server_ciphers on;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH;
+    ignore_invalid_headers off;
+    client_max_body_size 0;
+    client_body_timeout 1d;
+    proxy_buffering off;
+    proxy_read_timeout 1d;
+    proxy_connect_timeout 1d;
+    proxy_send_timeout 1d;
+    location / {
+        proxy_pass http://127.0.0.1:8080;
+        proxy_http_version 1.1;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        add_header X-Host $host;
+        proxy_set_header X-Forwarded-Host $http_host;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+    }
+    location ~ /\.ht {
+        deny all;
+    }
+}
+
+```
