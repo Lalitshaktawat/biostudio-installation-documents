@@ -2257,6 +2257,7 @@ There could be several reason behind this issue. Common reason is blocking below
 *.anaconda.org
 *repo.anaconda.com
 Amazon S3
+github.com
 ```
 
 :o: **Resolution**
@@ -2267,6 +2268,7 @@ Kindly allow below sites.
 *.anaconda.org
 *repo.anaconda.com
 Amazon S3
+github.com
 ```
 
 ## Workspace / any other element access is not showing graphics clear and images are not showing correctly.
