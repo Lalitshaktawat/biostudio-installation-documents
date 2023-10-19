@@ -204,8 +204,11 @@ Just press the ENTER key
 
 Wait for a while to download the BioColab image and start the container.
 
-**12]** check the status:  
+**12]** check the status: 
+
+```R
 docker ps -a
+``` 
  
 Both containers are UP and running.
 <img alt="email-t" src="./emailtemp-pic/brn.png" class="lazy" width="100%">
