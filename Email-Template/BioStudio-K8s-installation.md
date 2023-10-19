@@ -25,7 +25,7 @@ helm repo add bioturing https://bioturing.github.io/charts/apps/
 helm repo update
 helm search repo bioturing
 
-<img alt="Protocol" src="./hel.png" class="lazy" width="100%">
+<img alt="Protocol" src="./emailtemp-pic/hel.png" class="lazy" width="100%">
 
 **2]** Adjust helm chart value based on your infrastructure environment.
     PVC
@@ -34,8 +34,8 @@ helm search repo bioturing
 
 **3]** Install BioColab from helm install or GUI.
 
-<img alt="Protocol" src="./done-wihout-lb.png" class="lazy" width="100%"> 
-<img alt="Protocol" src="./pvc-done.png" class="lazy" width="100%"> 
+<img alt="Protocol" src="./emailtemp-pic/done-wihout-lb.png" class="lazy" width="100%"> 
+<img alt="Protocol" src="./emailtemp-pic/pvc-done.png" class="lazy" width="100%"> 
 
 For machine creation follow to add local DNS.
 

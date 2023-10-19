@@ -16,21 +16,21 @@ https://<Your BioStudio URL>/dashboard
 
 **2]** Do the **account registration** for Admin login.
 
-<img alt="email-t" src="./ar.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/ar.png" class="lazy" width="100%">
 
 
 **3]** Create an Admin Account by clicking on **Account Registration**.
 
-<img alt="email-t" src="./ar1.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/ar1.png" class="lazy" width="100%">
 
 
 **4]** Login to the dashboard using the Admin account that we registered via the create admin account step.
 
-<img alt="email-t" src="./lg.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/lg.png" class="lazy" width="100%">
 
 **5]** Admin portal setting will appear on the **left hand side menu**. Please click on **SSO**. Then select **+ Add New SSO**.
 
-<img alt="email-t" src="./ans.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/ans.png" class="lazy" width="100%">
 
 **6] SSO** set up.
 
@@ -44,12 +44,12 @@ Select the protocol that you wish to set up and put some **dummy** values to the
 
 https://studio.bioturing.com/document/installation#p-stylecolor-000080-sso-set-up-p
 
-<img alt="email-t" src="./sso.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/sso.png" class="lazy" width="100%">
 
 **7]** Update SSO setting.
 
 Once set up the Callback URL with IDP. Get all mandatory values and update SSO settings. 
-<img alt="email-t" src="./usso.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/usso.png" class="lazy" width="100%">
 
 ```R
      --> Login to admin dashboard. https://<Your Domain>/dashboard
@@ -59,7 +59,7 @@ Once set up the Callback URL with IDP. Get all mandatory values and update SSO s
 ```
 SSO domains and save the configuration.
 
-<img alt="email-t" src="./ssco.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/ssco.png" class="lazy" width="100%">
 
 
 ## Machine Creation:
@@ -76,17 +76,17 @@ https://studio.bioturing.com/document/installation#machine-creation
 – IP address: this is a private IP of the server. You can get this from the command below.
 ```
 
-<img alt="email-t" src="./crm.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/crm.png" class="lazy" width="100%">
 
 ```R
 docker exec bioproxy cat /etc/hosts
 ```
 
-<img alt="email-t" src="./h.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/h.png" class="lazy" width="100%">
 
 **2]** fill all mandatory Make it **Available** by enabling it. Click on **Submit** button to save this setting.
 
-<img alt="email-t" src="./crm2.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/crm2.png" class="lazy" width="100%">
 
 **3]** Volume creation.
 
@@ -98,7 +98,7 @@ docker exec bioproxy cat /etc/hosts
 – Make it **Available** by enabling it.
 – Click on **Submit** button to save this configuration.
 
-<img alt="email-t" src="./adv1.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/adv1.png" class="lazy" width="100%">
 
 **Testing**
 

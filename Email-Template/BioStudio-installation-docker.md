@@ -78,30 +78,34 @@ mkdir -p /biocolab/appdata
 ```
 
 **2]** Switch to biocolab folder.
+
 ```R
 cd /biocolab
 ```
 
 **3]** Download installation script.
+
 ```R
 wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.52.tar.gz
 ```
 
-<img alt="email-t" src="./wget.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/wget.png" class="lazy" width="100%">
 
 **4]** Uncompressed .gz file.
+
 ```R
 tar xvf v1.0.52.tar.gz
 ```
 
-<img alt="email-t" src="./t.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/t.png" class="lazy" width="100%">
 
 **5]** Switch to the installation folder.
+
 ```R
 cd installation-1.0.52/
 ```
 
-<img alt="email-t" src="./cd.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/cd.png" class="lazy" width="100%">
 
  
 **6]** Execute installation script.
@@ -114,34 +118,36 @@ Following script execution instructions:
 
 **1]** During the execution, It will prompt for “**Install Self-Signed CA Certificate [y, n]**”: **n**
 ( We can use **n** )
-<img alt="email-t" src="./ca.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/ca.png" class="lazy" width="100%">
 
  
 **2]** Next it will prompt for folder structure confirmation.
+
 As we already created before. We just need to press the ENTER key to move to the next step.
-<img alt="email-t" src="./f.png" class="lazy" width="100%">
+
+<img alt="email-t" src="./emailtemp-pic/f.png" class="lazy" width="100%">
  
 **3]** Script will prompt for Token and Domain name. 
+
 Please use the token provided by us.
 Your specific domain name for BioStudio.
-<img alt="email-t" src="./dn.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/dn.png" class="lazy" width="100%">
 
 **4]** Next step to set up credential for super user account. 
 Please provide **password** for Admin user.
 
 **NOTE:** Kindly keep save this password. We can not recovery it once lost.
 
-<img alt="email-t" src="./adm.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/adm.png" class="lazy" width="100%">
 
 **5]** Input exposes ports. 
 We can use HTTP : 80 and HTTPS : 443
 
 **Note:** If you are installing BioTuring ecosystem and BioStudio on the same machine. Please use different port like 8081 for HTTP and 4433 for HTTPS.
 
-<img alt="email-t" src="./po.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/po.png" class="lazy" width="100%">
 
 Wait for a while to install docker on your machine.
-
 
 **6]** Instance / machine type selection ( GPU / CPU )
 
@@ -151,7 +157,7 @@ If your instance / machine is based on **CPU**. Please press n to continue to in
 
 Do you have a GPU on your machine: [y/n] **n** ( I used n as my machine does not support GPU ). Kindly select **Y** if your machine is having GPU support.
 
-<img alt="email-t" src="./gn.png" class="lazy" width="100%"> 
+<img alt="email-t" src="./emailtemp-pic/gn.png" class="lazy" width="100%"> 
 
 ==OR==
 
@@ -159,12 +165,12 @@ Do you have a GPU on your machine: [y/n] y (in case you have GPU supported insta
 – It will download the driver and install it.
 – Type accept to move to the next step.
 
-<img alt="email-t" src="./26.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/26.png" class="lazy" width="100%">
 
 
 Use the down arrow key to reach **install** option and press enter to start cuda driver installation.
 
-<img alt="email-t" src="./27.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/27.png" class="lazy" width="100%">
 
 Wait for a while to complete execution to install nvidia driver.
 
@@ -175,26 +181,26 @@ Please press y if you wish to install Nvidia docker2.
 **8]** Would you like to change IP:
 We can simply press Enter or n. If we do not want to change IP.
 
-<img alt="email-t" src="./ci.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/ci.png" class="lazy" width="100%">
 
 
 **9]** Please enter Biocolab's Proxy 1.0.25 (latest):
 We can press enter as it is the latest version.
 
-<img alt="email-t" src="./pver.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/pver.png" class="lazy" width="100%">
 
 **10]** Install NFS server [y, n]:
 We can simply press Enter or n. If we do not want to install NFS.
 
-<img alt="email-t" src="./nfs.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/nfs.png" class="lazy" width="100%">
 
 Wait for a while to download the Bioproxy image and start the container.
-<img alt="email-t" src="./bstart.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/bstart.png" class="lazy" width="100%">
 
 **11]** BioColab version installation.
 Just press the ENTER key
 
-<img alt="email-t" src="./bcv.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/bcv.png" class="lazy" width="100%">
 
 Wait for a while to download the BioColab image and start the container.
 
@@ -202,7 +208,7 @@ Wait for a while to download the BioColab image and start the container.
 docker ps -a
  
 Both containers are UP and running.
-<img alt="email-t" src="./brn.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/brn.png" class="lazy" width="100%">
 
 Once both containers are up and running successfully.
 
