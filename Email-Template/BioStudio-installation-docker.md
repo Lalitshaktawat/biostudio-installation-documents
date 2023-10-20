@@ -220,4 +220,4 @@ Installation has been completed.
 
 Thank you so much for continue support for us in this set up. Feel free to contact us, If you need any support or have any question for us.
 
-Best regards,
+Best Regards,
