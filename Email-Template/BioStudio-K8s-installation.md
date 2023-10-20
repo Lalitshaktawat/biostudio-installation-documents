@@ -53,4 +53,4 @@ We must use local DNS service name to add machine.
 # biocolab-preprod-biostudio-colab.bioturing-preprod.svc.cluster.local
 ```
 
-Best Regards,
+Best regards,
