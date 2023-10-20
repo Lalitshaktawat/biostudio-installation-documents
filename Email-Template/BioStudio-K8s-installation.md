@@ -27,12 +27,12 @@ helm search repo bioturing
 
 <img alt="Protocol" src="./emailtemp-pic/hel.png" class="lazy" width="100%">
 
-**2]** Adjust helm chart value based on your infrastructure environment.
+**2]** Adjust helm chart **value** based on your infrastructure environment.
     PVC
     Resources
     Credentials
 
-**3]** Install BioColab from helm install or GUI.
+**3]** Install BioStudio from helm install or GUI.
 
 <img alt="Protocol" src="./emailtemp-pic/done-wihout-lb.png" class="lazy" width="100%"> 
 <img alt="Protocol" src="./emailtemp-pic/pvc-done.png" class="lazy" width="100%"> 
@@ -44,7 +44,7 @@ We must use local DNS service name to add machine.
 
 <Service Name>.<Namespace>.svc.cluster.local
 
-# bioc-test-release-biocolab-colab.bioc-test.svc.cluster.local
+# bioc-test-release-biostudio-colab.bioc-test.svc.cluster.local
 
-# biocolab-preprod-biocolab-colab.bioturing-preprod.svc.cluster.local
+# biocolab-preprod-biostudio-colab.bioturing-preprod.svc.cluster.local
 ```
