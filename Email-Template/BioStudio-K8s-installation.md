@@ -30,9 +30,11 @@ helm search repo bioturing
 <img alt="Protocol" src="./emailtemp-pic/hel.png" class="lazy" width="100%">
 
 **2]** Adjust helm chart **value** based on your infrastructure environment.
+```R
     PVC
     Resources
     Credentials
+```
 
 **3]** Install BioStudio from helm install or GUI.
 
