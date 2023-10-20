@@ -21,9 +21,11 @@ Access to these domains is required for the machine with the BioStudio software 
 | github.com         | We need to retrieve packages from the Github. |
 
 **1]** Add bioturing repo.
+```R
 helm repo add bioturing https://bioturing.github.io/charts/apps/
 helm repo update
 helm search repo bioturing
+```
 
 <img alt="Protocol" src="./emailtemp-pic/hel.png" class="lazy" width="100%">
 
