@@ -93,3 +93,8 @@ Click in dot will gives more information for user activities.
 **BioStudio login:**
 
 <img alt="email-t" src="./emailtemp-pic/lgin.png" class="lazy" width="100%">
+
+*For every success user login. BioStudio automatically create an user entry on users tab to maintain their usage and status. user ‘s account can be activated and deactivated by changing status.*
+
+<img alt="email-t" src="./emailtemp-pic/ustat12.png" class="lazy" width="100%">
+
