@@ -85,7 +85,7 @@ Graph will help uses to see the activities and take appropriate actions.
 **BioStudio usage and activities:**
 
 ```R
-Click in dot will gives more information for user activities. 
+Click on dot will gives more information for user activities. 
 ```
 
 <img alt="email-t" src="./emailtemp-pic/acti1.png" class="lazy" width="100%">
