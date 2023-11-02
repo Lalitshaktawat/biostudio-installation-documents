@@ -575,5 +575,31 @@ This functionality can be used to create a kernel that was previously requested 
 You can see the progress on Recent Activity by clicking notification icon.
 ```
 
-
 <img alt="BioStudio-env" src="./pic/kfbb.png" class="lazy" width="100%">
+
+
+```R
+All the Kernels are listed on Kernel manager.
+```
+
+<img alt="BioStudio-env" src="./pic/ksm.png" class="lazy" width="100%">
+
+:arrow_forward: **Attach Kernel to the Notebook.**
+
+```R
+Click on File --> New --> Notebook.
+```
+
+<img alt="BioStudio-env" src="./pic/nn.png" class="lazy" width="100%">
+
+```R
+Attached the kernel based on your requirement.
+```
+
+<img alt="BioStudio-env" src="./pic/akk.png" class="lazy" width="100%">
+
+```R
+You can switch the Kernel using switch kernel button.
+```
+
+<img alt="BioStudio-env" src="./pic/swk.png" class="lazy" width="100%">
