@@ -61,7 +61,7 @@
 | *.anaconda.org     | We need to retrieve packages from the Anaconda server.             |
 | *repo.anaconda.com | We need to retrieve packages from the Anaconda repo server.        |
 | Amazon S3          | We need to retrieve resources from the BioTuring ecosystem server. |
-| github.com         | We need to retrieve packages from the Guthub. |
+| github.com         | We need to retrieve packages from the Github. |
 
 
 :point_right: **Please contact** :email: [support@bioturing.com](mailto:support@bioturing.com) to get the **token** for your company.
