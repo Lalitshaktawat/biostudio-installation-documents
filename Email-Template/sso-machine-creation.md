@@ -107,7 +107,7 @@ Below is the user credential for testing. It will work without SSO configuration
 
 
 User Name: tester@bioturing.com
-Password: tester@123
+Password: XXXXXXXXXXXX
 
 Thank you so much for continue support for us in this set up. Feel free to contact us, If you need any support or have any question for us.
 
