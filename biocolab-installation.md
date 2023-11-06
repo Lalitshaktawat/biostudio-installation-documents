@@ -1265,7 +1265,7 @@ II] Login to server and follow below steps.
 
 ## Kubernetes Setup for BioStudio
 
-> Helm chart version : **1.0.42**
+> Helm chart version : **1.0.69**
 
 ```R
 # Before installing the BioTuring System on Linux/K8S, some pre-installation steps are required:
@@ -1399,7 +1399,7 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 | **Key**                                    | **Type** | **Default**        | **Description**      |
 |--------------------------------------------|----------|--------------------|----------------------|
 | image.biocolab.repository                  | string   | bioturing/biocolab | biocolab repository  |
-| image.biocolab.tag                         | int      | 1.0.24             | biocolab image tag   |
+| image.biocolab.tag                         | int      | 2.0.50             | biocolab image tag   |
 | image.bioproxy.repository                  | string   | bioturing/biocolab | bioproxy repository  |
 | image.bioproxy.tag                         | int      | 1.0.25             | bioproxy image tag   |
 | imagePullSecrets                           | object   | {}                 | secrets              |
@@ -2100,6 +2100,9 @@ That issue can be fixed by updating the (Nginx) load balancer by incorporating t
 client_max_body_size = 0
 
 By implementing this configuration, users will have the flexibility to upload files without any imposed size restrictions. Setting this value to zero will exempt the client request a body size check, allowing users to upload files of unlimited sizes.
+
+- nginx load balancing standalone : client_max_body_size 0
+- nginx k8s ingress : nginx.ingress.kubernetes.io/proxy-body-size 0
 ```
 
 ## Conda installation error.
@@ -2442,5 +2445,24 @@ server {
         deny all;
     }
 }
+
+```
+## Multiple redirection and timeout issue.
+
+:o: **Reason**
+
+```R
+Ingress setting is not correct on LB.
+```
+
+:o: **Resolution**
+
+```R
+Kindly update setting below.
+
+nginx.ingress.kubernetes.io/proxy-read-timeout: 3600
+nginx.ingress.kubernetes.io/proxy-send-timeout: 3600
+nginx.ingress.kubernetes.io/proxy-body-size: 0
+nginx.ingress.kubernetes.io/client_max_body_size: 0
 
 ```

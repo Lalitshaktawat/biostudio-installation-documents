@@ -3,11 +3,11 @@
 
 # Conda Environment Manager
 
-**BioStudio** currently using **conda manager**. **Conda** is an open-source package management system and environment management system. A **conda environment** is a directory that contains a specific collection of **conda packages** that you have installed.
+**BioStudio** is currently utilizing **conda manager**. **Conda** is an open-source package management system and environment management system. A **conda environment** is a directory that contains a specific collection of **conda packages** that you have installed.
 
-To access this features:
+**To access this features:**
 
-:high_brightness: Click on **Package Environments** icon on left side menu  
+:high_brightness: Click on **Package Environments** icon on the left side menu. 
 
 -- **OR** --
 
@@ -26,16 +26,16 @@ To access this features:
 
 ## Create new environment
 
-You can create new conda environment with pre-installed language by clicking on **Create New** button.
+You can create a new Conda environment with pre-installed language by clicking on the **Create New** button.
 
-:one: Enter environment name in the input field.
-:two: Select require language with version that you would like to have in new environment.
+:one: Enter the environment name in the input field.
+:two: Select the required language with the version that you would like to have in the new environment.
 :three: Click on **OK** button to process next step. <br>
 
 <img alt="BioStudio-env" src="./pic/cne.png" class="lazy" width="100%">
 <br><br>
 
-Terminal will automatic open on right side with activated environment. It's up to client to use this activated environment.
+The terminal will automatically open on the right side with an activated environment. It's up to the client to use this activated environment.
 
 :high_brightness: We can close this terminal by clicking **Close** button.
 
@@ -48,11 +48,10 @@ Terminal will automatic open on right side with activated environment. It's up t
 :high_brightness: Click on **Refresh** icon to update environment list.
 
 <br>
-<img alt="BioStudio-env" src="./pic/cner.png" class="lazy" width="100%">
+<img alt="BioStudio-env" src="./pic/cner.png" class="lazy" width="100%"><br><br>
 
-<br>
 
-In order to open new terminal with activate specific environment from the list. 
+In order to open a new terminal, activate a specific environment from the list.
 
 :high_brightness: Click on **Terminal** icon.
 
@@ -62,7 +61,7 @@ In order to open new terminal with activate specific environment from the list.
 
 ## Clone environment
 
-We can create the similar environment from existing environment by clicking on **Clone** icon.
+We can create the **similar environment** from **existing environment** by clicking on **Clone** icon.
 
 :one: Enter the new environment name.
 :two: Click On **OK** button.
@@ -71,12 +70,13 @@ We can create the similar environment from existing environment by clicking on *
 
 <img alt="BioStudio-env" src="./pic/envcl.png" class="lazy" width="100%"><br><br>
 
+It will appear on the **list** as below.
 
-<img alt="BioStudio-env" src="./pic/envcll.png" class="lazy" width="100%"><br>
+<br><img alt="BioStudio-env" src="./pic/envcll.png" class="lazy" width="100%"><br>
 
 ## Import environment from YAML file
 
-We can create environment from **YAML file** by clicking on **Import** button.
+We can create an environment from a **YAML file** by clicking on the **Import** button.
 :one: Enter the new environment.
 :two: Upload **YAML** file from local machine.
 :three: Click on **OK** button.
@@ -84,11 +84,12 @@ We can create environment from **YAML file** by clicking on **Import** button.
 <img alt="BioStudio-env" src="./pic/im.png" class="lazy" width="100%">
 
 ## Export environment to YAML file
-We can export environment to **YAML file**  and you can download it on your local
 
-:one: Select the environment which you would like to export from dropdown list.
-:two: Click on Export Button.
-:three: Once it finished, it will automatically download yaml file to your local machine. In case not downloaded, click on **Download YAML** link.
+We can export the environment to a **YAML file** that can be downloaded to your local.
+
+:one: Select the environment that you would like to export from dropdown list.
+:two: Click on **Export** Button.
+:three: Once it is finished, it will automatically download **YAML** file to your local machine. In case not downloaded, click on **Download YAML** link.
 
 <br><img alt="BioStudio-env" src="./pic/ceed.png" class="lazy" width="100%"><br>
 
@@ -116,12 +117,12 @@ You can install  packages to selected environment from available package on Expl
 You can find and install packages to the selected environment.
 
 :one: Select the environment.
-:two: Click on Explore Tab.
-:three: Type the package name in the search field and press **Enter**. It will show all the packages for the same name from different channels.
+:two: Click on **Explore** Tab.
+:three: Type the **package name** in the **search field** and press **Enter**. It will show all the packages for the same name from different channels.
 
 <br><img alt="BioStudio-env" src="./pic/pan.png" class="lazy" width="100%"><br>
 
-:four: After you get the search results, click the intended package to open it on new tab. This allows you to view the package details and choose the version to install. 
+:four: After you get the search results, click the intended package to open it in a new tab. This allows you to view the package details and choose the version to install. 
 :five: click on **Install**. Click OK in the popup to confirm your action.
 
 <br><img alt="BioStudio-env" src="./pic/panda1.png" class="lazy" width="100%"><br>
@@ -130,8 +131,8 @@ Installed packages would be listed on **Installed** tab. You can uninstall or up
 
 ## Update packages
 
-You can update existing conda packages in the environment
-:one: Select the environment
+You can update existing conda packages in the environment.
+:one: Select the environment.
 :two: Switch to  **Installed** tab. Search packages you want to update, then click on it to go to detail tab, select specific version that you would like to update.
 :three: Click OK in the popup to confirm your action.
 
@@ -139,8 +140,8 @@ You can update existing conda packages in the environment
 
 ## Uninstall packages
 
-You can uninstall conda packages in the environment
-:one: Select the environment
+You can uninstall conda packages in the environment.
+:one: Select the environment.
 :two: Switch to  **Installed** tab. Search packages you want to uninstall, then click on **Uninstall** icon.
 :three: Click OK in the popup to confirm your action.
 
@@ -153,8 +154,8 @@ For packages from **github** repository, you can install it by following steps:
 
 <br><img alt="BioStudio-env" src="./pic/adn.png" class="lazy" width="100%"><br>
 
-:one: Select the environment
-:two: Go to **Repositories** tab, Click to button **Add New Repository**
+:one: Select the environment.
+:two: Go to **Repositories** tab, Click to button **Add New Repository**.
 :three: Enter Git repository URL, select package language and click on **Check** button.
 :high_brightness: It will prompt for branch. By default it will be main branch. You can switch to another branch that you would like install.
 :high_brightness: Click on **Install**. Click OK in the popup to confirm your action.
@@ -192,9 +193,9 @@ Then, the popup will appear, which have four options:
 ## Basic Mode
 
 :one: Enter the kernel name.
-:two: Choose A Mode: **Basic**. In this mode, it will create general environment and kernel. All basic package will be attached with this Kernel.
-:three: Select specific language in language field. Currently, BioStudio is only supporting two languages: **Python** and **R**.
-:four: Select version based on selected language. If pre-define versions is not suitable for your requirement, you can type version you would like to install, and then, click **Add Customize** button to apply.
+:two: Choose A Mode: **Basic**. In this mode, it will create a general environment and kernel. All basic package will be attached with this Kernel.
+:three: Select specific language in language field. Currently, BioStudio is supporting two languages: **Python** and **R**.
+:four: Select version based on selected language. If pre-define versions are not suitable for your requirements, you can type the version that you would like to install, and then, click **Add Customize** button to apply.
 :five: Click **Create** button.
 
 <br><img alt="BioStudio-env" src="./pic/ck.png" class="lazy" width="100%"><br>
@@ -210,13 +211,13 @@ You can view the log to tracking the status.
 
 ## From Env Mode
 
-:one: Enter the kernel name
+:one: Enter the kernel name.
 :two: Choose A Mode: **From Env**. In this mode, create kernel using existing environment.
 :three: Select specific existing environment in environment field.
 :four: Select specific language in language field. Currently, BioStudio is only supporting two languages: **Python** and **R**.
 :five: Select version based on selected language.
 
-:bell: Existing environment included **Python package** / **R package** already. So Version field will be disabled and not allowed to change. But if you will select different language package, which is not in existing environment then you are allow to select version. If pre-define versions is not suitable for your requirement, you can type version you would like to install, and then, click **Add Customize** button to apply.
+:bell: Existing environment includes **Python package** and **R package** already. So the version field will be **disabled** and not allowed to be changed. But if you select a different language package that is not in the existing environment, then you are allowed to select the version. If pre-defined versions are not suitable for your requirements, you can type the version you would like to install, and then click the **Add Customize** button to apply.
 
 :high_brightness: Click **Create** button
 
@@ -246,7 +247,7 @@ If pre-define versions is not suitable for your requirement, you can type versio
 
 **From BioTuring**  option is similar to From File. But environment will be uploaded form BioTuring cloud. It is requested environmental package from client.
 
-:three: Select your request environment from Your request Environment. If you have nothing and would like to request, You click on **Send us a request** to request BioTuring's DataScience Team  help you prepare your environment.
+:three: Select your request environment from Your Request Environment. If you have nothing and would like to request something, you can click on **Send us a request** to request that BioTuring's DataScience Team help you prepare your environment.
  
 <br><img alt="BioStudio-env" src="./pic/prq.png" class="lazy" width="100%"><br>
 
@@ -259,7 +260,7 @@ If pre-define versions is not suitable for your requirement, you can type versio
 :four: Select specific language in language field. Currently, BioStudio is only supporting two languages: **Python** and **R**.
 :five: Select version based on selected language.
 
-Existing YAML file included Python package / R package already. So Version field will be disabled and not allowed to change. But if you will select different language package, which is not in existing YAML file then you are allow to select version. If pre-define versions is not suitable for your requirement, you can type version you would like to install, and then, click **Add Customize** button to apply.
+:bell: Existing environment includes **Python package** and **R package** already. So the version field will be **disabled** and not allowed to be changed. But if you select a different language package that is not in the existing environment, then you are allowed to select the version. If pre-defined versions are not suitable for your requirements, you can type the version you would like to install, and then click the **Add Customize** button to apply.
 
 :six: Click **Create** button.
    
@@ -280,7 +281,7 @@ Existing YAML file included Python package / R package already. So Version field
 
 :high_brightness: **User Kernels** : List of the Kernels, which were created by user. User can edit and remove these kernel.
 
-:high_brightness: **System Kernels** : BioStudio pre-define kernels. Which can be used to run notebook.  User are not allowed to edit and remove these kernel, but can copy this kernel to user kernels.
+:high_brightness: **System Kernels** : BioStudio pre-defines kernels. Which can be used to run a notebook. Users are not allowed to edit or remove these kernels, but they can be copied to user kernels.
 
 <br><img alt="BioStudio-env" src="./pic/km23.png" class="lazy" width="100%"><br>
 
@@ -294,11 +295,11 @@ While run the notebook you can select Kernel by clicking switch kernel button.
 
 :high_brightness: Select Kernel popup will appear. 
 
-:high_brightness: Select the Kernel as you would like to connect. If the Kernel had a previous section. Then you will have two options. 
+:high_brightness: Select the kernel to which you would like to connect. If the kernel had a previous section, Then you will have two options.
 
-:high_brightness: **Create a new section**: Kernel will start from beginning and does not have any old values of variables.
+:high_brightness: **Create a new section**: Kernel will start from the beginning and does not have any old values for variables.
 
-:high_brightness: **Current section**:  In this option. Notebook will run on existing Kernel and can have the all available variables from previous section.
+:high_brightness: **Current section**:  In this option, The notebook will run on the existing kernel and have all the available variables from the previous section.
 
 <br><img alt="BioStudio-env" src="./pic/nbkn.png" class="lazy" width="100%"><br>
 

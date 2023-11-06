@@ -4,10 +4,7 @@ Thank you so much to choose BioStudio. Installing BioStudio on Kubernetes is so 
 
 ## BioStudio Deployments on Kubernetes
 
-Once K8s Cluster is ready. We can follow to install BioStudio using the helm chart.
-
-Network requirements:
-Access to these domains is required for the machine with the BioStudio software installed, as we need to retrieve data from the BioTuring ecosystem server.
+Once **K8s** Cluster is ready. We can follow to install BioStudio using the helm chart.
 
 **Network requirements:**
 Access to these domains is required for the machine with the BioStudio software installed, as we need to retrieve data from the BioTuring ecosystem server.
