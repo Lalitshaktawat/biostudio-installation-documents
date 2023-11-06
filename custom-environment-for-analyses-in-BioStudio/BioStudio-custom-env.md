@@ -295,11 +295,11 @@ While run the notebook you can select Kernel by clicking switch kernel button.
 
 :high_brightness: Select Kernel popup will appear. 
 
-:high_brightness: Select the kernel to which you would like to connect. If the kernel had a previous section, Then you will have two options.
+:high_brightness: Select the kernel to which you would like to connect. If the kernel had a previous session, Then you will have two options.
 
-:high_brightness: **Create a new section**: Kernel will start from the beginning and does not have any old values for variables.
+:high_brightness: **Create a new session**: Kernel will start from the beginning and does not have any old values for variables.
 
-:high_brightness: **Current section**:  In this option, The notebook will run on the existing kernel and have all the available variables from the previous session.
+:high_brightness: **Current session**:  In this option, The notebook will run on the existing kernel and have all the available variables from the previous session.
 
 <br><img alt="BioStudio-env" src="./pic/nbkn.png" class="lazy" width="100%"><br>
 
