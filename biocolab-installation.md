@@ -2464,5 +2464,4 @@ nginx.ingress.kubernetes.io/proxy-read-timeout: 3600
 nginx.ingress.kubernetes.io/proxy-send-timeout: 3600
 nginx.ingress.kubernetes.io/proxy-body-size: 0
 nginx.ingress.kubernetes.io/client_max_body_size: 0
-
 ```
