@@ -4,7 +4,7 @@
 
 ## File Browser
 
-The file browser and File menu enable you to work with files and directories on your system. This includes opening, creating, deleting, renaming, downloading, copying, and sharing files and directories.
+The file browser and File menu enable you to work with files and directories on your system. This includes opening, creating, deleting, renaming, downloading and copying files and directories.
 
 **BioStudio** is providing many ways to work with files and folders. Please review the details below.
 
