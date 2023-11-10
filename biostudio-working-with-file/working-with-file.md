@@ -275,6 +275,9 @@ This is an another way to upload / Download files / folders
 
 <br><img alt="working with file" src="./working-file-pic/fbrw.png" class="lazy" width="100%"><br>
 
+
+:diamond_shape_with_a_dot_inside: **Download**
+
 :small_blue_diamond: Click on **Download** icon.
 :small_blue_diamond: It will allow us to select **compress option** for specific **folder** ans download. If we will select a specific **file** then, It will download to our local.
 
@@ -283,3 +286,27 @@ This is an another way to upload / Download files / folders
 <br><img alt="working with file" src="./working-file-pic/dfz.png" class="lazy" width="100%"><br>
 
 **File:**
+
+<br><img alt="working with file" src="./working-file-pic/downf.png" class="lazy" width="100%"><br>
+
+:diamond_shape_with_a_dot_inside: **Upload**
+
+This option helps us to upload any files / folder to BioStudio.
+
+:small_blue_diamond: Click on **upload** icon.
+:small_blue_diamond: Option to select file / folder will display.
+:small_blue_diamond: Select file / folder based on your requirement.
+
+<br><img alt="working with file" src="./working-file-pic/uplfd.png" class="lazy" width="100%"><br>
+
+:small_blue_diamond: Select file / folder and click on open.
+
+<br><img alt="working with file" src="./working-file-pic/upoc.png" class="lazy" width="100%"><br>
+
+:small_blue_diamond: File has been uploaded successfully.
+
+<br><img alt="working with file" src="./working-file-pic/sucf.png" class="lazy" width="100%"><br>
+
+:small_blue_diamond: We can **delete** file from file browser using delete button.
+
+<br><img alt="working with file" src="./working-file-pic/delu.png" class="lazy" width="100%"><br>
