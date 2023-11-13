@@ -34,7 +34,7 @@ We can create a new folder by following these steps:
 
 :diamond_shape_with_a_dot_inside: Create **Switch in/out Folder**
 
-:small_blue_diamond: To open any file, **double-click** on its name in the file browser.
+:small_blue_diamond: To open any file, **double-click** on its name in the **File Browser**.
 
 <img alt="working with file" src="./working-file-pic/sf.png" class="lazy" width="100%"><br>
 
@@ -102,6 +102,8 @@ It is used to upload files to specific folder that you are in.
 :small_blue_diamond: Select the file that you would like to upload.
 :small_blue_diamond: Click on **Open** to upload file.
 
+:bell: **Note**: When we will upload any files. It will show the upload status at the bottom. Please make sure that the upload is completed before opening any file.
+
 <br><img alt="working with file" src="./working-file-pic/upl.png" class="lazy" width="100%"><br>
 
 -- **OR** --
@@ -110,7 +112,21 @@ It is used to upload files to specific folder that you are in.
 
 <br><img alt="working with file" src="./working-file-pic/uplo.png" class="lazy" width="100%"><br>
 
-## Refresh the file browser
+:small_blue_diamond: It will show large file size warning.
+:small_blue_diamond: Click on Upload button.
+
+<br><img alt="working with file" src="./working-file-pic/uplwa.png" class="lazy" width="100%"><br>
+
+
+:small_blue_diamond: Click on **Upload** button.
+
+The file will appear in the list, and we can view the upload status at the bottom.
+We must wait until the upload is completed. In that case, we would like to stop this upload. We just need to refresh the browser. It will stop file uploads, and later we can delete this partially uploaded file.
+
+<br><img alt="working with file" src="./working-file-pic/uploads.png" class="lazy" width="100%"><br>
+
+
+## Refresh the File Browser
 
 It is used to refresh current folder structure.
 
@@ -124,7 +140,7 @@ It used to show hidden files.
 
 ## Cloud Storage
 
-BioStudio providing a great features there you can create a connection to your cloud storage.
+**BioStudio** providing a great features there you can create a **connection** to your **cloud storage**.
 
 ```R
 1. Amazon S3
@@ -249,7 +265,7 @@ It is used to make a connection with **AzureBlob**.
 
 ### Cloud storage - mount point and access
 
-Once finished connection with cloud storage. We can see mount point on Terminal and mounted folder structure on file browser.
+Once finished connection with cloud storage. We can view mount point on Terminal and mounted folder structure on file browser.
 
 :small_blue_diamond: Click on **System Terminal**.
 
@@ -263,9 +279,21 @@ Once finished connection with cloud storage. We can see mount point on Terminal 
 
 <br><img alt="working with file" src="./working-file-pic/clstt.png" class="lazy" width="100%"><br>
 
+:bell: **Note**: We can view failure connection lof using following way.
+
+:small_blue_diamond: Click on **Notification Icon**.
+:small_blue_diamond: Click on **View log**.
+
+<br><img alt="working with file" src="./working-file-pic/notif.png" class="lazy" width="100%"><br>
+
+:small_blue_diamond: You can view log message for more details.
+
+<br><img alt="working with file" src="./working-file-pic/logf.png" class="lazy" width="100%"><br>
+
 ## File Browser - Menu Bar
 
-This is an another way to upload / Download files / folders
+This is an another way to upload / Download files / folders. This is a BioStudio application that helps us to fast upload.
+
 
 :small_blue_diamond: Click on **File Browser**.
 
@@ -303,9 +331,18 @@ This option helps us to upload any files / folder to BioStudio.
 
 <br><img alt="working with file" src="./working-file-pic/upoc.png" class="lazy" width="100%"><br>
 
+:small_blue_diamond: You can view **upload status** at the **bottom**.
+
+<br><img alt="working with file" src="./working-file-pic/upfst.png" class="lazy" width="100%"><br>
+
 :small_blue_diamond: File has been uploaded successfully.
 
 <br><img alt="working with file" src="./working-file-pic/sucf.png" class="lazy" width="100%"><br>
+
+:small_blue_diamond: We can click on the cross button for uploading file status to stop this upload.
+
+<br><img alt="working with file" src="./working-file-pic/abourtupl.png" class="lazy" width="100%"><br>
+
 
 :small_blue_diamond: We can **delete** file from file browser using delete button.
 
