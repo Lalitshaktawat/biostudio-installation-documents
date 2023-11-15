@@ -1087,11 +1087,11 @@ set up SSO at the same time.
 
 <br>
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid16.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="./SSO_IMG/pingid16.png" class="lazy" width="60%">
 
 :large_orange_diamond: **User is able to login successfully.**
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid17.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="./SSO_IMG/pingid17.png" class="lazy" width="60%">
 
 ## SSO set up with Azure AD ( SAML )
 
@@ -2103,7 +2103,65 @@ By implementing this configuration, users will have the flexibility to upload fi
 
 - nginx load balancing standalone : client_max_body_size 0
 - nginx k8s ingress : nginx.ingress.kubernetes.io/proxy-body-size 0
+
+in case you have seperate Nginx Load Balancer.
+
+    nginx.ingress.kubernetes.io/client_max_body_size: 100m
+    nginx.ingress.kubernetes.io/proxy-body-size: 100m
+    nginx.ingress.kubernetes.io/proxy-read-timeout: 3600
+    nginx.ingress.kubernetes.io/proxy-send-timeout: 3600
+
+--Based on situation -- anotation and values can be vary--
+
+Kubernete ingress:
+
+    nginx.ingress.kubernetes.io/client_max_body_size: 5000M
+    nginx.ingress.kubernetes.io/proxy-body-size: 5000M
+    nginx.ingress.kubernetes.io/proxy-buffer-size: 16k
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "3600"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+
+ Nginx lb:
+
+
+    proxy_buffers 4 256k;
+    proxy_buffer_size 256k;
+    proxy_busy_buffers_size 256k;
+    proxy_connect_timeout 3600s;
+    proxy_read_timeout 3600s;
+    proxy_send_timeout 3600s;
+    client_max_body_size 5000M;
+
+For Nginx LB, the value we updated will not be effective until we restart or reload it.
+
+Restart Nginx in case needed:
+ 
+1] Check Syntax
+
+sudo nginx -t
+
+ 
+2] Restart
+
+sudo nginx -s reload  
+
+or
+
+sudo systemctl reload nginx  
+
+or
+
+sudo systemctl restart nginx  
+
 ```
+
+**Ref**:
+
+[Nginx Proxy Module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_buffer_size)
+[Nginx HTTP Module](https://nginx.org/en/docs/http/ngx_http_core_module.html#client_max_body_size)
+[Nginx Suffix rule](https://nginx.org/en/docs/syntax.html)
 
 ## Conda installation error.
 
@@ -2458,10 +2516,5 @@ Ingress setting is not correct on LB.
 :o: **Resolution**
 
 ```R
-Kindly update setting below.
-
-nginx.ingress.kubernetes.io/proxy-read-timeout: 3600
-nginx.ingress.kubernetes.io/proxy-send-timeout: 3600
-nginx.ingress.kubernetes.io/proxy-body-size: 0
-nginx.ingress.kubernetes.io/client_max_body_size: 0
+There is no any specific solution. Issue could be form Load Balancer or would be form Application.
 ```

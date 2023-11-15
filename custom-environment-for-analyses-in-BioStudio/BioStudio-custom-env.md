@@ -125,7 +125,7 @@ You can find and install packages to the selected environment.
 :four: After you get the search results, click the intended package to open it in a new tab. This allows you to view the package details and choose the version to install. 
 :five: click on **Install**. Click OK in the popup to confirm your action.
 
-<br><img alt="BioStudio-env" src="./pic/panda1.png" class="lazy" width="100%"><br>
+<br><img alt="BioStudio-env" src="./pic/panda1.png" class="lazy" width="100%"><br><br>
 
 Installed packages would be listed on **Installed** tab. You can uninstall or update it later.
 

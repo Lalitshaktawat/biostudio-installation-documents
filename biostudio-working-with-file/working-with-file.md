@@ -73,12 +73,15 @@ Right click on folder name also providing many valuable option.
 :small_blue_diamond: **Paste** : Place the selected files / folders that was cut / copy.
 :small_blue_diamond: **Compress** : This is option used to compress selected folders in zip / tarz . 7z format.
 :small_blue_diamond: **Extract Here** : Compressed folder right click will have an option to extract here.
+
+
 <br><img alt="working with file" src="./working-file-pic/com.png" class="lazy" width="100%"><br>
 
 :small_blue_diamond: **Download as an Archive** : It is used to download selected folder in local.
 :small_blue_diamond: **Open Current Folder in Terminal** : It is used to open current folder in terminal.
 
 <br><img alt="working with file" src="./working-file-pic/opt.png" class="lazy" width="100%"><br>
+
 
 :small_blue_diamond: **Open Current Folder in VS Code** : It is used to open folder in VS code.
 :small_blue_diamond: **Delete Non-Empty Folder** : It is used to remove non empty folder.
