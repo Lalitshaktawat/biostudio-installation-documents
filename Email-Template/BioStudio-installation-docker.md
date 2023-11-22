@@ -43,7 +43,7 @@ domain name:  DNS name obtained for BioStudio.
 Authentication: **SSO**
 BioStudio supports three types of protocol ( **SAML, OPENID and OAUTH2** ) with all types of service providers.
 
-https://studio.bioturing.com/document/installation#kubernetes-setup-for-biostudio
+https://studio.bioturing.com/document/installation#p-stylecolor-000080-sso-set-up-p
 
 **5]** Network requirements:
 Access to these domains is required for the machine with the BioStudio software installed, as we need to retrieve data from the BioTuring ecosystem server.
