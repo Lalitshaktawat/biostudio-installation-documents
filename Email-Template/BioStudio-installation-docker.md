@@ -31,7 +31,7 @@ https://studio.bioturing.com/document/installation
 
 **2]**  BioStudio Partition details:
 
-**[1]** app : it used to store application related data. ( **50GB** )
+**[1]** app : it used to store application related data. ( **100GB** )
 **[2]** metadata : It is used to store postgresql database. ( **50GB** )
 **[3]** user : It used to store user's data. Like user's generated notebooks and other works. ( **500GB** to **1024GB** )
 **[4]** configs : It used to store server configs. It can be ( **50GB** )
@@ -74,7 +74,7 @@ Update **fstab** entry by adding line below.
 mkdir -p /biocolab/metadata
 mkdir -p /biocolab/configs
 mkdir -p /biocolab/userdata ( minimum 500GB or more )
-mkdir -p /biocolab/appdata
+mkdir -p /biocolab/appdata  ( minimum 100GB or more )
 ```
 
 **2]** Switch to biocolab folder.

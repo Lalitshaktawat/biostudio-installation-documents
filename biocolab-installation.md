@@ -438,7 +438,7 @@ ssh -i "lalit-biocolab-keypair.pem" ubuntu@3.98.231.253
 | META_DATA Volume         | This will use by Bioproxy to store database. [**/biocolab/metadata**]  | 50GB     |
 | SSL Volume               | Using by BioProxy. [**/biocolab/configs**]                                  | 1GB      |
 | Data Volume              | Using to store user data. [**/biocolab/userdata**]                                   | 500GB    |
-| Application data Volume  | Used to store application binary data.[**/biocolab/appdata**]                    | 50GB     |
+| Application data Volume  | Used to store application binary data.[**/biocolab/appdata**]                    | 100GB or above     |
 | Ethernet IP Address       | Use to pass IP address during installation (**eth0**) |  |
 
 Run the **install.biocolab.docker.sh** script for docker environment and install require software.
@@ -1265,7 +1265,7 @@ II] Login to server and follow below steps.
 
 ## Kubernetes Setup for BioStudio
 
-> Helm chart version : **1.0.69**
+> Helm chart version : **1.0.70**
 
 ```R
 # Before installing the BioTuring System on Linux/K8S, some pre-installation steps are required:
@@ -1401,7 +1401,7 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 | image.biocolab.repository                  | string   | bioturing/biocolab | biocolab repository  |
 | image.biocolab.tag                         | int      | 2.0.50             | biocolab image tag   |
 | image.bioproxy.repository                  | string   | bioturing/biocolab | bioproxy repository  |
-| image.bioproxy.tag                         | int      | 1.0.25             | bioproxy image tag   |
+| image.bioproxy.tag                         | int      | 1.0.26             | bioproxy image tag   |
 | imagePullSecrets                           | object   | {}                 | secrets              |
 | secret.data.allowips                       | string   | ""                 | allow ip             |
 | secret.data.cbtoken                        | string   | ""                 | Colab token          |
@@ -1441,11 +1441,11 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 | service.ports.bioproxy.ntfsp4.port         | int      | 32765              |                      |
 | service.ports.bioproxy.postgresql.port     | int      | 5432               |                      |
 | service.ports.bioproxy.redis.port          | int      | 6379               | redis port           |
-| persistence.dirs.app.size                  | String   | 5Gi                | application data     |
+| persistence.dirs.app.size                  | String   | 100Gi                | application data     |
 | persistence.dirs.app.storageClass          | string   | ""                 |                      |
 | persistence.dirs.metadata.size             | String   | 5Gi                | metadata             |
 | persistence.dirs.metadata.storageClass     | string   | ""                 |                      |
-| persistence.dirs.user.size                 | String   | 5Gi                | user data            |
+| persistence.dirs.user.size                 | String   | 500Gi                | user data            |
 | persistence.dirs.user.storageClass         | string   | ""                 |                      |
 | ingress.annotations                        | object   | {}                 |                      |
 | ingress.className                          | string   | ""                 |                      |
