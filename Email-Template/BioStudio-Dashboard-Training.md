@@ -127,5 +127,5 @@ It used to check the BioStudio websocket status.
 
 *For every successful login, BioStudio automatically creates a user entry on the Users tab to maintain their usage and status. A user's account can be activated or deactivated by changing its status.*
 
-<img alt="email-t" src="./emailtemp-pic/ustat12.png" class="lazy" width="100%">
+<img alt="email-t" src="./emailtemp-pic/ustat121.png" class="lazy" width="100%">
 
