@@ -2,9 +2,9 @@
 
 Dear,
 
-We'd like to thank you for choosing **BioStudio**. It is so easy to install. We just need to run installation script and follow the instructions.
+We'd like to thank you for choosing **BioStudio**. It is so easy to install. We just need to run the installation script and follow the instructions.
 
-Feel free to explore detail information for BioStudio architecture and installation.
+Feel free to explore detailed information for BioStudio architecture and installation.
 
 **Architecture:**
 https://studio.bioturing.com/document/architecture
@@ -25,16 +25,16 @@ https://studio.bioturing.com/document/installation
 | **AWS Instance**    | Support any type of instance type. Depend on needs| AWS g5xlarge in case using GPU.                                          |
 |**Platform**         | Docker / Kubernetes                                                                                                        |
 
-**GPU:** This is optional, If user's want to run notebooks based on GPU, then we need GPU supported instances. We can install BioStudio on any type of instance and in future it can be upgraded to GPU.
+**GPU:** This is optional. If users want to run notebooks based on GPUs, then we need GPU-supported instances. We can install BioStudio on any type of instance, and in the future, it can be upgraded to a GPU.
 
-**Other:** Yes, other types also support.
+**Other:** Yes, other types ( CPU ) also support.
 
 **2]**  BioStudio Partition details:
 
 **[1]** app : it used to store application related data. ( **100GB** )
 **[2]** metadata : It is used to store postgresql database. ( **50GB** )
 **[3]** user : It used to store user's data. Like user's generated notebooks and other works. ( **500GB** to **1024GB** )
-**[4]** configs : It used to store server configs. It can be ( **50GB** )
+**[4]** configs : It used to store server configs. It can be ( **1GB to 2GB** )
 
 **3]** Domain name:
 domain name:  DNS name obtained for BioStudio.
@@ -68,13 +68,15 @@ Update **fstab** entry by adding line below.
 [Partition-name] /biocolab   xfs    defaults   0   0
 ```
 
+https://studio.bioturing.com/document/installation#installation-started
+
 **1]** Login to the server and create the required folder structure before execution.
 
 ```R
 mkdir -p /biocolab/metadata
 mkdir -p /biocolab/configs
 mkdir -p /biocolab/userdata ( minimum 500GB or more )
-mkdir -p /biocolab/appdata  ( minimum 100GB or more )
+mkdir -p /biocolab/appdata ( minimum 100GB or more )
 ```
 
 **2]** Switch to biocolab folder.
@@ -86,7 +88,7 @@ cd /biocolab
 **3]** Download installation script.
 
 ```R
-wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.52.tar.gz
+wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.53.tar.gz
 ```
 
 <img alt="email-t" src="./emailtemp-pic/wget.png" class="lazy" width="100%">
@@ -94,7 +96,7 @@ wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.52.tar.gz
 **4]** Uncompressed .gz file.
 
 ```R
-tar xvf v1.0.52.tar.gz
+tar xvf v1.0.53.tar.gz
 ```
 
 <img alt="email-t" src="./emailtemp-pic/t.png" class="lazy" width="100%">
@@ -102,7 +104,7 @@ tar xvf v1.0.52.tar.gz
 **5]** Switch to the installation folder.
 
 ```R
-cd installation-1.0.52/
+cd installation-1.0.53/
 ```
 
 <img alt="email-t" src="./emailtemp-pic/cd.png" class="lazy" width="100%">
@@ -184,7 +186,7 @@ We can simply press Enter or n. If we do not want to change IP.
 <img alt="email-t" src="./emailtemp-pic/ci.png" class="lazy" width="100%">
 
 
-**9]** Please enter Biocolab's Proxy 1.0.25 (latest):
+**9]** Please enter Biocolab's Proxy 1.0.26 (latest):
 We can press enter as it is the latest version.
 
 <img alt="email-t" src="./emailtemp-pic/pver.png" class="lazy" width="100%">
@@ -217,7 +219,8 @@ Once both containers are up and running successfully.
 
 Installation has been completed.
 
+I’d be more than happy to schedule a quick call and start BioStudio installation.  We only need approx. 30 minutes to complete these installation steps. Feel free to let me know what could be a good time to schedule a call.
 
-Thank you so much for continue support for us in this set up. Feel free to contact us, If you need any support or have any question for us.
+If you have any questions or require any additional information or support, please don't hesitate to contact me at any point.
 
 Best regards,

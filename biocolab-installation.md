@@ -437,8 +437,8 @@ ssh -i "lalit-biocolab-keypair.pem" ubuntu@3.98.231.253
 | Application Domain       | Access BioStudio on Browser.                                         |          |
 | META_DATA Volume         | This will use by Bioproxy to store database. [**/biocolab/metadata**]  | 50GB     |
 | SSL Volume               | Using by BioProxy. [**/biocolab/configs**]                                  | 1GB      |
-| Data Volume              | Using to store user data. [**/biocolab/userdata**]                                   | 500GB    |
-| Application data Volume  | Used to store application binary data.[**/biocolab/appdata**]                    | 100GB or above     |
+| Data Volume              | Using to store user data. [**/biocolab/userdata**]                                   | 500GB and above   |
+| Application data Volume  | Used to store application binary data.[**/biocolab/appdata**]                    | 100GB and above    |
 | Ethernet IP Address       | Use to pass IP address during installation (**eth0**) |  |
 
 Run the **install.biocolab.docker.sh** script for docker environment and install require software.
@@ -459,13 +459,13 @@ cd /biocolab
 # Note: Installation script version would be changed based on updates.
 # Our Team will get you updates and keep in touch with you during installation.
 
-wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.52.tar.gz
+wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.53.tar.gz
 
 # uncompressed .gz
-tar xvf v1.0.52.tar.gz
+tar xvf v1.0.53.tar.gz
 
 # Switch to installation folder
-cd installation-1.0.52/
+cd installation-1.0.53/
 
 # Execute installation script
 bash install.biocolab.docker.sh
@@ -477,7 +477,7 @@ docker ps -a
 http://<Your Domain>/dashboard/
 ```
 
-:large_orange_diamond: Download **v1.0.52.tar.gz**, which content script to install **BioStudio.**
+:large_orange_diamond: Download **v1.0.53.tar.gz**, which content script to install **BioStudio.**
 
 <br>
 <img alt="wget-script" src="./idiag/install-step1.png" class="lazy" width="100%">
@@ -510,7 +510,7 @@ http://<Your Domain>/dashboard/
 <div class="warning" style='background-color: LightGray; color: #69337A; border-left: solid #805AD5 4px; border-radius: 4px; padding:0.7em;'>
 <span>
 <p style='margin-top:1em; text-align:justify'; text-justify:inter-word;>
-<code><b>BioProxy version : 1.0.25</b></code> 
+<code><b>BioProxy version : 1.0.26</b></code> 
 <code><b>BioColab version : 2.0.50</b></code> 
 </p>
 </span>
