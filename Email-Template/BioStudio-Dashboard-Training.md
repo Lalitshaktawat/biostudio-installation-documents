@@ -3,6 +3,8 @@
 **What is a Dashboard in BioStudio?**
 
 ```R
+The BioStudio web administrator page serves as a centralized hub for managing the various components of the application, allowing authorized individuals to keep the site running smoothly and securely.
+
 Dashboard is a place where administrators can perform all administrative tasks.
 ```
 
@@ -36,13 +38,21 @@ Note: You cannot create multiple Super Admin user’s accounts. It can only have
 
 Admin dashboard can view and perform activities below.
 
-**1]** SSO
-**2]** Users
-**3]** Admin
-**4]** Machines
-**5]** Forward port
-**6]** Settings
-**7]** Help Center
+- **Overview**: provides a comprehensive view of all activities in your BioStudio system.
+
+- **SSO**: displays all current Single Sign-On (SSO) protocols supported in your BioStudio system. You can also add new SSO protocols to expand your options.
+
+- **Users**: allows you to manage all users in your BioStudio system. When you enter this tab, you will see a table displaying the details of each user.
+
+- **Admin**: contains all accounts set as administrators. New accounts can be added to this tab to grant administrative privileges. Additionally, you can assign specific roles to each admin account, such as super administrator or content, user, technique, or security roles.
+
+- **Machines**: shows all servers currently in use by your BioStudio system with detailed information such as machine names, IP addresses, and status.
+
+- **Forward Port**: allows you to configure port forwarding for your BioStudio system.
+
+- **Settings**: enables you to access and modify your BioStudio system’s settings. License information is also stored in this tab, along with other system-wide configurations.
+
+- **Help Center**: If you face any troubles while managing the system, you can send system log files to BioTuring for the purpose of debugging the application. Your data will be kept secure and confidential.
 
 **Note:** Some of setting, we already performed during installation and should not do any changes.
 
@@ -128,4 +138,7 @@ It used to check the BioStudio websocket status.
 *For every successful login, BioStudio automatically creates a user entry on the Users tab to maintain their usage and status. A user's account can be activated or deactivated by changing its status.*
 
 <img alt="email-t" src="./emailtemp-pic/ustat121.png" class="lazy" width="100%">
+<br>
+<br>
 
+For more information, please contact us at support@bioturing.com.

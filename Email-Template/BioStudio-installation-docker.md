@@ -33,19 +33,21 @@ https://studio.bioturing.com/document/installation
 
 **[1]** app : it used to store application related data. ( **100GB** )
 **[2]** metadata : It is used to store postgresql database. ( **50GB** )
-**[3]** user : It used to store user's data. Like user's generated notebooks and other works. ( **500GB** to **1024GB** )
-**[4]** configs : It used to store server configs. It can be ( **1GB to 2GB** )
+**[3]** user : It used to store user's data. Like user's generated notebooks and other works. ( **500GB - 1024GB and above** )
+**[4]** configs : It used to store server configs. It can be ( **1GB - 2GB and above** )
 
 **3]** Domain name:
 domain name:  DNS name obtained for BioStudio.
 
 **4]** BioStudio Authentication:
+
 Authentication: **SSO**
 BioStudio supports three types of protocol ( **SAML, OPENID and OAUTH2** ) with all types of service providers.
 
 https://studio.bioturing.com/document/installation#p-stylecolor-000080-sso-set-up-p
 
 **5]** Network requirements:
+
 Access to these domains is required for the machine with the BioStudio software installed, as we need to retrieve data from the BioTuring ecosystem server.
 
 | Domain             | Explain                                                            |
@@ -58,6 +60,7 @@ Access to these domains is required for the machine with the BioStudio software 
 
 
 Installation Steps:
+
 Once the machine is ready to install.  
 
 Please **mount** data volume as **/biocolab**
@@ -75,8 +78,8 @@ https://studio.bioturing.com/document/installation#installation-started
 ```R
 mkdir -p /biocolab/metadata
 mkdir -p /biocolab/configs
-mkdir -p /biocolab/userdata ( minimum 500GB or more )
-mkdir -p /biocolab/appdata ( minimum 100GB or more )
+mkdir -p /biocolab/userdata ( minimum 500GB and above )
+mkdir -p /biocolab/appdata ( minimum 100GB and above )
 ```
 
 **2]** Switch to biocolab folder.
@@ -219,7 +222,7 @@ Once both containers are up and running successfully.
 
 Installation has been completed.
 
-I’d be more than happy to schedule a quick call and start BioStudio installation.  We only need approx. 30 minutes to complete these installation steps. Feel free to let me know what could be a good time to schedule a call.
+I’d be more than happy to schedule a quick call and start BioStudio installation.  We only need approx. 30 minutes to complete these installation steps.  Feel free to let me know what could be a good time to schedule a call.
 
 If you have any questions or require any additional information or support, please don't hesitate to contact me at any point.
 
