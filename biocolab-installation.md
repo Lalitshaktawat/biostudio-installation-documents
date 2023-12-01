@@ -436,8 +436,8 @@ ssh -i "lalit-biocolab-keypair.pem" ubuntu@3.98.231.253
 | BioStudio Token           | To access our product.                                              |          |
 | Application Domain       | Access BioStudio on Browser.                                         |          |
 | META_DATA Volume         | This will use by Bioproxy to store database. [**/biocolab/metadata**]  | 50GB     |
-| SSL Volume               | Using by BioProxy. [**/biocolab/configs**]                                  | 1GB      |
-| Data Volume              | Using to store user data. [**/biocolab/userdata**]                                   | 500GB and above   |
+| SSL Volume               | Using by BioProxy. [**/biocolab/configs**]                                  | 1GB - 2GB and above      |
+| Data Volume              | Using to store user data. [**/biocolab/userdata**]                                   | 500GB - 1024GB and above   |
 | Application data Volume  | Used to store application binary data.[**/biocolab/appdata**]                    | 100GB and above    |
 | Ethernet IP Address       | Use to pass IP address during installation (**eth0**) |  |
 
@@ -576,7 +576,7 @@ https://<your domain>/dashboard
 <div class="warning" style='background-color: LightGray; color: #69337A; border-left: solid #805AD5 4px; border-radius: 4px; padding:0.7em;'>
 <span>
 <p style='margin-top:1em; text-align:justify'; text-justify:inter-word;>
-<code><b> Workspace </b></code> <b style="color: darkblue">It is essential to create machine and mount the volume.</b>
+<code><b> Workspace </b></code> <b style="color: darkblue">It is essential to create a machine and mount the volume before using the workspace.</b>
 </p>
 </span>
 </div>
@@ -590,14 +590,14 @@ https://<your domain>/dashboard
 
 Name: You can select any name to this machine. This is a private IP of your machine, That can be find in /etc/hosts file on BioStudio pods.
 
-I already added a machine so I will go with update machine.
+I already added a machine, so I will go with the update machine.
 ```
 
 <img alt="Script execution" src="./idiag/mip.png" class="lazy" width="100%">
 
 <br>
 
-:large_orange_diamond: Please fill **Update machine Metadata.**
+:large_orange_diamond: Please fill out **Update machine metadata.**
 
 <br>
 <img alt="Machine update" src="./idiag/machine-update.png" class="lazy" width="100%">
@@ -607,8 +607,8 @@ I already added a machine so I will go with update machine.
 
 ```R
 # Machines --> Click on + sign to add volume.
-# You can use any name for volume but volume path always be /home
-# Now WORKSPACE is ready to use.
+# You can use any name for volume, but the volume path will always be /home.
+# Workspace is now ready for use.
 ```
 
 <br>
@@ -787,7 +787,7 @@ BioStudio is comes under service provider.
 
 :large_blue_diamond: **SAML Protocol update / delete method.** 
 
-> You can update values of existing SSO configuration, Whenever you want by selecting update option for SSO.
+> You can update the values of an existing SSO configuration whenever you want by selecting the update option for SSO.
 
 ```R
 # In Order to update or delete existing SSO configuration. Please follow steps are given below.
@@ -1112,13 +1112,13 @@ set up SSO at the same time.
 :large_orange_diamond:  Select SSO setting from left side menu and click on **+ Add New SSO**. If you are going to
 set up SSO at the same time.
 
-:bell: Note: If we are going to provide a Callback URL to another team to configure with IDP. Then we must provide dummy values to the mandatory field and click on submit button to save. Later we can update.
+:bell: Note: If we are going to provide a callback URL to another team to configure with IDP, Then we must provide dummy values to the mandatory field and click on the submit button to save. Later, we can update.
 
 <img alt="BioColab-img" src="./SSO_IMG/pingid4.png" class="lazy" width="100%">
 
 :large_orange_diamond: **Copy Callback HTTPS URL that needs to be configured with IDP.**
 
-:bell: I am following to save existing call back URL. Later we will configure this.
+:bell: I am following to save the existing callback URL. Later, we will configure this.
 
 
 <img alt="BioColab-img" src="./SSO_IMG/az1a.png" class="lazy" width="100%">
@@ -2123,6 +2123,10 @@ Kubernete ingress:
     nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
     nginx.ingress.kubernetes.io/use-regex: "true"
 
+    nginx.ingress.kubernetes.io/rewrite-target /;
+    nginx.ingress.kubernetes.io/ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
+    nginx.ingress.kubernetes.io/client-header-buffer-size 100k;
+
  Nginx lb:
 
 
@@ -2504,6 +2508,54 @@ server {
     }
 }
 
+============== OR ==============
+
+# In case you have external Load balancers
+
+upstream bioturing_router_http {
+    ip_hash;
+    server 10.201.7.95:80;
+    server 10.201.9.71:80;
+}
+
+server {
+    listen 443 ssl http2;
+    server_name biocolab.pass-yellow.astrazeneca.net;
+    ssl_certicate /etc/ssl/certs/pass-astrazeneca_net-yellow.crt;
+    ssl_certicate_key /etc/ssl/certs/pass-astrazeneca_net-yellow.key;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
+
+    location / {
+        # For reverse proxy to backends
+        proxy_pass http://bioturing_router_http;
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For  $proxy_add_x_forwarded_for;
+        proxy_connect_timeout 3600;
+        proxy_read_timeout 3600;
+        proxy_write_timeout 3600;
+
+
+        # For HTTP/HTTPS
+        client_max_body_size 5000m;
+        client_header_buffer_size 16k;
+          large_client_header_buffers  4 32k;
+
+        # For websocket
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade "websocket";
+        proxy_set_header Connection 'Upgrade';
+        proxy_cache_bypass "websocket";
+        proxy_set_header Connection “keep-alive”;
+    }
+}
+
+# In K8s Nginx Ingress. Please help to make sure that the below annotation is set up.
+
+nginx.ingress.kubernetes.io/rewrite-target /;
+nginx.ingress.kubernetes.io/ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
+nginx.ingress.kubernetes.io/client-header-buffer-size 100k;
 ```
 ## Multiple redirection and timeout issue.
 
@@ -2518,3 +2570,24 @@ Ingress setting is not correct on LB.
 ```R
 There is no any specific solution. Issue could be form Load Balancer or would be form Application.
 ```
+
+:o: **How to test websocket?**
+
+```R
+BioStudio has an inbuilt feature to test Websocket.
+
+1] Login to BioStudio Admin dashboard.
+
+2] Select System Setting -- Click to Check BioStudio button
+
+```
+
+<br>
+
+<img alt="Protocol" src="./EKS_PIC/cbs.png" class="lazy" width="100%"><br><br> 
+
+```R
+You could see the result below.
+```
+
+<br><br> <img alt="Protocol" src="./EKS_PIC/cbc.png" class="lazy" width="100%"> 
