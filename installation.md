@@ -1,4 +1,4 @@
-![BioStudio logo](./idiag/logo.png)
+![BioStudio logo](https://cdn.bioturing.com/documentation/idiag/logo.png)
 
 # <p> <span style="color:blue"> Installation Steps: </span> <span style="color:green"> BioTuring BioStudio </span> </p>
 
@@ -110,7 +110,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 :large_orange_diamond: Search **VPC** on the search box.
 
 <br>
-<img alt="VPC Search" src="./idiag/VPC-Search.png" class="lazy" width="100%">
+<img alt="VPC Search" src="https://cdn.bioturing.com/documentation/idiag/VPC-Search.png" class="lazy" width="100%">
 
 <br>
 <br>
@@ -118,62 +118,62 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 :large_orange_diamond: Select the appropriate **region** for VPC.
 
 <br>
-<img alt="Region Selection" src="./idiag/region-selection.png" class="lazy" width="100%">
+<img alt="Region Selection" src="https://cdn.bioturing.com/documentation/idiag/region-selection.png" class="lazy" width="100%">
 
 <br>
 <br>
 
 :large_orange_diamond: Click on **Create VPC.**
 <br>
-<img alt="Create VPC" src="./idiag/Create_VPC1.png" class="lazy" width="100%">
+<img alt="Create VPC" src="https://cdn.bioturing.com/documentation/idiag/Create_VPC1.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Fill-out **Name tag** , **IPv4 CIDR** block details.
 <br>
-<img alt="Create VPC fill" src="./idiag/Create-VPC2.png" class="lazy" width="100%">
+<img alt="Create VPC fill" src="https://cdn.bioturing.com/documentation/idiag/Create-VPC2.png" class="lazy" width="100%">
 
 <br>
 
 :large_orange_diamond: Mentioned **Tags** and select **Create VPC** push button.
 <br>
-<img alt="Create VPC click" src="./idiag/Create-VPC3.png" class="lazy" width="100%">
+<img alt="Create VPC click" src="https://cdn.bioturing.com/documentation/idiag/Create-VPC3.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: **Verify** VPC creation successfully completed.
 
 <br>
-<img alt="VPC creation succeed" src="./idiag/VPC-Created-Successfully.png" class="lazy" width="100%">
+<img alt="VPC creation succeed" src="https://cdn.bioturing.com/documentation/idiag/VPC-Created-Successfully.png" class="lazy" width="100%">
 <br>
 
 ## Create a Subnet
 
 :large_orange_diamond: Time to create Subnet. Click on **Create subnet.**
 <br>
-<img alt="Create Subnet" src="./idiag/Create-subnet1.png" class="lazy" width="100%">
+<img alt="Create Subnet" src="https://cdn.bioturing.com/documentation/idiag/Create-subnet1.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Select **VPC ID** and type **Subnet name.**
 
 <br>
-<img alt="Create Subnet fill" src="./idiag/Create-subnet2.png" class="lazy" width="100%">
+<img alt="Create Subnet fill" src="https://cdn.bioturing.com/documentation/idiag/Create-subnet2.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Fill **CIDR block**, type **Tag Key** and **Value** then Click on **Create subnet.**
 
 <br>
-<img alt="Create Subnet fill CIDR" src="./idiag/Create_subnet-3.png" class="lazy" width="100%">
+<img alt="Create Subnet fill CIDR" src="https://cdn.bioturing.com/documentation/idiag/Create_subnet-3.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Subnet created successfully.
 
 <br>
-<img alt="Subnet Succeed" src="./idiag/Subnet-created-successfully.png" class="lazy" width="100%">
+<img alt="Subnet Succeed" src="https://cdn.bioturing.com/documentation/idiag/Subnet-created-successfully.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Check **Subnet** detail.
 
 <br>
-<img alt="Subnet Detail" src="./idiag/Subnet-detail.png" class="lazy" width="100%">
+<img alt="Subnet Detail" src="https://cdn.bioturing.com/documentation/idiag/Subnet-detail.png" class="lazy" width="100%">
 
 ## Create Internet Gateway
 
@@ -184,26 +184,26 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 :large_orange_diamond: **Router Table.**
 
 <br>
-<img alt="Subnet Detail" src="./idiag/Router_table.png" class="lazy" width="100%">
+<img alt="Subnet Detail" src="https://cdn.bioturing.com/documentation/idiag/Router_table.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Select **Internet gateway** and Click on **Create internet gateway**.
 
 <br>
-<img alt="internet gateway creation" src="./idiag/Create-IG.png" class="lazy" width="100%">
+<img alt="internet gateway creation" src="https://cdn.bioturing.com/documentation/idiag/Create-IG.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Fill **Name Tag**, **Key** and **Value** then Click **Create internet gateway.**
 
 <br>
-<img alt="IG creation step" src="./idiag/Create-IG1.png" class="lazy" width="100%">
+<img alt="IG creation step" src="https://cdn.bioturing.com/documentation/idiag/Create-IG1.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Internet gateway created successfully.
 
 <br>
 
-<img alt="IG creation Succeed" src="./idiag/IG-Created-success.png" class="lazy" width="100%">
+<img alt="IG creation Succeed" src="https://cdn.bioturing.com/documentation/idiag/IG-Created-success.png" class="lazy" width="100%">
 
 <br>
 
@@ -212,15 +212,15 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 :large_orange_diamond: In Internet gateway Click on **Action** and select **Attached to VPC.**
 
 <br>
-<img alt="IG attached to VPC" src="./idiag/IG-Attached-to-vpc1.png" class="lazy" width="100%">
-<img alt="IG attached to VPC done" src="./idiag/Attached-to-vpc2.png" class="lazy" width="100%">
-<img alt="IG attached to VPC done" src="./idiag/Attached-to-vpc-final-step.png" class="lazy" width="100%">
+<img alt="IG attached to VPC" src="https://cdn.bioturing.com/documentation/idiag/IG-Attached-to-vpc1.png" class="lazy" width="100%">
+<img alt="IG attached to VPC done" src="https://cdn.bioturing.com/documentation/idiag/Attached-to-vpc2.png" class="lazy" width="100%">
+<img alt="IG attached to VPC done" src="https://cdn.bioturing.com/documentation/idiag/Attached-to-vpc-final-step.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: **Internet Gateway** attached to VPC completed.
 
 <br>
-<img alt="IG attached to VPC done" src="./idiag/IG-attached-to-vpc-done.png" class="lazy" width="100%">
+<img alt="IG attached to VPC done" src="https://cdn.bioturing.com/documentation/idiag/IG-attached-to-vpc-done.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Now Update Route Table for **Subnet association** and add **Route** to use Internet gateway to router table.
@@ -232,19 +232,19 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 :large_orange_diamond: Select **Subnet associations** from **Route tables** :arrow_forward: Second tab.
 
 <br>
-<img alt="Subnet association selection" src="./idiag/Subnet_associated-with-router.png" class="lazy" width="100%">
+<img alt="Subnet association selection" src="https://cdn.bioturing.com/documentation/idiag/Subnet_associated-with-router.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Click on **Edit subnet associations** and select Subnet name, which you would like to associate then Click on **Save associations** button.
 
 <br>
-<img alt="Subnet association done" src="./idiag/Subnet_associated_save.png" class="lazy" width="100%">
+<img alt="Subnet association done" src="https://cdn.bioturing.com/documentation/idiag/Subnet_associated_save.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Subnet association completed.
 
 <br>
-<img alt="Association success" src="./idiag/Subnet_associated_success.png" class="lazy" width="100%">
+<img alt="Association success" src="https://cdn.bioturing.com/documentation/idiag/Subnet_associated_success.png" class="lazy" width="100%">
 <br>
 
 ## Update Router table to use Internet gateway.
@@ -254,7 +254,7 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 :large_orange_diamond: Click on **Edit routes.**
 
 <br>
-<img alt="IG to Route step1" src="./idiag/Ig-to-Router1.png" class="lazy" width="100%">
+<img alt="IG to Route step1" src="https://cdn.bioturing.com/documentation/idiag/Ig-to-Router1.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Fill the value **0.0.0.0/0** and select Internet gateway name as showing on below screenshot.
@@ -262,13 +262,13 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 :large_orange_diamond: Click on **Save change.**
 
 <br>
-<img alt="IG to Route step2" src="./idiag/Ig-to-Router2.png" class="lazy" width="100%">
+<img alt="IG to Route step2" src="https://cdn.bioturing.com/documentation/idiag/Ig-to-Router2.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Router table updated.
 
 <br>
-<img alt="IG to Route step2" src="./idiag/Ig-to-Router3.png" class="lazy" width="100%">
+<img alt="IG to Route step2" src="https://cdn.bioturing.com/documentation/idiag/Ig-to-Router3.png" class="lazy" width="100%">
 <br>
 
 ## Create ec2 Instance
@@ -276,30 +276,30 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 :large_orange_diamond: Click on Search Bar and type ec2.
 
 <br>
-<img alt="ec2 search" src="./idiag/ec2-search.png" class="lazy" width="100%">
+<img alt="ec2 search" src="https://cdn.bioturing.com/documentation/idiag/ec2-search.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Click on **instances (running).**
 
 <br>
-<img alt="ec2 instance" src="./idiag/instance1.png" class="lazy" width="100%">
+<img alt="ec2 instance" src="https://cdn.bioturing.com/documentation/idiag/instance1.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Click on **Launch instances.**
 <br>
-<img alt="ec2 launch" src="./idiag/Launch-in1.png" class="lazy" width="100%">
+<img alt="ec2 launch" src="https://cdn.bioturing.com/documentation/idiag/Launch-in1.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Type **name** of instance.
 
 <br>
-<img alt="ec2 name" src="./idiag/In2.png" class="lazy" width="100%">
+<img alt="ec2 name" src="https://cdn.bioturing.com/documentation/idiag/In2.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Select **Operating System.** Here, We are selecting **ubuntu.**
 
 <br>
-<img alt="ec2 os" src="./idiag/In4.png" class="lazy" width="100%">
+<img alt="ec2 os" src="https://cdn.bioturing.com/documentation/idiag/In4.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Select **g5.8xlarge** instance.
@@ -307,38 +307,38 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 :mag: Select instance type based on your requirements.
 
 <br>
-<img alt="ec2 Instance type" src="./idiag/In5.png" class="lazy" width="100%">
+<img alt="ec2 Instance type" src="https://cdn.bioturing.com/documentation/idiag/In5.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Create a **Keypair** to connect to ec2 instance. Type **Key pair name** and Click on **Create key pair.**
 
 <br>
-<img alt="ec2 Key pair" src="./idiag/In6-keypair 002.png" class="lazy" width="100%">
+<img alt="ec2 Key pair" src="https://cdn.bioturing.com/documentation/idiag/In6-keypair 002.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: **Key pair** will download.
 
 <br>
-<img alt="ec2 Keypair download" src="./idiag/keypair-download.png" class="lazy" width="100%">
+<img alt="ec2 Keypair download" src="https://cdn.bioturing.com/documentation/idiag/keypair-download.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: On the **Network settings** select correct **VPC** and **Subnet ID**
 
 <br>
-<img alt="ec2 Netset" src="./idiag/select_subnet.png" class="lazy" width="100%">
+<img alt="ec2 Netset" src="https://cdn.bioturing.com/documentation/idiag/select_subnet.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: On the **firewall (Security groups)** section. Create new security group by giving appropriate name.
 
 <br>
-<img alt="ec2 SG" src="./idiag/Security-GR1.png" class="lazy" width="100%">
+<img alt="ec2 SG" src="https://cdn.bioturing.com/documentation/idiag/Security-GR1.png" class="lazy" width="100%">
 <br>
 
 
 :large_orange_diamond: Allow **SSH** , **HTTP** and **HTTPS**. Source will be **0.0.0.0/0**.
 
 <br>
-<img alt="ec2 Sg1" src="./idiag/Security-GR2 002.png" class="lazy" width="100%">
+<img alt="ec2 Sg1" src="https://cdn.bioturing.com/documentation/idiag/Security-GR2 002.png" class="lazy" width="100%">
 <br>
 
 :o: **Configure Storage**
@@ -348,19 +348,19 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 :large_orange_diamond: **EBS Volume is 1000GB ~ 1TB**
 
 <br>
-<img alt="ec2 Storage" src="./idiag/Security-GR3andDisk.png" class="lazy" width="100%">
+<img alt="ec2 Storage" src="https://cdn.bioturing.com/documentation/idiag/Security-GR3andDisk.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Click on **Launch instance.**
 
 <br>
-<img alt="ec2 final step" src="./idiag/launch_instance1-final-step.png" class="lazy" width="100%">
+<img alt="ec2 final step" src="https://cdn.bioturing.com/documentation/idiag/launch_instance1-final-step.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Instance creation will be **in progress.**
 
 <br>
-<img alt="ec2 Launched" src="./idiag/Instance_Created.png" class="lazy" width="100%">
+<img alt="ec2 Launched" src="https://cdn.bioturing.com/documentation/idiag/Instance_Created.png" class="lazy" width="100%">
 <br>
 
 ## Assign Elastic IP to instance
@@ -368,16 +368,16 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 :large_orange_diamond: Click on **Elastic IPs** and Click on **Allocate Elastic IP address.**
 
 <br>
-<img alt="Elastic IP assign step1" src="./idiag/Easltic-ip1.png" class="lazy" width="100%">
+<img alt="Elastic IP assign step1" src="https://cdn.bioturing.com/documentation/idiag/Easltic-ip1.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Select **Network Boarder Group** and take Elastic IP address.
 
 <br>
 
-<img alt="Elastic IP assign step1" src="./idiag/ElasticIp2.png" class="lazy" width="100%">
+<img alt="Elastic IP assign step1" src="https://cdn.bioturing.com/documentation/idiag/ElasticIp2.png" class="lazy" width="100%">
 
-<img alt="ec2 search" src="./idiag/ElasticIpAllocate.png" class="lazy" width="100%">
+<img alt="ec2 search" src="https://cdn.bioturing.com/documentation/idiag/ElasticIpAllocate.png" class="lazy" width="100%">
 
 <br>
 
@@ -385,11 +385,11 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 
  <br>
 
-<img alt="ec2 search" src="./idiag/EasticIP-allocated.png" class="lazy" width="100%">
+<img alt="ec2 search" src="https://cdn.bioturing.com/documentation/idiag/EasticIP-allocated.png" class="lazy" width="100%">
 
 <br> 
 
-<img alt="ec2 search" src="./idiag/EaslticIP_all1.png" class="lazy" width="100%">
+<img alt="ec2 search" src="https://cdn.bioturing.com/documentation/idiag/EaslticIP_all1.png" class="lazy" width="100%">
 
 <br>
 
@@ -397,26 +397,26 @@ User can access <b>BioStudio application using two ways</b>, In case installed B
 
 <br>
 
-<img alt="ec2 Assign" src="./idiag/EaslticIP_all2.png" class="lazy" width="100%">
+<img alt="ec2 Assign" src="https://cdn.bioturing.com/documentation/idiag/EaslticIP_all2.png" class="lazy" width="100%">
 
 <br>
 
 :large_orange_diamond: Click on **Associate.**
 
 <br>
-<img alt="ec2 search" src="./idiag/EaslticIP_all3 002.png" class="lazy" width="100%">
+<img alt="ec2 search" src="https://cdn.bioturing.com/documentation/idiag/EaslticIP_all3 002.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Elastic IP address associated successfully.
 
 <br>
-<img alt="ec2 search" src="./idiag/EaslticIP_all5.png" class="lazy" width="100%">
+<img alt="ec2 search" src="https://cdn.bioturing.com/documentation/idiag/EaslticIP_all5.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Take connection string and **SSH** to **ec2 Instnace.**
 
 <br>
-<img alt="ec2 search" src="./idiag/Connecting-string.png" class="lazy" width="100%">
+<img alt="ec2 search" src="https://cdn.bioturing.com/documentation/idiag/Connecting-string.png" class="lazy" width="100%">
 <br>
 
 ## Installation Started.
@@ -436,9 +436,9 @@ ssh -i "lalit-biocolab-keypair.pem" ubuntu@3.98.231.253
 | BioStudio Token           | To access our product.                                              |          |
 | Application Domain       | Access BioStudio on Browser.                                         |          |
 | META_DATA Volume         | This will use by Bioproxy to store database. [**/biocolab/metadata**]  | 50GB     |
-| SSL Volume               | Using by BioProxy. [**/biocolab/configs**]                                  | 1GB - 2GB and above      |
-| Data Volume              | Using to store user data. [**/biocolab/userdata**]                                   | 500GB - 1024GB and above   |
-| Application data Volume  | Used to store application binary data.[**/biocolab/appdata**]                    | 100GB and above    |
+| SSL Volume               | Using by BioProxy. [**/biocolab/configs**]                                  | 1GB      |
+| Data Volume              | Using to store user data. [**/biocolab/userdata**]                                   | 500GB    |
+| Application data Volume  | Used to store application binary data.[**/biocolab/appdata**]                    | 50GB     |
 | Ethernet IP Address       | Use to pass IP address during installation (**eth0**) |  |
 
 Run the **install.biocolab.docker.sh** script for docker environment and install require software.
@@ -459,13 +459,13 @@ cd /biocolab
 # Note: Installation script version would be changed based on updates.
 # Our Team will get you updates and keep in touch with you during installation.
 
-wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.53.tar.gz
+wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.52.tar.gz
 
 # uncompressed .gz
-tar xvf v1.0.53.tar.gz
+tar xvf v1.0.52.tar.gz
 
 # Switch to installation folder
-cd installation-1.0.53/
+cd installation-1.0.52/
 
 # Execute installation script
 bash install.biocolab.docker.sh
@@ -477,10 +477,10 @@ docker ps -a
 http://<Your Domain>/dashboard/
 ```
 
-:large_orange_diamond: Download **v1.0.53.tar.gz**, which content script to install **BioStudio.**
+:large_orange_diamond: Download **v1.0.52.tar.gz**, which content script to install **BioStudio.**
 
 <br>
-<img alt="wget-script" src="./idiag/install-step1.png" class="lazy" width="100%">
+<img alt="wget-script" src="https://cdn.bioturing.com/documentation/idiag/install-step1.png" class="lazy" width="100%">
 <br>
 
 ---
@@ -492,25 +492,25 @@ http://<Your Domain>/dashboard/
 :large_orange_diamond: Execute **script.**
 
 <br>
-<img alt="Script execution" src="./idiag/install-step2.png" class="lazy" width="100%">
+<img alt="Script execution" src="https://cdn.bioturing.com/documentation/idiag/install-step2.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Follow **execution** script's instructions and input values accordingly.
 
 <br>
-<img alt="step1-provideinfo" src="./idiag/install-step4.png" class="lazy" width="100%">
+<img alt="step1-provideinfo" src="https://cdn.bioturing.com/documentation/idiag/install-step4.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Change the IP, **If we have many.**
 
 <br>
-<img alt="Installation-step2" src="./idiag/Installation-step2.png" class="lazy" width="100%">
+<img alt="Installation-step2" src="https://cdn.bioturing.com/documentation/idiag/Installation-step2.png" class="lazy" width="100%">
 <br>
 
 <div class="warning" style='background-color: LightGray; color: #69337A; border-left: solid #805AD5 4px; border-radius: 4px; padding:0.7em;'>
 <span>
 <p style='margin-top:1em; text-align:justify'; text-justify:inter-word;>
-<code><b>BioProxy version : 1.0.26</b></code> 
+<code><b>BioProxy version : 1.0.25</b></code> 
 <code><b>BioColab version : 2.0.50</b></code> 
 </p>
 </span>
@@ -524,7 +524,7 @@ http://<Your Domain>/dashboard/
 :large_orange_diamond: Verify both **container status - UP and running.**
 
 <br>
-<img alt="docker-image" src="./idiag/docker-image.png" class="lazy" width="100%">
+<img alt="docker-image" src="https://cdn.bioturing.com/documentation/idiag/docker-image.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Browser **BioStudio.**
@@ -537,7 +537,7 @@ http://<Your Domain>/dashboard/
 
 
 <br>
-<img alt="brows-site" src="./idiag/brows-site.png" class="lazy" width="100%">
+<img alt="brows-site" src="https://cdn.bioturing.com/documentation/idiag/brows-site.png" class="lazy" width="100%">
 <br>
 
 ## Register for **root admin**.
@@ -554,13 +554,13 @@ https://<your domain>/dashboard
 :large_orange_diamond: **Account Registration.**
 
 <br>
-<img alt="registration-admin-account" src="./idiag/reg-ad.png" class="lazy" width="100%">
+<img alt="registration-admin-account" src="https://cdn.bioturing.com/documentation/idiag/reg-ad.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Crearte **Admin Account.**
 
 <br>
-<img alt="registration_form" src="./idiag/registration_form.png" class="lazy" width="100%">
+<img alt="registration_form" src="https://cdn.bioturing.com/documentation/idiag/registration_form.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Login to **dashboard.**
@@ -570,13 +570,13 @@ https://<your domain>/dashboard
 ```
 
 <br>
-<img alt="loin-admin" src="./idiag/loin-admin.png" class="lazy" width="100%">
+<img alt="loin-admin" src="https://cdn.bioturing.com/documentation/idiag/loin-admin.png" class="lazy" width="100%">
 <br>
 
 <div class="warning" style='background-color: LightGray; color: #69337A; border-left: solid #805AD5 4px; border-radius: 4px; padding:0.7em;'>
 <span>
 <p style='margin-top:1em; text-align:justify'; text-justify:inter-word;>
-<code><b> Workspace </b></code> <b style="color: darkblue">It is essential to create a machine and mount the volume before using the workspace.</b>
+<code><b> Workspace </b></code> <b style="color: darkblue">It is essential to create machine and mount the volume.</b>
 </p>
 </span>
 </div>
@@ -590,29 +590,29 @@ https://<your domain>/dashboard
 
 Name: You can select any name to this machine. This is a private IP of your machine, That can be find in /etc/hosts file on BioStudio pods.
 
-I already added a machine, so I will go with the update machine.
+I already added a machine so I will go with update machine.
 ```
 
-<img alt="Script execution" src="./idiag/mip.png" class="lazy" width="100%">
+<img alt="Script execution" src="https://cdn.bioturing.com/documentation/idiag/mip.png" class="lazy" width="100%">
 
 <br>
 
-:large_orange_diamond: Please fill out **Update machine metadata.**
+:large_orange_diamond: Please fill **Update machine Metadata.**
 
 <br>
-<img alt="Machine update" src="./idiag/machine-update.png" class="lazy" width="100%">
+<img alt="Machine update" src="https://cdn.bioturing.com/documentation/idiag/machine-update.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Please **add volume - Update machine Metadata.**
 
 ```R
 # Machines --> Click on + sign to add volume.
-# You can use any name for volume, but the volume path will always be /home.
-# Workspace is now ready for use.
+# You can use any name for volume but volume path always be /home
+# Now WORKSPACE is ready to use.
 ```
 
 <br>
-<img alt="Volume added" src="./idiag/volume-add.png" class="lazy" width="100%">
+<img alt="Volume added" src="https://cdn.bioturing.com/documentation/idiag/volume-add.png" class="lazy" width="100%">
 <br>
 
 # <p style="color: #000080"> SSO Set up </p>
@@ -718,13 +718,13 @@ I already added a machine, so I will go with the update machine.
 :high_brightness: Click on :arrow_right: **+ Add New SSO** push button.
 
 <br>
-<img alt="New SSO" src="./SSO_IMG/new-sso.png" class="lazy" width="100%">
+<img alt="New SSO" src="https://cdn.bioturing.com/documentation/SSO_IMG/new-sso.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: **New SSO configuration.**
 
 <br>
-<img alt="Protocol" src="./SSO_IMG/protocol.png" class="lazy" width="100%">
+<img alt="Protocol" src="https://cdn.bioturing.com/documentation/SSO_IMG/protocol.png" class="lazy" width="100%">
 <br>
 
 | **Option**               | **Description**                                                                                                                                |
@@ -758,13 +758,13 @@ BioStudio is comes under service provider.
 ```
 
 <br>
-<img alt="saml config" src="./SSO_IMG/SSO-CONF.png" class="lazy" width="100%">
+<img alt="saml config" src="https://cdn.bioturing.com/documentation/SSO_IMG/SSO-CONF.png" class="lazy" width="100%">
 <br>
 
 :large_blue_diamond: **SAML Protocol Configured.** 
 
 <br>
-<img alt="saml saved" src="./SSO_IMG/SAML-SAVED.png" class="lazy" width="100%">
+<img alt="saml saved" src="https://cdn.bioturing.com/documentation/SSO_IMG/SAML-SAVED.png" class="lazy" width="100%">
 <br>
 
 :large_blue_diamond: **SAML Protocol view metadata.**
@@ -774,20 +774,20 @@ BioStudio is comes under service provider.
 ```
 
 <br>
-<img alt="saml metadata" src="./SSO_IMG/SSOmetadata.png" class="lazy" width="100%">
+<img alt="saml metadata" src="https://cdn.bioturing.com/documentation/SSO_IMG/SSOmetadata.png" class="lazy" width="100%">
 <br>
 <br>
 
 :large_blue_diamond: **SAML metadata.**
 
 <br>
-<img alt="saml metadata detail" src="./SSO_IMG/ssometada-desc.png" class="lazy" width="100%">
+<img alt="saml metadata detail" src="https://cdn.bioturing.com/documentation/SSO_IMG/ssometada-desc.png" class="lazy" width="100%">
 <br>
 <br>
 
 :large_blue_diamond: **SAML Protocol update / delete method.** 
 
-> You can update the values of an existing SSO configuration whenever you want by selecting the update option for SSO.
+> You can update values of existing SSO configuration, Whenever you want by selecting update option for SSO.
 
 ```R
 # In Order to update or delete existing SSO configuration. Please follow steps are given below.
@@ -801,7 +801,7 @@ BioStudio is comes under service provider.
 ```
 
 <br>
-<img alt="saml update" src="./SSO_IMG/SMAL-update.png" class="lazy" width="100%">
+<img alt="saml update" src="https://cdn.bioturing.com/documentation/SSO_IMG/SMAL-update.png" class="lazy" width="100%">
 <br>
 
 ```R
@@ -809,7 +809,7 @@ BioStudio is comes under service provider.
 ```
 
 <br>
-<img alt="saml update" src="./SSO_IMG/update-sson.png" class="lazy" width="100%">
+<img alt="saml update" src="https://cdn.bioturing.com/documentation/SSO_IMG/update-sson.png" class="lazy" width="100%">
 <br>
 
 ```R
@@ -819,7 +819,7 @@ BioStudio is comes under service provider.
 
 
 <br>
-<img alt="saml delete" src="./SSO_IMG/delete-sson.png" class="lazy" width="100%">
+<img alt="saml delete" src="https://cdn.bioturing.com/documentation/SSO_IMG/delete-sson.png" class="lazy" width="100%">
 <br>
 <br>
 
@@ -832,7 +832,7 @@ OpenID Connect is an interoperable authentication protocol based on the OAuth 2.
 :large_blue_diamond: **OPENID configured.**
 
 <br>
-<img alt="Open ID" src="./SSO_IMG/openid.png" class="lazy" width="100%">
+<img alt="Open ID" src="https://cdn.bioturing.com/documentation/SSO_IMG/openid.png" class="lazy" width="100%">
 <br>
 <br>
 
@@ -848,7 +848,7 @@ The OAuth 2.0 is the industry protocol for authorization. It allows a user to gr
 :large_blue_diamond: **OAUTH2 configured with Google.**
 
 <br>
-<img alt="Oauth2 detail google" src="./SSO_IMG/oauth2google.png" class="lazy" width="100%">
+<img alt="Oauth2 detail google" src="https://cdn.bioturing.com/documentation/SSO_IMG/oauth2google.png" class="lazy" width="100%">
 <br>
 <br>
 
@@ -856,14 +856,14 @@ The OAuth 2.0 is the industry protocol for authorization. It allows a user to gr
 :large_blue_diamond: **OAUTH2 configured with Azure.**
 
 <br>
-<img alt="Oauth2 detail Azure" src="./SSO_IMG/OAUTH2Azure.png" class="lazy" width="100%">
+<img alt="Oauth2 detail Azure" src="https://cdn.bioturing.com/documentation/SSO_IMG/OAUTH2Azure.png" class="lazy" width="100%">
 <br>
 <br>
 
 > In above explanation, We configured four types of SSO. It will appears to users during login to decide login method.
 
 <br>
-<img alt="Final SSO" src="./SSO_IMG/finalsso.png" class="lazy" width="100%">
+<img alt="Final SSO" src="https://cdn.bioturing.com/documentation/SSO_IMG/finalsso.png" class="lazy" width="100%">
 <br>
 <br>
 
@@ -878,99 +878,99 @@ NOTE: Kindly follow the instructions and steps based on your infrastructure / IT
 ```
 
 <br>
-<img alt="loin-okta" src="./idiag/okta-account1.png" class="lazy" width="100%">
+<img alt="loin-okta" src="https://cdn.bioturing.com/documentation/idiag/okta-account1.png" class="lazy" width="100%">
 <br>
 <br>
 
 :large_orange_diamond: Click on **Create App Integration.**
 
 <br>
-<img alt="smal select" src="./idiag/oktastep2.png" class="lazy" width="100%">
+<img alt="smal select" src="https://cdn.bioturing.com/documentation/idiag/oktastep2.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Select **SAML 2.0**
 
 <br>
-<img alt="Okta-app" src="./idiag/Okta-step3.png" class="lazy" width="100%">
+<img alt="Okta-app" src="https://cdn.bioturing.com/documentation/idiag/Okta-step3.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Write **App name**
 
 <br>
-<img alt="App name" src="./idiag/Oktastep4.png" class="lazy" width="100%">
+<img alt="App name" src="https://cdn.bioturing.com/documentation/idiag/Oktastep4.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Upload application **logo** ( If you wish ).
 
 <br>
-<img alt="Okta logo" src="./idiag/Okta-step5.png" class="lazy" width="100%">
+<img alt="Okta logo" src="https://cdn.bioturing.com/documentation/idiag/Okta-step5.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: On BioStudio dashboard login. Select SSO :arrow_right: Add New SSO.
 
 <br>
-<img alt="SSO login" src="./idiag/new_sso_login.png" class="lazy" width="100%">
+<img alt="SSO login" src="https://cdn.bioturing.com/documentation/idiag/new_sso_login.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Copy **callback URL** from **New SSO login** and update on Okta.
 
 <br>
-<img alt="callback UR" src="./idiag/Oktaste7-fill-value.png" class="lazy" width="100%">
+<img alt="callback UR" src="https://cdn.bioturing.com/documentation/idiag/Oktaste7-fill-value.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Scroll down and click on **Next**
 
 <br>
-<img alt="SSO next" src="./idiag/okta-step8-next.png" class="lazy" width="100%">
+<img alt="SSO next" src="https://cdn.bioturing.com/documentation/idiag/okta-step8-next.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Follow **Step3: I'm an Okta customer adding an internal app.**
 
 <br>
-<img alt="Okta -step3" src="./idiag/okta-step9.png" class="lazy" width="100%">
+<img alt="Okta -step3" src="https://cdn.bioturing.com/documentation/idiag/okta-step9.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Click on **Finish.**
 
 
 <br>
-<img alt="Okta - Finish" src="./idiag/okta-step10-finish.png" class="lazy" width="100%">
+<img alt="Okta - Finish" src="https://cdn.bioturing.com/documentation/idiag/okta-step10-finish.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: **SAML** config data is ready.
 
 <br>
-<img alt="loin-admin" src="./idiag/view-saml.png" class="lazy" width="100%">
+<img alt="loin-admin" src="https://cdn.bioturing.com/documentation/idiag/view-saml.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: **View SAML setup instructions.**
 
 <br>
-<img alt="SAML Setup" src="./idiag/add-smal.png" class="lazy" width="100%">
+<img alt="SAML Setup" src="https://cdn.bioturing.com/documentation/idiag/add-smal.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Get the value from Okta and fill on **SSO BioStudio**. Click on **Submit**.
 
 <br>
-<img alt="fill SSO" src="./idiag/Fill-sso.png" class="lazy" width="100%">
+<img alt="fill SSO" src="https://cdn.bioturing.com/documentation/idiag/Fill-sso.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: **User assignment to Application.**
 
 <br>
-<img alt="Create user account" src="./idiag/okta-test-user-creation.png" class="lazy" width="100%">
+<img alt="Create user account" src="https://cdn.bioturing.com/documentation/idiag/okta-test-user-creation.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: **Assign User to Application.**
 
 <br>
-<img alt="loin-admin" src="./idiag/okta-user-assignment.png" class="lazy" width="100%">
+<img alt="loin-admin" src="https://cdn.bioturing.com/documentation/idiag/okta-user-assignment.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Login to **BioStudio.**
 
 <br>
-<img alt="loin-admin" src="./idiag/sso-login-test.png" class="lazy" width="100%">
+<img alt="loin-admin" src="https://cdn.bioturing.com/documentation/idiag/sso-login-test.png" class="lazy" width="100%">
 <br>
 
 
@@ -982,25 +982,25 @@ NOTE: Kindly follow the instructions and steps based on your infrastructure / IT
 
 
 <br>
-<img alt="loin-admin" src="./idiag/SSO-successful-login.png" class="lazy" width="100%">
+<img alt="loin-admin" src="https://cdn.bioturing.com/documentation/idiag/SSO-successful-login.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Access BioStudio services.
 
 <br>
-<img alt="BioColab-img" src="./idiag/BioColab-img.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/idiag/BioColab-img.png" class="lazy" width="100%">
 <br>
 
 ## SSO set up with PingID
 
 :large_orange_diamond: **Add an application to PingID**
 
-<img alt="BioColab-img" src="./SSO_IMG/pingida.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingida.png" class="lazy" width="100%">
 
 
 :large_orange_diamond: **Select SAML Application method and click on Configure**
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid2.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid2.png" class="lazy" width="100%">
 
 
 :large_orange_diamond: **Login to BioColab Admin Dashboard**
@@ -1011,7 +1011,7 @@ NOTE: Kindly follow the instructions and steps based on your infrastructure / IT
 
 It will prompt for Admin credentials. Please provide Admin credentials to login.
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid3.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid3.png" class="lazy" width="100%">
 
 
 :large_orange_diamond:  Select SSO setting from left side menu and click on **+ Add New SSO**. If you are going to
@@ -1019,26 +1019,26 @@ set up SSO at the same time.
 
 :bell: Note: If we are going to provide a Callback URL to another team to configure with IDP. Then we must provide dummy values to the mandatory field and click on submit button to save. Later we can update.
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid4.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid4.png" class="lazy" width="100%">
 
 :large_orange_diamond: **Copy Callback HTTPS URL that needs to be configured with IDP.**
 
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid5.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid5.png" class="lazy" width="100%">
 
 :large_orange_diamond: Select **Manually Enter** and fill **callback URL** to **ACS URLs** and **Entity ID** would be the **last value** of that URL.
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid6.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid6.png" class="lazy" width="100%">
 
 :large_orange_diamond: Fill the value based on over instruction.
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid7.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid7.png" class="lazy" width="100%">
 
 :large_orange_diamond: **Click on Save button.**
 
 - Now update attribute mapping.
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid8.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid8.png" class="lazy" width="100%">
 
 :large_orange_diamond: **Select Configuration Tab and get all required values.**
 
@@ -1049,49 +1049,49 @@ set up SSO at the same time.
 :three: **Download singing certificate**
 
 
-<img alt="BioColab-img" src="./SSO_IMG/pingidc.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingidc.png" class="lazy" width="100%">
 
 :large_orange_diamond: login to Biocolab dashboard admin and fill those values to required fields by **updating SSO settings.**
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid9.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid9.png" class="lazy" width="100%">
 
 :large_orange_diamond: I created two users but on the existing set up you might have a user's list already on the portal with a specified group to assign applications.
 
 - On the Identity. I configured two users below.
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid9-1.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid9-1.png" class="lazy" width="100%">
 
 :large_orange_diamond: **Now I created one Group and assigned those user’s to that Group**
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid10.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid10.png" class="lazy" width="100%">
 
 <br>
 
-<img alt="BioColab-img" src="./SSO_IMG/pingidg.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingidg.png" class="lazy" width="100%">
 
 <br>
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid11.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid11.png" class="lazy" width="100%">
 
 :large_orange_diamond: **There are many ways to assign users to the group. Like User → Group → Edit – assign. Assign a group to the application.**
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid12.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid12.png" class="lazy" width="100%">
 
 :large_orange_diamond: **Now all set and time to test SSO login with those users.**
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid13.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid13.png" class="lazy" width="100%">
 
 :large_orange_diamond: **Provide PingID username and password, which we configured with Ping ID.**
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid15.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid15.png" class="lazy" width="100%">
 
 <br>
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid16.png" class="lazy" width="60%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid16.png" class="lazy" width="60%">
 
 :large_orange_diamond: **User is able to login successfully.**
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid17.png" class="lazy" width="60%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid17.png" class="lazy" width="60%">
 
 ## SSO set up with Azure AD ( SAML )
 
@@ -1107,21 +1107,21 @@ set up SSO at the same time.
 
 - It will prompt for Admin credentials. Please provide Admin credentials to login.
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid3.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid3.png" class="lazy" width="100%">
 
 :large_orange_diamond:  Select SSO setting from left side menu and click on **+ Add New SSO**. If you are going to
 set up SSO at the same time.
 
-:bell: Note: If we are going to provide a callback URL to another team to configure with IDP, Then we must provide dummy values to the mandatory field and click on the submit button to save. Later, we can update.
+:bell: Note: If we are going to provide a Callback URL to another team to configure with IDP. Then we must provide dummy values to the mandatory field and click on submit button to save. Later we can update.
 
-<img alt="BioColab-img" src="./SSO_IMG/pingid4.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingid4.png" class="lazy" width="100%">
 
 :large_orange_diamond: **Copy Callback HTTPS URL that needs to be configured with IDP.**
 
-:bell: I am following to save the existing callback URL. Later, we will configure this.
+:bell: I am following to save existing call back URL. Later we will configure this.
 
 
-<img alt="BioColab-img" src="./SSO_IMG/az1a.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az1a.png" class="lazy" width="100%">
 
 <br>
 
@@ -1129,40 +1129,40 @@ set up SSO at the same time.
 
 :large_orange_diamond: **Open  Microsoft Entra ID ( Azure Active Directory )**
 
-<img alt="BioColab-img" src="./SSO_IMG/az2.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az2.png" class="lazy" width="100%">
 
 :large_orange_diamond: **Click on Enterprise applications.**
 
-<img alt="BioColab-img" src="./SSO_IMG/az3.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az3.png" class="lazy" width="100%">
 
 :large_orange_diamond: Click **+ New application.**
 
-<img alt="BioColab-img" src="./SSO_IMG/az4.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az4.png" class="lazy" width="100%">
 
 :large_orange_diamond: Click **+ Create your own application.**
 
-<img alt="BioColab-img" src="./SSO_IMG/az5.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az5.png" class="lazy" width="100%">
 
 :large_orange_diamond: **Input your application name.** Click on **Create**
 
-<img alt="BioColab-img" src="./SSO_IMG/az6.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az6.png" class="lazy" width="100%">
 
 :large_orange_diamond: **Application has been added.**
 
-<img alt="BioColab-img" src="./SSO_IMG/az7.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az7.png" class="lazy" width="100%">
 
 :large_orange_diamond: Click on **Single sign-on.**
 
-<img alt="BioColab-img" src="./SSO_IMG/az8.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az8.png" class="lazy" width="100%">
 
 
 :large_orange_diamond: Click on **SAML.**
 
-<img alt="BioColab-img" src="./SSO_IMG/az9.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az9.png" class="lazy" width="100%">
 
 :large_orange_diamond: Click on **Edit -- Basic SAML Configuration**
 
-<img alt="BioColab-img" src="./SSO_IMG/az10.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az10.png" class="lazy" width="100%">
 
 - Fill required field.
   
@@ -1171,17 +1171,17 @@ set up SSO at the same time.
 
 :large_orange_diamond: Login to BioStudio dashboard and click on three dot to select **Update SSO setting**
 
-<img alt="BioColab-img" src="./SSO_IMG/az11.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az11.png" class="lazy" width="100%">
 
 - Copy callback URL and fill on required fields.
   
-<img alt="BioColab-img" src="./SSO_IMG/az12.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az12.png" class="lazy" width="100%">
 
 <br>
 
 :large_orange_diamond: Click on **Save** button.
 
-<img alt="BioColab-img" src="./SSO_IMG/az13.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az13.png" class="lazy" width="100%">
 
 <br>
 
@@ -1189,7 +1189,7 @@ set up SSO at the same time.
 - Copy **Login URL**
 - Copy **Microsoft Entra ID Identifier**
 
-<img alt="BioColab-img" src="./SSO_IMG/az14.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az14.png" class="lazy" width="100%">
 
 :pencil2: **Certificate (Base64)** = **IDP x509 Public Cert**
 :pencil2: **Login URL** = **IDP SSO URL**
@@ -1199,36 +1199,36 @@ set up SSO at the same time.
 
 :large_orange_diamond: Login to BioStudio dashboard and click on three dot to select **Update SSO setting**
 
-<img alt="BioColab-img" src="./SSO_IMG/az11.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az11.png" class="lazy" width="100%">
 
 <br>
 
-<img alt="BioColab-img" src="./SSO_IMG/az15.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az15.png" class="lazy" width="100%">
 
 :large_orange_diamond: **Create user and assign application to the user**
 
 :large_orange_diamond: Click on **Users and groups**
 
-<img alt="BioColab-img" src="./SSO_IMG/az16.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az16.png" class="lazy" width="100%">
 
 :large_orange_diamond: Click on **+ Add user/group**
 
 :large_orange_diamond: Click on **Add user** and click on **Select**
 
-<img alt="BioColab-img" src="./SSO_IMG/az17.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az17.png" class="lazy" width="100%">
 
 :large_orange_diamond: **Click on Assign**
 
-<img alt="BioColab-img" src="./SSO_IMG/az18.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az18.png" class="lazy" width="100%">
 
 :large_orange_diamond: **User has been Assign to this application.**
 
-<img alt="BioColab-img" src="./SSO_IMG/az19.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az19.png" class="lazy" width="100%">
 
 
 :large_orange_diamond: **Login succeed.**
 
-<img alt="BioColab-img" src="./SSO_IMG/az20.png" class="lazy" width="100%">
+<img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/az20.png" class="lazy" width="100%">
 
 ## SSL setup.
 <div class="warning" style='background-color: LightGray; color: #69337A; border-left: solid #805AD5 4px; border-radius: 4px; padding:0.7em;'>
@@ -1254,18 +1254,18 @@ II] Login to server and follow below steps.
 :large_orange_diamond: SSL using  WebUI
 
 <br>
-<img alt="ssl-setup" src="./idiag/SSL-setup.png" class="lazy" width="100%">
+<img alt="ssl-setup" src="https://cdn.bioturing.com/documentation/idiag/SSL-setup.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: SSL direct upload on server location.
 
 <br>
-<img alt="ssl-setup" src="./idiag/tls-cer.png" class="lazy" width="100%">
+<img alt="ssl-setup" src="https://cdn.bioturing.com/documentation/idiag/tls-cer.png" class="lazy" width="100%">
 <br>
 
 ## Kubernetes Setup for BioStudio
 
-> Helm chart version : **1.0.70**
+> Helm chart version : **1.0.69**
 
 ```R
 # Before installing the BioTuring System on Linux/K8S, some pre-installation steps are required:
@@ -1401,7 +1401,7 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 | image.biocolab.repository                  | string   | bioturing/biocolab | biocolab repository  |
 | image.biocolab.tag                         | int      | 2.0.50             | biocolab image tag   |
 | image.bioproxy.repository                  | string   | bioturing/biocolab | bioproxy repository  |
-| image.bioproxy.tag                         | int      | 1.0.26             | bioproxy image tag   |
+| image.bioproxy.tag                         | int      | 1.0.25             | bioproxy image tag   |
 | imagePullSecrets                           | object   | {}                 | secrets              |
 | secret.data.allowips                       | string   | ""                 | allow ip             |
 | secret.data.cbtoken                        | string   | ""                 | Colab token          |
@@ -1441,11 +1441,11 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 | service.ports.bioproxy.ntfsp4.port         | int      | 32765              |                      |
 | service.ports.bioproxy.postgresql.port     | int      | 5432               |                      |
 | service.ports.bioproxy.redis.port          | int      | 6379               | redis port           |
-| persistence.dirs.app.size                  | String   | 100Gi                | application data     |
+| persistence.dirs.app.size                  | String   | 5Gi                | application data     |
 | persistence.dirs.app.storageClass          | string   | ""                 |                      |
 | persistence.dirs.metadata.size             | String   | 5Gi                | metadata             |
 | persistence.dirs.metadata.storageClass     | string   | ""                 |                      |
-| persistence.dirs.user.size                 | String   | 500Gi                | user data            |
+| persistence.dirs.user.size                 | String   | 5Gi                | user data            |
 | persistence.dirs.user.storageClass         | string   | ""                 |                      |
 | ingress.annotations                        | object   | {}                 |                      |
 | ingress.className                          | string   | ""                 |                      |
@@ -1483,7 +1483,7 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 ```
 
 <br>
-<img alt="BioColab version" src="./idiag/Biocolab-version.png" class="lazy" width="100%">
+<img alt="BioColab version" src="https://cdn.bioturing.com/documentation/idiag/Biocolab-version.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Select **namespace** and type name of **Statefulset**.
@@ -1491,13 +1491,13 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 :large_orange_diamond: Click on **Next**
 
 <br>
-<img alt="Type name" src="./idiag/biocolab-step1-namespace.png" class="lazy" width="100%">
+<img alt="Type name" src="https://cdn.bioturing.com/documentation/idiag/biocolab-step1-namespace.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Verify ***Tag*** and ***repository***
 
 <br>
-<img alt="tag verification" src="./idiag/verify-image-tag.png" class="lazy" width="100%">
+<img alt="tag verification" src="https://cdn.bioturing.com/documentation/idiag/verify-image-tag.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: **Update values:**
@@ -1510,29 +1510,29 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 ```
 
 <br>
-<img alt="PVC and domain" src="./idiag/pvc-domain.png" class="lazy" width="100%">
+<img alt="PVC and domain" src="https://cdn.bioturing.com/documentation/idiag/pvc-domain.png" class="lazy" width="100%">
 <br>
 <br>
 
 :large_orange_diamond: BioStudio will start installation based on helm chart.
 <br>
-<img alt="ssl-setup" src="./idiag/helm-installed.png" class="lazy" width="100%">
+<img alt="ssl-setup" src="https://cdn.bioturing.com/documentation/idiag/helm-installed.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Verify **statefulset.**
 <br>
-<img alt="ssl-setup" src="./idiag/stateful-set.png" class="lazy" width="100%">
+<img alt="ssl-setup" src="https://cdn.bioturing.com/documentation/idiag/stateful-set.png" class="lazy" width="100%">
 <br>
 
 :large_orange_diamond: Verify **ingress.**
 <br>
-<img alt="ssl-setup" src="./idiag/ingress.png" class="lazy" width="100%">
+<img alt="ssl-setup" src="https://cdn.bioturing.com/documentation/idiag/ingress.png" class="lazy" width="100%">
 <br>
 
 
 :large_orange_diamond: Browse **your domain**.
 <br>
-<img alt="ssl-setup" src="./idiag/biocolab-web.png" class="lazy" width="100%">
+<img alt="ssl-setup" src="https://cdn.bioturing.com/documentation/idiag/biocolab-web.png" class="lazy" width="100%">
 <br>
 
 :small_orange_diamond: Before access **WORKSPACE**. It is necessary to access dashboard and create machine and well as create volume to be mounted.
@@ -1543,7 +1543,7 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 # For any support and enquiry. Drop a mail to us support@bioturing.com
 ```
 
-![BioStudio logo](./EKS_PIC/logo.png)
+![BioStudio logo](https://cdn.bioturing.com/documentation/EKS_PIC/logo.png)
 
 # <p style="color: #006400">  BioStudio Deployments on Kubernetes</p>
 
@@ -1571,7 +1571,7 @@ BioStudio on K8s. Install Software on Kubernetes Clusters with the Helm.
 
 :o: **Serach for EKS in serach bar.** 
 
-<img alt="Search" src="./EKS_PIC/eks-search.png" class="lazy" width="100%"> 
+<img alt="Search" src="https://cdn.bioturing.com/documentation/EKS_PIC/eks-search.png" class="lazy" width="100%"> 
 
 <b></b>
 
@@ -1579,14 +1579,14 @@ BioStudio on K8s. Install Software on Kubernetes Clusters with the Helm.
 
 <b></b>
 
-<img alt="create" src="./EKS_PIC/select-add-cluster-create.png" class="lazy" width="100%"> 
+<img alt="create" src="https://cdn.bioturing.com/documentation/EKS_PIC/select-add-cluster-create.png" class="lazy" width="100%"> 
 
 <b></b>
 
 :o: **Configure Cluster.** 
 <b></b>
 
-<img alt="Configure" src="./EKS_PIC/select-cluster-nameandKube-version.png" class="lazy" width="100%"> 
+<img alt="Configure" src="https://cdn.bioturing.com/documentation/EKS_PIC/select-cluster-nameandKube-version.png" class="lazy" width="100%"> 
 
 <b></b>
 
@@ -1597,7 +1597,7 @@ role --> Create role
 ``` 
 <b></b>
 
-<img alt="Create role" src="./EKS_PIC/role-create-role.png" class="lazy" width="100%"> 
+<img alt="Create role" src="https://cdn.bioturing.com/documentation/EKS_PIC/role-create-role.png" class="lazy" width="100%"> 
 
 <b></b>
 
@@ -1605,14 +1605,14 @@ role --> Create role
 
 <b></b>
 
-<img alt="eks" src="./EKS_PIC/aws-service-eks.png" class="lazy" width="100%"> 
+<img alt="eks" src="https://cdn.bioturing.com/documentation/EKS_PIC/aws-service-eks.png" class="lazy" width="100%"> 
 
 <b></b>
 
 :o: **Select EKS -Cluster.** 
 
 <b></b>
-<img alt="eks-pic" src="./EKS_PIC/eks-ekscluster-next.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/eks-ekscluster-next.png" class="lazy" width="100%"> 
 <b></b>
  
 :o: **Add permission.** 
@@ -1622,7 +1622,7 @@ AmzonEKSClusterPolicy
 ``` 
 :arrow_right: **click on next.** 
 
-<img alt="eks-pic" src="./EKS_PIC/autao-add-permission.png" class="lazy" width="100%">
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/autao-add-permission.png" class="lazy" width="100%">
 
 <b></b>
 
@@ -1631,20 +1631,20 @@ AmzonEKSClusterPolicy
 :arrow_right: **Create role.** 
 
 <b></b>
-<img alt="eks-pic" src="./EKS_PIC/eksrole-detail.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/add-tag-crearte-role.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/eksrole-detail.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/add-tag-crearte-role.png" class="lazy" width="100%"> 
 <b></b>
 
 :o: **Role created .** 
 
-<img alt="eks-pic" src="./EKS_PIC/role-creation-done.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/role-creation-done.png" class="lazy" width="100%"> 
 
 <b></b>
 
 
 :o: **Select appropriate role that we created earlier..** 
 
-<img alt="eks-pic" src="./EKS_PIC/role-view-oneks.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/role-view-oneks.png" class="lazy" width="100%"> 
 
 <b></b>
 
@@ -1652,7 +1652,7 @@ AmzonEKSClusterPolicy
 
 :arrow_right: **click on next.** 
 
-<img alt="eks-pic" src="./EKS_PIC/eks-cluster-tag.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/eks-cluster-tag.png" class="lazy" width="100%"> 
 
 <b></b>
 
@@ -1660,7 +1660,7 @@ AmzonEKSClusterPolicy
 
 :link: [Amazon EKS VPC and subnet requirements and considerations](https://docs.aws.amazon.com/eks/latest/userguide/network_reqs.html)
 
-<img alt="eks-pic" src="./EKS_PIC/eks-vpc-subnet-default.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/eks-vpc-subnet-default.png" class="lazy" width="100%"> 
 
 <b></b>
 
@@ -1668,13 +1668,13 @@ AmzonEKSClusterPolicy
 
 :arrow_right: **click on next.** 
 
-<img alt="eks-pic" src="./EKS_PIC/Cluster-endpoint-next.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/Cluster-endpoint-next.png" class="lazy" width="100%"> 
 
 <b></b>
 
 :o: **Select Configuring logging.** 
 
-<img alt="eks-pic" src="./EKS_PIC/configure-login.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/configure-login.png" class="lazy" width="100%"> 
 
 <b></b>
 
@@ -1682,46 +1682,46 @@ AmzonEKSClusterPolicy
 
 :arrow_right: **click on next.** 
 
-<img alt="eks-pic" src="./EKS_PIC/select-addons.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/select-addons.png" class="lazy" width="100%"> 
 
 :arrow_right: **Select Version of Add-ons and click on next.** 
 
-<img alt="eks-pic" src="./EKS_PIC/configure-addons-serting.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/configure-addons-next.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/configure-addons-serting.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/configure-addons-next.png" class="lazy" width="100%"> 
 <b></b>
 
 :o: **Click on Create.** 
 
-<img alt="eks-pic" src="./EKS_PIC/scrill-down-create.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/scrill-down-create.png" class="lazy" width="100%"> 
 <b></b>
 
 
 :blush: **You are done to create cluster. Wait for a while to setup this.**
 
-<img alt="eks-pic" src="./EKS_PIC/cluster-creation-under-progress.png" class="lazy" width="100%">
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/cluster-creation-under-progress.png" class="lazy" width="100%">
 
 :gift: **Kubernetes Cluster is Active now.**
 
-<img alt="eks-pic" src="./EKS_PIC/eks-cluster-ready.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/eks-cluster-ready.png" class="lazy" width="100%"> 
 
 :link: [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 ```R
 Kindly select the OS version installation according to your Operating System.
 ``` 
-<img alt="eks-pic" src="./EKS_PIC/aws-cli-intallation-on-window.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/aws-cli-accept-licence.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/aws-cli-setup-location.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/aws-cli-install-final-step.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/aws-cli-installation-in-progress.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/aws-cli-install-completed-finish.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/aws-cli-intallation-on-window.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/aws-cli-accept-licence.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/aws-cli-setup-location.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/aws-cli-install-final-step.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/aws-cli-installation-in-progress.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/aws-cli-install-completed-finish.png" class="lazy" width="100%"> 
 
 :o: Test AWS cli
 
-<img alt="eks-pic" src="./EKS_PIC/aws-cli-version-test.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/aws-cli-clusater-check.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/aws-eks-cluster-status.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/kubectl-version.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/aws-cli-version-test.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/aws-cli-clusater-check.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/aws-eks-cluster-status.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/kubectl-version.png" class="lazy" width="100%"> 
 
 :o: **Installing Kubectl command utility.** 
 
@@ -1731,9 +1731,9 @@ Kindly select the OS version installation according to your Operating System.
 There are many ways to install Kubectl command utility too. Here we are using window machine, So just to prefer Choco.
 ``` 
 
-<img alt="eks-pic" src="./EKS_PIC/choco-install.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/choco-install.png" class="lazy" width="100%"> 
 
-<img alt="eks-pic" src="./EKS_PIC/kubectl-command-install.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/kubectl-command-install.png" class="lazy" width="100%"> 
 
 <b></b>
 
@@ -1744,7 +1744,7 @@ EKS --> Compute --> Add node group.
 In order to add node to the cluster. We need to add node group. Each node group can content different kind of node ( compute resources ). We can add many node group based on requirements.
 ``` 
 
-<img alt="eks-pic" src="./EKS_PIC/compute-add-node.png" class="lazy" width="100%">
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/compute-add-node.png" class="lazy" width="100%">
 
 :o: **Configure node group.** 
 
@@ -1752,11 +1752,11 @@ In order to add node to the cluster. We need to add node group. Each node group 
 In node group configuration, We need to provide node name as well as must create Node IAM role. to handle worker node. Once click on IAM console. A new window will open to create new IAM role.
 ```
 
-<img alt="eks-pic" src="./EKS_PIC/node-gr-config.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/node-gr-config.png" class="lazy" width="100%"> 
 
 :o: **Click on Create role.** 
 
-<img alt="eks-pic" src="./EKS_PIC/createrolefor-node.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/createrolefor-node.png" class="lazy" width="100%"> 
 
 :o: **Select AWS service.** 
 
@@ -1764,24 +1764,24 @@ In node group configuration, We need to provide node name as well as must create
 Use cases for other AWS services. EC2
 ```
 
-<img alt="eks-pic" src="./EKS_PIC/node-role-policy.png" class="lazy" width="100%">
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/node-role-policy.png" class="lazy" width="100%">
 
 ```R
 Add three tick mark policy that role.
 ```
 
-<img alt="eks-pic" src="./EKS_PIC/eks-policy-for-node.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/eks-node-policy-ec2.png" class="lazy" width="100%">
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/eks-policy-for-node.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/eks-node-policy-ec2.png" class="lazy" width="100%">
 
 :o: **Click on Create role.** 
 
-<img alt="eks-pic" src="./EKS_PIC/node-role-created.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/node-role-created.png" class="lazy" width="100%"> 
 
 ```R
 Once role is ready. Now time to assign this role to node group.
 ```
 
-<img alt="eks-pic" src="./EKS_PIC/attach-iamroleTo-nodeconfig.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/attach-iamroleTo-nodeconfig.png" class="lazy" width="100%"> 
 
 
 ```R
@@ -1792,24 +1792,24 @@ You have two option to create Ec2 instance.
 
 :one: **Launch from EKS node configuration wizard.**
 
-<img alt="eks-pic" src="./EKS_PIC/node-gr-conf.png" class="lazy" width="100%">
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/node-gr-conf.png" class="lazy" width="100%">
 
 :o: **Click on Next.** 
 
-<img alt="eks-pic" src="./EKS_PIC/create-node-next.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/secondway-node-creation.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/create-node-next.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/secondway-node-creation.png" class="lazy" width="100%"> 
 
 :o: **Click on Next.** 
 
-<img alt="eks-pic" src="./EKS_PIC/node-group-scale.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/node-group-scale.png" class="lazy" width="100%"> 
 
 :o: **Click on Next.** 
-<img alt="eks-pic" src="./EKS_PIC/add-node-gr-networl.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/add-node-gr-networl.png" class="lazy" width="100%"> 
 
 :o: **Click on Create.** 
 
-<img alt="eks-pic" src="./EKS_PIC/create-node-gr-final.png" class="lazy" width="100%">
-<img alt="eks-pic" src="./EKS_PIC/node-under-creation.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/create-node-gr-final.png" class="lazy" width="100%">
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/node-under-creation.png" class="lazy" width="100%"> 
 
 :arrows_counterclockwise: **Wait for a while to add node to the Cluster.**
 
@@ -1822,45 +1822,45 @@ You have two option to create Ec2 instance.
 :link: [Create Template](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-launch-template.html)
 
 
-<img alt="eks-pic" src="./EKS_PIC/create-template.png" class="lazy" width="100%">
-<img alt="eks-pic" src="./EKS_PIC/node-creation.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/create-template.png" class="lazy" width="100%">
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/node-creation.png" class="lazy" width="100%"> 
  
-<img alt="eks-pic" src="./EKS_PIC/launch-template.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/keypair.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/create-template-01.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/launch-template.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/keypair.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/create-template-01.png" class="lazy" width="100%"> 
 
 :o: **Once followed to provide all the value. Click on create launch template.**
 
-<img alt="eks-pic" src="./EKS_PIC/Template-created.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/Template-created.png" class="lazy" width="100%"> 
 
 :o: **Once template ready. Add to the node group.**
 
-<img alt="eks-pic" src="./EKS_PIC/add-launch-template.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/add-launch-template.png" class="lazy" width="100%"> 
 
-<img alt="eks-pic" src="./EKS_PIC/resources-addedto-cluster.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/resources-addedto-cluster.png" class="lazy" width="100%"> 
 
 :o: **In order to use PVC creation. We must have driver installed with cluster.**
 
 :o: **Click on Add-ons tab.**
 
-<img alt="eks-pic" src="./EKS_PIC/addon-click.png" class="lazy" width="100%">
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/addon-click.png" class="lazy" width="100%">
 
 :o: **Click on Get more Add-ons.**
 
-<img alt="eks-pic" src="./EKS_PIC/ebs-driver-creation.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/ebs-driver-creation.png" class="lazy" width="100%"> 
 
 :o: **Select Amazon EBS CSI Driver.**
 
-<img alt="eks-pic" src="./EKS_PIC/selectaddo.png" class="lazy" width="100%">
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/selectaddo.png" class="lazy" width="100%">
 
 :o: **Click on next.**
 
-<img alt="eks-pic" src="./EKS_PIC/addnxt.png" class="lazy" width="100%">
-<img alt="eks-pic" src="./EKS_PIC/consel.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/addnxt.png" class="lazy" width="100%">
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/consel.png" class="lazy" width="100%"> 
 
 :o: **Click on Create.**
 
-<img alt="eks-pic" src="./EKS_PIC/ebs-csi-driver-addon-cluster.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/ebs-csi-driver-addon-cluster.png" class="lazy" width="100%"> 
 
 :eight_pointed_black_star: **We need to create IAM OIDC provider for your cluster.**
 
@@ -1870,29 +1870,29 @@ You have two option to create Ec2 instance.
 
 :arrow_right: **Search IAM and click on role**
 
-<img alt="eks-pic" src="./EKS_PIC/iam.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/iam.png" class="lazy" width="100%"> 
 
 :arrow_right: **Select Identity provider on Access management.**
-<img alt="eks-pic" src="./EKS_PIC/id.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/id.png" class="lazy" width="100%"> 
 
 :arrow_right: **Click on Add provider.**
 
-<img alt="eks-pic" src="./EKS_PIC/id.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/id.png" class="lazy" width="100%"> 
 
 
 :arrow_right: **Click on OpenID Connect.**
 
-<img alt="eks-pic" src="./EKS_PIC/opidc.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/opidc.png" class="lazy" width="100%"> 
 
 :arrow_right: **Paste Provider URL tht we copied earlier from Cluster.**
 
 :arrow_right: **Click on Get thumbprint.**
 
-<img alt="eks-pic" src="./EKS_PIC/gt.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/gt.png" class="lazy" width="100%"> 
 
 :arrow_right: **Audience, enter sts.amazonaws.com and choose Add provider.**
 
-<img alt="eks-pic" src="./EKS_PIC/aud.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/aud.png" class="lazy" width="100%"> 
 
 :o: **Create Amazon EBS CSI driver IAM role.**
 
@@ -1902,13 +1902,13 @@ You have two option to create Ec2 instance.
 IAM --> Roles --> Create role
 ```
 
-<img alt="eks-pic" src="./EKS_PIC/crw.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/create-openid-role.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/openid-next.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/openid-driver-permission-asignment.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/crw.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/create-openid-role.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/openid-next.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/openid-driver-permission-asignment.png" class="lazy" width="100%"> 
 
-<img alt="eks-pic" src="./EKS_PIC/OpenID-Create_role-1.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/OpenID-Create_role_Completed.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/OpenID-Create_role-1.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/OpenID-Create_role_Completed.png" class="lazy" width="100%"> 
 
 :arrow_right: **Edit trust relationship policy.**
 
@@ -1916,26 +1916,26 @@ IAM --> Roles --> Create role
 
 :bell: **Change the value based on your OpenID**
 
-<img alt="eks-pic" src="./EKS_PIC/num.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/num.png" class="lazy" width="100%"> 
 
 ```R
 "oidc.eks.ca-central-1.amazonaws.com/id/7B6A410BCEF7466327A6CE441E164591:sub": "system:serviceaccount:kube-system:ebs-csi-controller-sa" 
 ```
-<img alt="eks-pic" src="./EKS_PIC/etp.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/etp.png" class="lazy" width="100%"> 
 
 :arrow_right: **Click on Update policy.**
 
-<img alt="eks-pic" src="./EKS_PIC/up.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/up.png" class="lazy" width="100%"> 
 
 :bell: **Make sure user should have permissions "AmazonEC2FullAccess".**
 
-<img alt="eks-pic" src="./EKS_PIC/mk.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/mk.png" class="lazy" width="100%"> 
 
 :o: **Update EBS CSI Driver fro IAM Role.**
 
-<img alt="eks-pic" src="./EKS_PIC/upcs.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/editad.png" class="lazy" width="100%"> 
-<img alt="eks-pic" src="./EKS_PIC/ebs-driver-updateforrole.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/upcs.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/editad.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/ebs-driver-updateforrole.png" class="lazy" width="100%"> 
 
 :arrow_right: **Test.**
 ```R
@@ -1949,7 +1949,7 @@ kubectl config current-context
 
 ```
 
-<img alt="eks-pic" src="./EKS_PIC/pvt.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/pvt.png" class="lazy" width="100%"> 
 
 :arrow_right: **Troubleshoot.** 
 
@@ -1961,7 +1961,7 @@ kubectl delete pods -n kube-system -l=app=ebs-csi-controller
 
 ```
 
-<img alt="eks-pic" src="./EKS_PIC/rs.png" class="lazy" width="100%"> 
+<img alt="eks-pic" src="https://cdn.bioturing.com/documentation/EKS_PIC/rs.png" class="lazy" width="100%"> 
 
 ```R
 ========
@@ -2028,12 +2028,12 @@ helm repo update
 helm search repo bioturing
 ```
 
-<img alt="Protocol" src="./EKS_PIC/hel.png" class="lazy" width="100%"> 
+<img alt="Protocol" src="https://cdn.bioturing.com/documentation/EKS_PIC/hel.png" class="lazy" width="100%"> 
 
 :bell: **I downloaded latest version of BioStudio and adjusted values accordingly.** 
 
-<img alt="Protocol" src="./EKS_PIC/done-wihout-lb.png" class="lazy" width="100%"> 
-<img alt="Protocol" src="./EKS_PIC/pvc-done.png" class="lazy" width="100%"> 
+<img alt="Protocol" src="https://cdn.bioturing.com/documentation/EKS_PIC/done-wihout-lb.png" class="lazy" width="100%"> 
+<img alt="Protocol" src="https://cdn.bioturing.com/documentation/EKS_PIC/pvc-done.png" class="lazy" width="100%"> 
 
 :o: **Kindly setup Load balancer (ALB) with your DNS.**
 
@@ -2122,10 +2122,6 @@ Kubernete ingress:
     nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
     nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
     nginx.ingress.kubernetes.io/use-regex: "true"
-
-    nginx.ingress.kubernetes.io/rewrite-target /;
-    nginx.ingress.kubernetes.io/ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
-    nginx.ingress.kubernetes.io/client-header-buffer-size 100k;
 
  Nginx lb:
 
@@ -2228,12 +2224,12 @@ To uninstall cuda driver. Just run uninstallation script.
 
 cd /usr/local/cuda-12.2/bin
 
-root@biocolab-server:/usr/local/cuda-12.2/bin# ./cuda-uninstaller
+root@biocolab-server:/usr/local/cuda-12.2/bin# https://cdn.bioturing.com/documentation/cuda-uninstaller
  Successfully uninstalled 
 
 ```
 
-<img alt="Troubleshoot" src="./TR_SHOOT/tru.png" class="lazy" width="100%"> 
+<img alt="Troubleshoot" src="https://cdn.bioturing.com/documentation/TR_SHOOT/tru.png" class="lazy" width="100%"> 
 
 ## Containers are failed to start automatically.
 
@@ -2280,7 +2276,7 @@ NOTE: Service should be disable which cause port issue. Like NFS.
 
 ## Not able to launch server once try to go inside WORKSPACE.
 
-<img alt="Troubleshoot" src="./TR_SHOOT/trw.png" class="lazy" width="100%"> 
+<img alt="Troubleshoot" src="https://cdn.bioturing.com/documentation/TR_SHOOT/trw.png" class="lazy" width="100%"> 
 
 <br>
 
@@ -2508,54 +2504,6 @@ server {
     }
 }
 
-============== OR ==============
-
-# In case you have external Load balancers
-
-upstream bioturing_router_http {
-    ip_hash;
-    server XX.XX.X.XX:80;
-    server XX.XX.X.XX:80;
-}
-
-server {
-    listen 443 ssl http2;
-    server_name biocolab.pass-yellow.astrazeneca.net;
-    ssl_certicate /etc/ssl/certs/pass-astrazeneca_net-yellow.crt;
-    ssl_certicate_key /etc/ssl/certs/pass-astrazeneca_net-yellow.key;
-    ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
-
-    location / {
-        # For reverse proxy to backends
-        proxy_pass http://bioturing_router_http;
-        proxy_redirect off;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For  $proxy_add_x_forwarded_for;
-        proxy_connect_timeout 3600;
-        proxy_read_timeout 3600;
-        proxy_write_timeout 3600;
-
-
-        # For HTTP/HTTPS
-        client_max_body_size 5000m;
-        client_header_buffer_size 16k;
-          large_client_header_buffers  4 32k;
-
-        # For websocket
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade "websocket";
-        proxy_set_header Connection 'Upgrade';
-        proxy_cache_bypass "websocket";
-        proxy_set_header Connection “keep-alive”;
-    }
-}
-
-# In K8s Nginx Ingress. Please help to make sure that the below annotation is set up.
-
-nginx.ingress.kubernetes.io/rewrite-target /;
-nginx.ingress.kubernetes.io/ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
-nginx.ingress.kubernetes.io/client-header-buffer-size 100k;
 ```
 ## Multiple redirection and timeout issue.
 
@@ -2570,24 +2518,3 @@ Ingress setting is not correct on LB.
 ```R
 There is no any specific solution. Issue could be form Load Balancer or would be form Application.
 ```
-
-:o: **How to test websocket?**
-
-```R
-BioStudio has an inbuilt feature to test Websocket.
-
-1] Login to BioStudio Admin dashboard.
-
-2] Select System Setting -- Click to Check BioStudio button
-
-```
-
-<br>
-
-<img alt="Protocol" src="./EKS_PIC/cbs.png" class="lazy" width="100%"><br><br> 
-
-```R
-You could see the result below.
-```
-
-<br><br> <img alt="Protocol" src="./EKS_PIC/cbc.png" class="lazy" width="100%"> 
