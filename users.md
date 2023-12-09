@@ -69,10 +69,4 @@ By following these steps, you will be able to easily download and access the not
 
 </br>
 
-In case you choose "Private" notebook, you must enter the secret key to access the notebook. For more information, please contact us at <a href="mailto:support@bioturing.com">support@bioturing.com</a>
-
-<img alt="block notebook" src="https://cdn.bioturing.com/documentation/md/user_password.png" class="lazy" width="100%">
-</br>
-</br>
-
-For more information, please contact us at <a href="mailto:support@bioturing.com">support@bioturing.com</a>.
+In case you choose **Private** notebook, you must enter the secret key to access the notebook. For more information, please contact us at <a href="mailto:support@bioturing.com">support@bioturing.com</a>

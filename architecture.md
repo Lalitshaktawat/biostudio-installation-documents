@@ -33,10 +33,11 @@ To install BioStudio on your private server, the following requirements must be 
 | :--------------------------------------------- | :------------------------------------------- |
 | CPUs                                           | 16 cores or above recommended                |
 | GPUs                                           | <strong style="color:red;">Optional</strong> |
-| MEMORY                                         | 32GB or above recommended                    |
-| APP-STORAGE                                    | 40GB or above recommended                    |
+| MEMORY                                         | 64GB or above recommended                    |
+| APP-STORAGE                                    | 100GB or above recommended                    |
 | METADATA-STORAGE                               | 50GB or above recommended                    |
 | USER-STORAGE                                   | 500GB or above recommended                   |
+| SSL-STORAGE                 | 1GB or above recommended |
 | RUNTIME-ENGINE                                 | Docker/Containerd, or Kubernetes             |
 
 #### Network requirements
@@ -49,6 +50,7 @@ Access to these domains is required for the machine with the BioStudio software 
 | \*.anaconda.org                              | We need to retrieve packages from the Anaconda server.             |
 | \*repo.anaconda.com                          | We need to retrieve packages from the Anaconda repo server.        |
 | Amazon S3                                    | We need to retrieve resources from the BioTuring ecosystem server. |
+| `github.com`                                    | We need to retrieve packages from the Github. |
 
 #### Application services
 
@@ -86,11 +88,11 @@ Using the machine that has the <strong style="color:red">BBrowserX private serve
 ```mermaid
 flowchart TD
     A[Requests from IP/DNS] -->|Access| M(BioStudio container \n in \n Your private server \n or Your K8S)
-    M -->|Acsess| B(BioStudio container \n in \n Your private server \n or Your K8S)
+    M -->|Access| B(BioStudio container \n in \n Your private server \n or Your K8S)
     B --> C{Business Logic}
     C -->|Licenses| D[*.bioturing.com]
     C -->|Notebooks| E[*.bioturing.com]
-    C -->|Packages| F[*.bioturing.com \n *.anaconada.org \n *.anaconda.com]
+    C -->|Packages| F[*.bioturing.com \n *.anaconada.org \n *.anaconda.com \n Amazon S3 \n github.com]
     C -->|In-house Data| G[NFS \n S3 \n GlusterFS]
     C -->|Databases| H[PostgreSQL \n MySQL \n MariaDB]
     C -->|Ecosystem| J[BBrowserX \n Talk2Data]
@@ -144,7 +146,7 @@ flowchart TD
 
 SSL Certificate : Software supports HTTPS protocol. SSL can be configured later after installation too.
 
-After installing your private server, you can update your SSL by accessing the dashboard at http://your_private_server_ip_or_domain:port/dashboard and selecting Settings > Update SSL.
+After installing your private server, you can update your SSL by accessing the dashboard at `http://your private server ip or domain:port/dashboard` and selecting Settings > Update SSL.
 
 <div style="display: flex; justify-content: center">
 
@@ -164,7 +166,7 @@ flowchart TD
 
 To activate the BioStudio private server, you need to have a token that is obtained from BioTuring.
 
-After installing your private server, you can update your BioStudio token by accessing the dashboard at http://your_private_server_ip_or_domain:port/dashboard and selecting Settings > Update BioStudio Token.
+After installing your private server, you can update your BioStudio token by accessing the dashboard at `http://your private server ip or domain:port/dashboard` and selecting Settings > Update BioStudio Token.
 
 <div style="display: flex; justify-content: center">
 

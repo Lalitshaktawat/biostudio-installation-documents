@@ -12,13 +12,13 @@ pip3 install BioStudiosdk -U
 
 ## Settings
 
-For initial use, you should configure your tokens in the 'User Settings' page by following these step:
+For initial use, you should configure your tokens in the `User Settings` page by following these step:
 **Step 1**: Click on your avatar.
-**Step 2**: Select 'User Settings'.
+**Step 2**: Select `User Settings`.
 **Step 3**: Configure the following tokens:
 
 - **Bioflex API Key**: a public Bioflex token used to access data from the BioTuring public database.
-  To obtain a Bioflex token, you can directly submit a request by following the instruction provided under the 'Bioflex API Key' box.
+  To obtain a Bioflex token, you can directly submit a request by following the instruction provided under the `Bioflex API Key` box.
 - **Talk2Data API Key**: a token that allows access to the Talk2Data Ecosystem.
 - **BBrowserX Private Server**: a domain that enables access BBrowserX on your private server.
 - **BBrowserX Private API Key**: an API token to access BBrowserX on your private server.
@@ -46,13 +46,13 @@ from bioturing_connector.typing import StudyType
 
 - **Step 2**: Initiate connection to BBrowserX
 
-Once you have configured all your tokens in the 'User Settings' page, you can simply call the method as follows:
+Once you have configured all your tokens in the `User Settings` page, you can simply call the method as follows:
 
 ```
 connector = EConnector()
 ```
 
-To change the domain and its tokens, you have two options. First, you can update the 'User Settings' page. Alternatively, you can directly define the private host and token while initializing the connection.
+To change the domain and its tokens, you have two options. First, you can update the `User Settings` page. Alternatively, you can directly define the private host and token while initializing the connection.
 
 ```
 connector = EConnector(
@@ -564,7 +564,7 @@ If you have configured all your tokens in the 'User Settings' page, you can simp
 connector = EConnector()
 ```
 
-To change your token, you have two options. First, you can update the ‘User Settings’ page. Alternatively, you can directly define the token while initializing the connection.
+To change your token, you have two options. First, you can update the `User Settings` page. Alternatively, you can directly define the token while initializing the connection.
 
 ```
 connector = EConnector(

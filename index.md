@@ -86,4 +86,4 @@ BioStudio provides 2 ways to install:
 
 - It is the on-demand availability of computer system resources, especially data storage (cloud storage) and computing power, without direct active management by the user.
 
-- For more details, contat us: <a href="mailto:support@bioturing.com">support@bioturing.com</a>
+- For more details, contact us: <a href="mailto:support@bioturing.com">support@bioturing.com</a>

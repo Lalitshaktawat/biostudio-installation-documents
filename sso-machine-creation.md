@@ -34,15 +34,16 @@ https://<Your BioStudio URL>/dashboard
 
 **6] SSO** set up.
 
-Select the protocol that you wish to set up and put some **dummy** values to the **mandatory** field. That we will change once we have correct values after setting up the **callback** URL with **Idp**. Copy callback URL and click on **Submit**.
+Select the protocol that you wish to set up and add some **dummy** values to the **mandatory** field. That we will change once we have the correct values after setting up the **callback** URL with **Idp**. Copy the callback URL and click on "Submit.
 
-**NOTE:** SSO configuration should be saved by clicking the **Submit** button as its value would be changed each time, once click add new sso.
+**NOTE:** SSO configuration should be saved by clicking the **Submit** button, as its value would be changed each time. Once clicked,  add a new SSO.
 
-– You can have two Callback URLs. Hope SSL certificate already setup for BioStudio domain and HTTPS Callback URL can be used. Copy the Callback URL based on configuration and set up this with IDP.
+- You can have two callback URLs. I hope the SSL certificate is already setup for the BioStudio domain and the HTTPS callback URL can be used. Copy the callback URL based on configuration and set it up with IDP.
 
--- BioStudio supports three types of protocol ( SAML, OPENID and OAUTH2 ) with all types of service providers.
+- BioStudio supports three types of protocols (SAML, OPENID, and OAUTH2) with all types of service providers.
 
-https://studio.bioturing.com/document/installation#p-stylecolor-000080-sso-set-up-p
+[SSO Set up](https://studio.bioturing.com/document/installation#p-stylecolor-000080-sso-set-up-p)
+
 
 <img alt="email-t" src="https://cdn.bioturing.com/documentation/emailtemp-pic/sso.png" class="lazy" width="100%">
 
@@ -109,6 +110,6 @@ Below is the user credential for testing. It will work without SSO configuration
 User Name: tester@bioturing.com
 Password: XXXXXXXXXXXX
 
-Thank you so much for continue support for us in this set up. Feel free to contact us, If you need any support or have any question for us.
+Thank you so much for your continued support for us in this setup. Feel free to contact us if you need any support or have any questions for us.
 
 Best regards,

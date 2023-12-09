@@ -18,16 +18,17 @@
 
 
 # System Requirements
+
 >**Before installing the BioStudio, some pre-installation steps are required:**
 
 || **Basic recommendation**| **Optional**|
 |---------------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| **CPU**             | 16 core| This is basic requirement to start  BioStudio and based on requirement, Resources as well as machine can be added.  |
-| **RAM**             | 64 Gb | As above                                                                                                           |
+| **CPU**             | <strong style="color:red;">16 core</strong>| This is basic requirement to start  BioStudio and based on requirement, Resources as well as machine can be added.  |
+| **RAM**             | <strong style="color:red;">64 GB</strong> | As above                                                                                                           |
 | **HDD**             | / partition can be 100 GB | As above.                                                                                      |
 |                     | Data Volume : 1TB| As above.                                                                                                |
 | **OS**              | Any OS. Ubuntu 20.04 and above.| BioStudio is more supportive with Linux OS. For better performance linux OS is recommended.|
-| **AWS Instance**    | Support any type of instance type. Depend on needs| AWS g5xlarge in case using GPU.                                          |
+| **AWS Instance**    | Support any type of instance type. Depend on needs| AWS <strong style="color:red;">g5.4xlarge</strong> in case using GPU.                                          |
 |**Platform**         | Docker / Kubernetes                                                                                                        |
 
 <br/>
@@ -341,9 +342,9 @@ ssh -i "lalit-biocolab-keypair.pem" ubuntu@3.98.231.253
 | BioStudio Token           | To access our product.                                              |          |
 | Application Domain       | Access BioStudio on Browser.                                         |          |
 | META_DATA Volume         | This will use by Bioproxy to store database. [**/biocolab/metadata**]  | 50GB     |
-| SSL Volume               | Using by BioProxy. [**/biocolab/configs**]                                  | 1GB - 2GB and above      |
-| Data Volume              | Using to store user data. [**/biocolab/userdata**]                                   | 500GB - 1024GB and above   |
-| Application data Volume  | Used to store application binary data.[**/biocolab/appdata**]                    | 100GB and above    |
+| SSL Volume               | Using by BioProxy. [**/biocolab/configs**]                                  | 1GB or above      |
+| Data Volume              | Using to store user data. [**/biocolab/userdata**]                                   | 500GB or above   |
+| Application data Volume  | Used to store application binary data.[**/biocolab/appdata**]                    | 100GB or above    |
 | Ethernet IP Address       | Use to pass IP address during installation (**eth0**) |  |
 
 Run the **install.biocolab.docker.sh** script for docker environment and install require software.

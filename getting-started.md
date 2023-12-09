@@ -51,17 +51,20 @@ The main idea is that BioStudio can help tackle the computational problems which
 - Workspace button will bring you to BioStudio workspace.
 - Notification icon shows all your working status such as download notebook, create kernel, etc.
 
+<br />
+
 <img alt="main page" src="https://cdn.bioturing.com/documentation/md/getting_main.png" class="lazy" width="100%">
 <br />
 <br />
 
 **The Recent page** shows all the records of your working history.
+<br />
 
 <img alt="recent page" src="https://cdn.bioturing.com/documentation/md/getting_recent.png" class="lazy" width="100%">
 <br />
 <br />
 
-**The Resources page** gives you useful BioStudio documentations.
+Notebook detail can be view by clicking it's name
 
 <br />
 
@@ -85,18 +88,21 @@ Checkout our channels on Youtube, LinkedIn, Twitter for more interesting informa
 In this session, we will introduce you to the process of acquiring a notebook and exploring the pipeline in our powerful workspace. Follow these steps to get started:
 
 - **Step 1:** Select your desired notebook and click the "download" button located at the bottom right corner of the notebook card.
+<br />
 
 <img alt="docs page" src="https://cdn.bioturing.com/documentation/md/getting_choose.png" class="lazy" style="object-fit: contain" width="100%">
 <br />
 <br />
 
 - **Step 2:** You will receive a notification message confirming that the retrieval process has started.
+<br />
 
 <img alt="docs page" src="https://cdn.bioturing.com/documentation/md/getting_startdl.png" class="lazy" style="object-fit: contain" width="100%">
 <br />
 <br />
 
 - **Step 3:** You can track the progress of the download in the notification area.
+<br />
 
 <img alt="docs page" src="https://cdn.bioturing.com/documentation/md/getting_noti.png" class="lazy" style="object-fit: contain" width="100%">
 <br />
@@ -104,11 +110,14 @@ In this session, we will introduce you to the process of acquiring a notebook an
 
 - **Step 4:** Once the notebook has been fully retrieved, click on it to initiate your analysis.
 
+<br />
 <img alt="docs page" src="https://cdn.bioturing.com/documentation/md/getting_success.png" class="lazy" style="object-fit: contain" width="100%">
 <br />
 <br />
 
 By following these steps, you will be able to easily download and access the notebook of your choice in our workspace.
+
+<br />
 
 <img alt="docs page" src="https://cdn.bioturing.com/documentation/md/getting_nbworkspace.png" class="lazy" style="object-fit: contain" width="100%">
 </br>

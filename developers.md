@@ -1,6 +1,6 @@
 # **Workspace interface**
 
-BioStudio workspace is a collection of powerful tools and applications designed to assist scientists with their data manipulations.
+BioStudio **workspace** is a collection of powerful tools and applications designed to assist scientists with their data manipulations.
 
 The workspace interface consists of a main work area that lists all of the tools and applications available in BioStudio, a menu bar located at the top of workspace, a collapsible left sidebar, and a right sidebar.
 
@@ -25,8 +25,6 @@ The top menu bar located at the top of the BioStudio workspace interface feature
 - **View**: actions that alter the appearance of BioStudio worspace
 - **Run**: actions for running code in different activities such as notebooks and code consoles
 - **Kernel**: actions for managing kernels, which are separate processes for running code
-- **Git**: actions for working with Git
-- **Diagram**: actions for working with Diagram files
 - **Settings**: common settings and an advanced settings editor.
 
 In addition to the default menus on the left sidebar, BioStudio workspace also provides some functional buttons on the right of the top menu bar, including:
@@ -56,12 +54,6 @@ The left sidebar contains several commonly-used tabs which are:
 </br>
 </br>
 
-- **HDF Browser**: provides easy access to HDF format files.
-
-<img alt="HDF" src="https://cdn.bioturing.com/documentation/md/dev_hdf.png" class="lazy" width="100%">
-</br>
-</br>
-
 - **Table of contents**: shows the structure of a document and allows users to navigate to specific sections by clicking on entries in the sidebar. It is automatically generated when working with notebooks, markdown, or python files and each listed section will be hyperlinked to the actual section within your document.
   </br>
 
@@ -71,37 +63,24 @@ The left sidebar contains several commonly-used tabs which are:
 </br>
 </br>
 
-If a notebook section has runnable code cells, a context menu is added to the corresponding table of contents heading. Clicking the "Run Cell(s)" option in the top menu bar will execute those code cells in the notebook.
-
-<img alt="table of content" src="https://cdn.bioturing.com/documentation/md/dev_toc2.png" class="lazy"  width="100%">
-
-</br>
-</br>
-
-- **AI assistant**: provides support to users through artificial intelligence tools such as ChatGPT and BioTuring Sonia AI. This feature is disabled by default.
-
-<img alt="left sidebar - AI assistant" src="https://cdn.bioturing.com/documentation/md/dev_ai.png" class="lazy" width="100%">
-
-</br>
-</br>
-
 - **Running panel**: displays a list of all currently running kernels and applications across all notebooks, code consoles, and directories.
 
-<img alt="left sidebar - Running panel" src="https://cdn.bioturing.com/documentation/md/dev_panel.png" class="lazy" width="100%">
+<img alt="left sidebar - Running panel" src="https://cdn.bioturing.com/documentation/md/dev_toc2.png" class="lazy" width="100%">
 
 </br>
 </br>
 
-- **Git**: provides actions for working with Git.
+- **Dask**: enables parallel and distributed computing by distributing tasks across multiple cores, processors, or computers.
 
-<img alt="left sidebar - Git" src="https://cdn.bioturing.com/documentation/md/dev_git.png" class="lazy" width="100%">
+<img alt="left sidebar - Dask" src="https://cdn.bioturing.com/documentation/md/dev_dask.png" class="lazy" width="100%">
 
 </br>
 </br>
 
-- **IPython parallel**: enables parallel and distributed computing by distributing tasks across multiple cores, processors, or computers.
+- **Cloud Storage**: you can create a connection to your cloud storage.
 
-<img alt="left sidebar - IPython parallel" src="https://cdn.bioturing.com/documentation/md/dev_python.png" class="lazy" width="100%">
+<img alt="left sidebar - Cloud Storage" src="https://cdn.bioturing.com/documentation/md/cloud_storage.png" class="lazy" width="100%">
+
 
 ## **Right sidebar**
 
@@ -113,6 +92,14 @@ The right sidebar contains the following commonly-used tabs:
 
 </br>
 </br>
+
+- **The Kernel Usage**: It provides the kernel resources usage.
+
+<img alt="right sidebar - The property inspector" src="https://cdn.bioturing.com/documentation/md/kernel_usage.png" class="lazy" width="100%">
+
+</br>
+</br>
+
 
 - **The debugger**: enables users to debug code consoles and files directly from the notebooks.
 
@@ -146,44 +133,23 @@ To create a new notebook kernel in the BioStudio workspace, follow these steps:
 </br>
 </br>
 
+**From BioTuring**: It used to create notebooks that were created prior to a request and provided by BioTuring based on the request.
+
+<img alt="Create notebook kernel - from Bioturing" src="https://cdn.bioturing.com/documentation/md/dev_bioturing.png" class="lazy"  width="100%">
+
+</br>
+</br>
+
 # **Manage Conda environment**
 
 Users can conveniently manage all packages in their Conda environments by accessing the Conda package manager in the Settings tab located on the top menu bar.
 
 Once you access the Conda package manager interface, you will see a list of all available environments on the left side and a list of all packages in the selected environment on the right side.
 
-<img alt="Conda environment - main page" src="https://cdn.bioturing.com/documentation/md/dev_env_main.png" class="lazy"  width="100%">
+<img alt="Conda environment - main page" src="https://cdn.bioturing.com/documentation/md/dev_env_main.png" class="lazy"  width="100%"><br><br>
 
-## **The left side**
+Please review more details using the link below.
 
-Within the left side, there are several actions that can be performed on the selected Conda environment:
-
-**Create**: allows you to create a new Conda environment by selecting your desire programing language.
-
-**Clone**: allows you to clone the selected environment into a new one.
-
-**Import**: allows you to create a new Conda environment by importing a YAML file.
-
-**Export**: allows you to export the selected environment in YAML format.
-
-**Remove**: allows you to remove the selected environment.
-
-## **The right side**
-
-After selecting a specific environment in the left side, the right side will display all the available packages along with their detailed description, installed version, installation status, and channel information.
-
-You can easily search for specific packages and also change the view modes to display all packages, installed packages, not installed packages, updatable packages, or selected packages.
-
-<img alt="Conda environment - right sidebar1" src="https://cdn.bioturing.com/documentation/md/dev_env_packages1.png" class="lazy"  width="100%">
-</br>
-</br>
-
-To install new packages, simply select the desired packages and their versions and click on the **Apply package modifications** button located above the table. Otherwise, the latest version of the package will be installed by defaut.
-
-For installed packages, BioStudio allows users to update to a new version or remove the package by changing its installation status and clicking on the **Apply package modifications** button.
-
-<img alt="Conda environment - right sidebar2" src="https://cdn.bioturing.com/documentation/md/dev_packages2.png" class="lazy"  width="100%">
-</br>
-</br>
+:link: [Custom environment set up in BioStudio](https://studio.bioturing.com/document/custom-environment-for-analyses)
 
 For more information, please contact us at <a href="mailto:support@bioturing.com">support@bioturing.com</a>.
