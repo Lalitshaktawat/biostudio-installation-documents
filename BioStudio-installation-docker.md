@@ -87,7 +87,7 @@ cd /biocolab
 **3]** Download installation script.
 
 ```R
-wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.53.tar.gz
+wget https://github.com/bioturing/installation/archive/refs/tags/v2.0.51.tar.gz
 ```
 
 <br><img alt="email-t" src="https://cdn.bioturing.com/documentation/emailtemp-pic/wget.png" class="lazy" width="100%"><br>
@@ -95,7 +95,7 @@ wget https://github.com/bioturing/installation/archive/refs/tags/v1.0.53.tar.gz
 **4]** Uncompressed .gz file.
 
 ```R
-tar xvf v1.0.53.tar.gz
+tar xvf v2.0.51.tar.gz
 ```
 
 <br><img alt="email-t" src="https://cdn.bioturing.com/documentation/emailtemp-pic/t.png" class="lazy" width="100%"><br>
@@ -103,7 +103,7 @@ tar xvf v1.0.53.tar.gz
 **5]** Switch to the installation folder.
 
 ```R
-cd installation-1.0.53/
+cd installation-2.0.51/
 ```
 
 <br><img alt="email-t" src="https://cdn.bioturing.com/documentation/emailtemp-pic/cd.png" class="lazy" width="100%"><br>
