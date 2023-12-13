@@ -33,7 +33,7 @@ To install BioStudio on your private server, the following requirements must be 
 | :--------------------------------------------- | :------------------------------------------- |
 | CPUs                                           | 16 cores or above recommended                |
 | GPUs                                           | <strong style="color:red;">Optional</strong> |
-| MEMORY                                         | 64GB or above recommended                    |
+| MEMORY                                         | <strong style="color:red;">64GB</strong> or above recommended                   |
 | APP-STORAGE                                    | 100GB or above recommended                    |
 | METADATA-STORAGE                               | 50GB or above recommended                    |
 | USER-STORAGE                                   | 500GB or above recommended                   |

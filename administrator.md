@@ -1,7 +1,8 @@
 # **Administrator**
+
 BioStudio web administrator page serves as a centralized hub for managing the various components of the application, allowing authorized individuals to keep the site running smoothly and securely.
 
-To get started, access the [BioStudio web administrator page](https://studio.bioturing.com/dashboard/). 
+To get started, access the [BioStudio web administrator page](https://studio.bioturing.com/dashboard/).
 
 For the initial use, you are required to register for an admin account.
 
@@ -9,14 +10,18 @@ For the initial use, you are required to register for an admin account.
 <img alt="administrator" src="https://cdn.bioturing.com/documentation/md/admin_register.png" class="lazy" width="50%">
 </div>
 </br>
+
 Once you have registered, log in by entering your username and password into the designated fields.
 
+</br>
 <div align="center">
 <img alt="administrator" src="https://cdn.bioturing.com/documentation/md/ar.png" class="lazy" width="100%">
 </div>
+</br>
 
 Upon successful authentication, you will be redirected to the dashboard, where you can manage various aspects of the application including overview, SSO, users, admin, machines, forward port, System setting, and help center.
 
+</br>
 <div align="center">
 <img alt="administrator" src="https://cdn.bioturing.com/documentation/md/admin_menu.png" class="lazy" width="25%">
 </div>
