@@ -94,7 +94,7 @@ We can export the environment to a **YAML file** that can be downloaded to your 
 <br><img alt="BioStudio-env" src="https://cdn.bioturing.com/documentation/pic/ceed.png" class="lazy" width="100%"><br>
 
 
-## Export environment to YAML file
+## Delete environment to YAML file
 
 :high_brightness: Environment can be deleted by clicking **Delete Environment** button. 
 :high_brightness: Click **OK** in the popup to confirm your action.
