@@ -94,7 +94,7 @@ We can export the environment to a **YAML file** that can be downloaded to your 
 <br><img alt="BioStudio-env" src="https://cdn.bioturing.com/documentation/pic/ceed.png" class="lazy" width="100%"><br>
 
 
-## Delete environment to YAML file
+## Delete environment
 
 :high_brightness: Environment can be deleted by clicking **Delete Environment** button. 
 :high_brightness: Click **OK** in the popup to confirm your action.
@@ -245,7 +245,7 @@ If pre-define versions is not suitable for your requirement, you can type versio
 :one: Enter the kernel name
 :two: Choose A Mode: **From BioTuring**. 
 
-**From BioTuring**  option is similar to From File. But environment will be uploaded form BioTuring cloud. It is requested environmental package from client.
+**From BioTuring**  option is similar to From File. But the environment will be delivered from BioTuring cloud which is requested environmental package from client.
 
 :three: Select your request environment from Your Request Environment. If you have nothing and would like to request something, you can click on **Send us a request** to request that BioTuring's DataScience Team help you prepare your environment.
  
