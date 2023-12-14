@@ -2131,6 +2131,9 @@ There could be several reason behind this issue. Common reason is blocking below
 *repo.anaconda.com
 Amazon S3
 github.com
+cdn-eu-west-1.s3.eu-west-1.amazonaws.com (euro -west1)
+s3.us-west-2.amazonaws.com/cdn.bioturing.com (us -west2)
+cdn.bioturing.com (us -west2)
 ```
 
 :o: **Resolution**
@@ -2142,6 +2145,9 @@ Kindly allow below sites.
 *repo.anaconda.com
 Amazon S3
 github.com
+cdn-eu-west-1.s3.eu-west-1.amazonaws.com (euro -west1)
+s3.us-west-2.amazonaws.com/cdn.bioturing.com (us -west2)
+cdn.bioturing.com (us -west2)
 ```
 
 ## Workspace / any other element access is not showing graphics clear and images are not showing correctly.
@@ -2315,6 +2321,8 @@ server {
         deny all;
     }
 }
+
+
 
 ============== OR ==============
 

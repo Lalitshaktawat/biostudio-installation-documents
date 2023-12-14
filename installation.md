@@ -56,13 +56,16 @@
 
 ## Network requirements
 
-| Domain             | Explain                                                            |
-|--------------------|--------------------------------------------------------------------|
-| *.bioturing.com    | We need to retrieve data from the BioTuring ecosystem server.      |
-| *.anaconda.org     | We need to retrieve packages from the Anaconda server.             |
-| *repo.anaconda.com | We need to retrieve packages from the Anaconda repo server.        |
-| Amazon S3          | We need to retrieve resources from the BioTuring ecosystem server. |
-| github.com         | We need to retrieve packages from the Github. |
+| Domain                                                           | Explain                                                            |
+|------------------------------------------------------------------|--------------------------------------------------------------------|
+| *.bioturing.com                                                  | We need to retrieve data from the BioTuring ecosystem server.      |
+| *.anaconda.org                                                   | We need to retrieve packages from the Anaconda server.             |
+| *repo.anaconda.com                                               | We need to retrieve packages from the Anaconda repo server.        |
+| Amazon S3                                                        | We need to retrieve resources from the BioTuring ecosystem server. |
+| github.com                                                       | We need to retrieve packages from the Github.                      |
+| cdn-eu-west-1.s3.eu-west-1.amazonaws.com (euro -west1)           | We need to retrieve packages from the CDN.                         |
+| s3.us-west-2.amazonaws.com/cdn.bioturing.com (us -west2)         | We need to retrieve packages from the CDN.                         |
+| cdn.bioturing.com (us -west2)                                    | We need to retrieve packages from the CDN.                         |
 
 
 :point_right: **Please contact** :email: [support@bioturing.com](mailto:support@bioturing.com) to get the **token** for your company.
@@ -2128,6 +2131,9 @@ There could be several reason behind this issue. Common reason is blocking below
 *repo.anaconda.com
 Amazon S3
 github.com
+cdn-eu-west-1.s3.eu-west-1.amazonaws.com (euro -west1)
+s3.us-west-2.amazonaws.com/cdn.bioturing.com (us -west2)
+cdn.bioturing.com (us -west2)
 ```
 
 :o: **Resolution**
@@ -2139,6 +2145,9 @@ Kindly allow below sites.
 *repo.anaconda.com
 Amazon S3
 github.com
+cdn-eu-west-1.s3.eu-west-1.amazonaws.com (euro -west1)
+s3.us-west-2.amazonaws.com/cdn.bioturing.com (us -west2)
+cdn.bioturing.com (us -west2)
 ```
 
 ## Workspace / any other element access is not showing graphics clear and images are not showing correctly.
@@ -2312,6 +2321,8 @@ server {
         deny all;
     }
 }
+
+
 
 ============== OR ==============
 
