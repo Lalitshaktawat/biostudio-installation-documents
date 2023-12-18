@@ -340,15 +340,15 @@ ssh -i "lalit-biocolab-keypair.pem" ubuntu@3.98.231.253
 ```
 
 
-| **Item**                 | **Note**                                                            | **Size** |
-|--------------------------|---------------------------------------------------------------------|----------|
-| BioStudio Token           | To access our product.                                              |          |
-| Application Domain       | Access BioStudio on Browser.                                         |          |
-| META_DATA Volume         | This will use by Bioproxy to store database. [**/biocolab/metadata**]  | 50GB     |
-| SSL Volume               | Using by BioProxy. [**/biocolab/configs**]                                  | 1GB or above      |
-| Data Volume              | Using to store user data. [**/biocolab/userdata**]                                   | 500GB or above   |
-| Application data Volume  | Used to store application binary data.[**/biocolab/appdata**]                    | 100GB or above    |
-| Ethernet IP Address       | Use to pass IP address during installation (**eth0**) |  |
+| **Item**                 | **Note**                                                             | **Size**          |
+|--------------------------|----------------------------------------------------------------------|-------------------|
+| BioStudio Token          | To access our product.                                               |                   |
+| Application Domain       | Access BioStudio on Browser.                                         |                   |
+| META_DATA Volume         | This will use by Bioproxy to store database. [**/biocolab/metadata**]| 50GB              |
+| SSL Volume               | Using by BioProxy. [**/biocolab/configs**]                           | 1GB or above      |
+| Data Volume              | Using to store user data. [**/biocolab/userdata**]                   | 500GB or above    |
+| Application data Volume  | Used to store application binary data.[**/biocolab/appdata**]        | 100GB or above    |
+| Ethernet IP Address      | Use to pass IP address during installation (**eth0**)                |                   |
 
 Run the **install.biocolab.docker.sh** script for docker environment and install require software.
 
@@ -368,13 +368,13 @@ cd /biocolab
 # Note: Installation script version would be changed based on updates.
 # Our Team will get you updates and keep in touch with you during installation.
 
-wget https://github.com/bioturing/installation/archive/refs/tags/v2.0.51.tar.gz
+wget https://github.com/bioturing/installation/archive/refs/tags/V2.0.53.tar.gz
 
 # uncompressed .gz
-tar xvf v2.0.51.tar.gz
+tar xvf V2.0.53.tar.gz
 
 # Switch to installation folder
-cd installation-2.0.51/
+cd installation-2.0.53/
 
 # Execute installation script
 bash install.biocolab.docker.sh
@@ -386,7 +386,7 @@ docker ps -a
 http://<Your Domain>/dashboard/
 ```
 
-:large_orange_diamond: Download **v2.0.51.tar.gz**, which content script to install **BioStudio.**
+:large_orange_diamond: Download **V2.0.53.tar.gz**, which content script to install **BioStudio.**
 
 <br><img alt="wget-script" src="https://cdn.bioturing.com/documentation/idiag/install-step1.png" class="lazy" width="100%"><br>
 
@@ -1259,7 +1259,7 @@ microk8s helm3 repo add bioturing https://bioturing.github.io/charts/apps/
 | resources                                  | object   | {}                 |                      |
 | service.type                               | string   | ClusterIP          |                      |
 | serviceAccount.annotations                 | object   | {}                 |                      |
-| serviceAccount.name                       | string   | ""                 |                      |
+| serviceAccount.name                        | string   | ""                 |                      |
 | tolerations                                | object   | {}                 |                      |
 | host_ip                                    | int      | 0.0.0.0            |                      |
 | affinity                                   | object   | {}                 |                      |
@@ -1866,7 +1866,7 @@ helm search repo bioturing
 Before start installation below is the status:
 
 ```R
-root@ip-172-31-39-182:/biocolab/installation-2.0.51# netstat -nltup
+root@ip-172-31-39-182:/biocolab/installation-2.0.53# netstat -nltup
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
 tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      2892/systemd-resolv
@@ -1877,9 +1877,9 @@ udp        0      0 172.31.39.182:68        0.0.0.0:*                           
 udp        0      0 127.0.0.1:323           0.0.0.0:*                           2808/chronyd
 udp6       0      0 ::1:323                 :::*                                2808/chronyd
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.51# env
+root@ip-172-31-39-182:/biocolab/installation-2.0.53# env
 SHELL=/bin/bash
-PWD=/biocolab/installation-2.0.51
+PWD=/biocolab/installation-2.0.53
 LOGNAME=root
 HOME=/root
 LANG=C.UTF-8
@@ -1896,7 +1896,12 @@ _=/usr/bin/env
 OLDPWD=/biocolab
 ```
 
+
+
 ## Testing with normal structure
+
+**After installation**
+
 :o: HTTP port : **80** and HTTPS port : **443**
 **Application port** : **11123**
 
@@ -1909,7 +1914,7 @@ Below are the port should be in as status.
 `netstat -nltup # from host`
 
 ```R
-root@ip-172-31-39-182:/biocolab/installation-2.0.51# netstat -nltup
+root@ip-172-31-39-182:/biocolab/installation-2.0.53# netstat -nltup
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
 tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      2892/systemd-resolv
@@ -1952,7 +1957,7 @@ udp6       0      0 ::1:323                 :::*                                
 `netstat -nltup # inside the container`
 
 ```R
-root@ip-172-31-39-182:/biocolab/installation-2.0.51# docker exec -it bioproxy /bin/bash
+root@ip-172-31-39-182:/biocolab/installation-2.0.53# docker exec -it bioproxy /bin/bash
 root@6c1fca69acf1:/home# netstat -nltup
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
@@ -1974,7 +1979,7 @@ root@6c1fca69acf1:/home#
 
 -------
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.51# docker exec -it bioproxy /bin/bash
+root@ip-172-31-39-182:/biocolab/installation-2.0.53# docker exec -it bioproxy /bin/bash
 root@6c1fca69acf1:/home# netstat -nltup
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
@@ -1996,7 +2001,7 @@ root@6c1fca69acf1:/home#
 
 -------
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.51# docker exec -it biocolab /bin/bash
+root@ip-172-31-39-182:/biocolab/installation-2.0.53# docker exec -it biocolab /bin/bash
 root@5fc5db8bc5cf:/home# netstat -nltup
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
@@ -2017,12 +2022,396 @@ tcp6       0      0 :::2223                 :::*                    LISTEN      
 root@5fc5db8bc5cf:/home#
 ```
 
+### Environmental variables
+
+**Bioproxy : environmental variable**
+
+```R
+
+# docker exec -it bioproxy /bin/bash
+
+root@507cd2637a97:/home# env
+NFS_T2_PORT=2049
+SHELL=/bin/bash
+POSTGRESQL_CLIENT_MIN_MESSAGES=error
+DEBUG_MODE=false
+HTTPS_SERVER_PORT=443
+POSTGRESQL_USERNAME=XXXXXXXXXXXXXX
+REDIS_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+PKG_CONFIG_PATH=/usr/lib64/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib64/pkgconfig:/usr/local/lib/pkgconfig
+POSTGRESQL_DATA_DIR=/bitnami/postgresql/data
+HOSTNAME=507cd2637a97
+LANGUAGE=en_US:en
+POSTGRESQL_ENABLE_LDAP=no
+MAX_THREADS=32
+USE_LETSENCRYPT=false
+POSTGRESQL_LOG_HOSTNAME=false
+NFS_T1_PORT=111
+PWD=/home
+OS_FLAVOUR=debian-11
+GIT_SSL_NO_VERIFY=true
+NFS_VOLUME_DIR=
+PYTHONHTTPSVERIFY=0
+NSS_WRAPPER_LIB=/opt/bitnami/common/lib/libnss_wrapper.so
+ENABLE_HTTPS=false
+TZ=UTC
+POSTGRESQL_DATABASE=biocohub
+NFS_T4_PORT=32767
+APP_DOMAIN=test-lalit-biocolab.bioturing.com
+HOME=/
+LANG=en_US.UTF-8
+POSTGRESQL_VOLUME_DIR=/bitnami/postgresql
+POSTGRESQL_POSTGRES_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+CONFIG_DIR=/home/configs
+POSTGRESQL_PORT_NUMBER=5432
+POSTGRESQL_SHARED_PRELOAD_LIBRARIES=pgaudit
+PG_DIR=
+POSTGRESQL_LOG_DISCONNECTIONS=false
+PG_PASSWORD=
+MAX_CONNECTION=5000
+BITNAMI_DEBUG=false
+POSTGRESQL_LOG_CONNECTIONS=false
+MAKEFLAGS=-j16
+NFS_T3_PORT=32765
+TERM=xterm
+PG_USERNAME=
+SSL_NO_VERIFY=1
+MEMCACHED_PORT=11211
+NO_PROXY=localhost,127.0.0.1
+COLAB_LIST_SERVER=172.31.39.123:11123
+DISPLAY=:1
+SHLVL=1
+POSTGRESQL_ENABLE_TLS=no
+BITNAMI_APP_NAME=postgresql
+POSTGRESQL_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+REDIS_PORT=6379
+LD_LIBRARY_PATH=/usr/lib64:/usr/lib:/usr/local/lib64:/usr/local/lib
+APP_VERSION=15.2.0
+COLAB_REDIS_DIR=/bitnami/postgresql/redis
+PGDATA=/bitnami/postgresql/data
+HTTP_SERVER_PORT=80
+LC_ALL=C.UTF-8
+OS_NAME=linux
+PATH=/opt/bitnami/common/bin:/opt/bitnami/postgresql/bin:/opt/bitnami/postgresql/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.local/bin
+POSTGRESQL_PGAUDIT_LOG_CATALOG=off
+DEBIAN_FRONTEND=noninteractive
+OS_ARCH=amd64
+_=/usr/bin/env
+root@507cd2637a97:/home#
+
+root@507cd2637a97:/home# cat /etc/environment 
+root@507cd2637a97:/home#
+root@507cd2637a97:/home# exit
+
+```
+
+**BioColab : environmental variable**
+
+```R
+# docker exec -it biocolab /bin/bash
+
+SHELL=/bin/bash
+NV_LIBCUBLAS_VERSION=11.11.3.6-1
+NVIDIA_VISIBLE_DEVICES=all
+DEBUG_MODE=false
+CACHE_MODE=false
+PYTHONUNBUFFERED=1
+CYPRESS_CONFIG=false
+RETICULATE_PYTHON=/miniconda/user/bin/python
+no_proxy=localhost,fc00::/7,.svc,kubernetes,127.0.0.1,10.0.0.0/8,10.42.0.90,.local,fe80::/10,192.168.10.0/24,.cluster.local,::1/128,.default,0.0.0.0
+REDIS_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+R_GZIPCMD=/usr/bin/gzip
+CONDA_EXE=/miniconda/user/bin/conda
+XORG_DPI=96
+COLLABORATIVE_MODE=false
+PKG_CONFIG_PATH=/usr/lib64/pkgconfig:/usr/lib/pkgconfig:/usr/local/lib64/pkgconfig:/usr/local/lib/pkgconfig
+ADMIN_USERNAME=admin
+GECKODRIVER_VERSION=0.33.0
+HOSTNAME=b1a226ccc20a
+LANGUAGE=C.UTF-8
+TMP_PATH=
+NODE_OPTIONS=--max-old-space-size=16000
+PYTORCH_ENABLE_MPS_FALLBACK=1
+JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+NVIDIA_REQUIRE_CUDA=cuda>=11.8 brand=tesla,driver>=450,driver<451 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471 brand=tesla,driver>=510,driver<511 brand=unknown,driver>=510,driver<511 brand=nvidia,driver>=510,driver<511 brand=nvidiartx,driver>=510,driver<511 brand=geforce,driver>=510,driver<511 brand=geforcertx,driver>=510,driver<511 brand=quadro,driver>=510,driver<511 brand=quadrortx,driver>=510,driver<511 brand=titan,driver>=510,driver<511 brand=titanrtx,driver>=510,driver<511 brand=tesla,driver>=515,driver<516 brand=unknown,driver>=515,driver<516 brand=nvidia,driver>=515,driver<516 brand=nvidiartx,driver>=515,driver<516 brand=geforce,driver>=515,driver<516 brand=geforcertx,driver>=515,driver<516 brand=quadro,driver>=515,driver<516 brand=quadrortx,driver>=515,driver<516 brand=titan,driver>=515,driver<516 brand=titanrtx,driver>=515,driver<516
+SEVER_INFO_COLAB_TOKEN_KEY=
+MAMBA_SSL_NO_REVOKE=1
+ADMIN_EXT_ID=
+NV_NVTX_VERSION=11.8.86-1
+TRACING_MODE=false
+DEV_MODE=false
+CORE_APP_VERSION=92ae1dec-6bf9-4041-9d06-330e0fe7b564
+PYDEVD_DISABLE_FILE_VALIDATION=1
+HUB_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+NV_LIBCUSPARSE_VERSION=11.7.5.86-1
+JAVA_OPTS=-Djava.awt.headless=false
+PG_HUB_DATABASE=biocohub
+NV_LIBNPP_VERSION=11.8.0.86-1
+HUB_SERVER_PORT=18000
+JULIA_PKGDIR=/miniconda/user/share/julia
+LAB_SHARED_PATH=/usr/local/share/jupyter/lab
+PACK_R=BiocManager devtools extrafont geometry ggplot2 httr magic multcomp plotly plotrix rmarkdown rstudioapi xslx ggbio glmpca gganimate ggalt ggdendro ggpubr igraph odbc
+NCCL_VERSION=2.15.5-1
+NEW_INSTALL_MODE=true
+STATIC_PATH=/appdata/share/static
+PWD=/home
+USE_REDIS_CACHE=true
+CODE_VERSION=4.16.1
+MAX_UPLOAD_FILE_SIZE=21474836480
+PORT=11123
+NVIDIA_DRIVER_CAPABILITIES=compute,utility
+GIT_SSL_NO_VERIFY=true
+NV_LIBNPP_PACKAGE=libnpp-11-8=11.8.0.86-1
+PYTHONHTTPSVERIFY=0
+TZ=Etc/UTC
+OPENAI_KEY=sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+OPENBLAS_NUM_THREADS=8
+STATIC_PACK_MODE=true
+UPGRADE_RESOURCE_URL=https://colab.bioturing.com
+NVIDIA_PRODUCT_NAME=CUDA
+USER_PATH=
+API_KEY=2015f6c1b7ef431267460c249deda53c
+APP_DATA=/appdata
+LD_PRELOAD=/miniconda/user/lib/mambasos.so
+NV_CUDA_CUDART_VERSION=11.8.89-1
+RPC_SECRET=bioturing500
+SSHDP_SERVER_PORT=2222
+HOME=/root
+COLAB_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+LANG=C.UTF-8
+FENET_KEY=
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+CARGO_HOME=/miniconda/user
+NXF_CONDA_ENABLED=true
+AMZ_S3_KEY=
+RPC_PORT=6800
+CUDA_VERSION=11.8.0
+NV_LIBCUBLAS_PACKAGE=libcublas-11-8=11.11.3.6-1
+SECRET_KEY=2703e1db-a539-4f5d-ac09-c6f8f6a76e8c
+TEMPLATE_PATH=/appdata/share/template
+UPGRADE_SCHEDULE_SECOND=900
+ADMIN_PASSWORD=admin
+SERVER_ID=srv1
+REDIS_LIST=172.31.39.123:6379
+https_proxy=
+PG_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+AMZ_S3_ENABLE=
+ARIA2C_SERVER_PORT=6800
+HUB_SECRET_PATH=
+HTTP_PSERVER_PORT=11113
+AMZ_S3_REGION=
+NV_LIBCUBLAS_PACKAGE_NAME=libcublas-11-8
+HUB_DB_STORAGE_PATH=
+DATA_PATH=
+QT_QPA_PLATFORM=offscreen
+PG_DATABASE=biocolab
+AMZ_S3_BUCKET=
+BEANSTALKD_SERVER_IP=127.0.0.1
+JWT_SECRET_KEY=5366a55744659eaf6b85d5dc6d9c0c4a
+MQTT_SERVER_PORT=9001
+LESSCLOSE=/usr/bin/lesspipe %s %s
+MAKEFLAGS=-j64
+JUPYTER_ENABLE_LAB=yes
+MAMBA_EXE=/miniconda/user/bin/mamba
+HUB_LIST_IPS=172.31.39.123
+TERM=xterm
+LOG_PATH=
+PG_USERNAME=XXXXXXXXXXXXXX
+HOST=0.0.0.0
+RUSTUP_HOME=/miniconda/user
+LESSOPEN=| /usr/bin/lesspipe %s
+TRAEFIK_PROXY_MODE=false
+GOTRACEBACK=
+SSL_NO_VERIFY=1
+CURL_CA_BUNDLE=
+NO_PROXY=localhost,fc00::/7,.svc,kubernetes,127.0.0.1,10.0.0.0/8,10.42.0.90,.local,fe80::/10,192.168.10.0/24,.cluster.local,::1/128,.default,0.0.0.0
+SERVER_VERSION=2.0.38
+VERIFY_SSL_CERT=0
+GIT_DISCOVERY_ACROSS_FILESYSTEM=1
+DISPLAY=:0.0
+GOMAXPROCS=
+CRAN_URL=https://cloud.r-project.org/
+SHLVL=1
+APP_DOMAIN_URL=https://test-lalit-biocolab.bioturing.com
+SSHD_SERVER_PORT=2223
+NV_CUDA_LIB_VERSION=11.8.0-1
+NVARCH=x86_64
+HTTPS_PROXY=
+HTTP_PROXY=
+JULIA_DEPOT_PATH=/miniconda/user/share/julia
+HDF5_USE_FILE_LOCKING=FALSE
+ROOT_PATH=
+PG_PORT=5432
+http_proxy=
+NV_CUDA_COMPAT_PACKAGE=cuda-compat-11-8
+REBUILT_AFTER=2023-03-13
+AMZ_S3_SYNC=
+RSTUDIO_VERSION=2023.06.1
+STRIPTAG_MODE=false
+NV_LIBNCCL_PACKAGE=libnccl2=2.15.5-1+cuda11.8
+LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+MQTT_LIST_IPS=172.31.39.123
+UPLOAD_PATH=
+LC_ALL=C.UTF-8
+R_CRAN_WEB=https://cloud.r-project.org
+RSESSION_PROXY_RSTUDIO_1_4=yes
+PATH=/appdata/bin:/appdata/apps:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/:/usr/local/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/bin:/sbin:/root/.local/bin:/miniconda/user/bin:/usr/local/go/bin::/usr/lib/jvm/java-11-openjdk-amd64/bin:/miniconda/user/bin:/usr/local/go/bin:/usr/lib/jvm/java-11-openjdk-amd64/bin:/opt/quarto/bin
+MEMCACHED_LIST=172.31.39.123:11211
+NV_LIBNCCL_PACKAGE_NAME=libnccl2
+MQTT_SERVER_TCP_PORT=1883
+NV_LIBNCCL_PACKAGE_VERSION=2.15.5-1
+MAMBA_DISABLE_LOCKFILE=FALSE
+FLASK_ENV=production
+RETICULATE_MINICONDA_ENABLED=TRUE
+AMZ_S3_SECRET=
+HUB_SECRET_COOKIE=adad744917fc58d2250c2d59400b26c4e45f0fc9af092482cdfd8a5a40c61423
+PG_HOST=172.31.39.123
+DEBUG=false
+SERVICE_ENDPOINT=
+MANUAL_REGISTER_KERNEL=
+DEBIAN_FRONTEND=noninteractive
+CONTENT_PATH=
+BEANSTALKD_SERVER_PORT=11300
+ARIA2C_LIST_IPS=172.31.39.123
+SUPERSET_ENV=production
+_=/usr/bin/env
+
+
+root@c355340b52ce:/home# cat /etc/environment
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+no_proxy="kubernetes,.svc,.default,localhost,0.0.0.0,.cluster.local,172.17.0.0/16,fe80::/10,.local,172.17.0.3,fc00::/7,::1/128,192.168.10.0/24,10.0.0.0/8,10.42.0.90,127.0.0.1"
+
+```
+
+### BioStudio process verification
+
+**Process running with Bioproxy container**
+
+```R
+root@ip-172-31-39-123:/biocolab/installation-2.0.53/biocolab# docker exec -it bioproxy /bin/bash
+root@507cd2637a97:/home# ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 03:50 pts/0    00:00:00 /bin/bash /super.sh
+root         204       1  0 03:50 pts/0    00:00:02 /usr/bin/python3 /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
+root         205     204  0 03:50 pts/0    00:00:00 /usr/sbin/cron -f
+memcach+     206     204  0 03:50 pts/0    00:00:00 /usr/bin/memcached -p 11211 -u memcached -m 128 -c 1024000 -P /memcached/program.pid
+postgres     207     204  0 03:50 pts/0    00:00:00 /opt/bitnami/postgresql/bin/postgres -D /bitnami/postgresql/data --config-file=/opt/bitnami/postgresql/conf/po
+redis        208     204  0 03:50 pts/0    00:00:11 /usr/bin/redis-server 0.0.0.0:6379
+root         219     204  0 03:50 pts/0    00:00:00 nginx: master process /usr/sbin/nginx -g daemon off;
+root         220     204  0 03:50 pts/0    00:00:00 /usr/bin/node /server.js
+www-data     221     204  0 03:50 pts/0    00:00:04 /usr/local/sbin/haproxy -f /etc/haproxy/haproxy.cfg -p /var/run/haproxy.pid
+www-data     253     219  0 03:50 pts/0    00:00:00 nginx: worker process
+www-data     254     219  0 03:50 pts/0    00:00:00 nginx: worker process
+www-data     255     219  0 03:50 pts/0    00:00:00 nginx: worker process
+www-data     257     219  0 03:50 pts/0    00:00:00 nginx: worker process
+postgres     308     207  0 03:50 ?        00:00:00 postgres: checkpointer
+postgres     309     207  0 03:50 ?        00:00:00 postgres: background writer
+postgres     311     207  0 03:50 ?        00:00:00 postgres: walwriter
+postgres     312     207  0 03:50 ?        00:00:00 postgres: autovacuum launcher
+postgres     313     207  0 03:50 ?        00:00:00 postgres: logical replication launcher
+root         336     204  0 03:50 pts/0    00:00:02 /usr/local/bin/dataplaneapi --port 5555 -b /usr/local/sbin/haproxy -c /etc/haproxy/haproxy.cfg -d 5 -r /usr/bi
+postgres     705     207  0 03:58 ?        00:00:00 postgres: postgres postgres 172.17.0.1(37132) idle
+postgres     706     207  0 03:58 ?        00:00:00 postgres: postgres biocolab 172.17.0.1(37140) idle
+postgres     707     207  0 03:58 ?        00:00:00 postgres: postgres biocolab 172.17.0.1(37156) idle
+postgres    1036     207  0 04:08 ?        00:00:00 postgres: postgres biocohub 172.17.0.1(57498) idle
+root        4206       0  1 05:33 pts/1    00:00:00 /bin/bash
+root        4212    4206  0 05:33 pts/1    00:00:00 ps -ef
+root@507cd2637a97:/home#
+```
+
+**Process running with BioColab container**
+
+```R
+root@ip-172-31-39-123:/biocolab/installation-2.0.53/biocolab# docker exec -it biocolab /bin/bash
+root@b1a226ccc20a:/home# ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 03:56 pts/0    00:00:00 /bin/bash /super.sh
+root         110       1  0 03:56 pts/0    00:00:09 /usr/bin/python3 /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
+mosquit+     112     110  0 03:56 pts/0    00:00:02 /usr/local/sbin/mosquitto -c /mosquitto/config/mosquitto.conf
+beansta+     113     110  0 03:56 pts/0    00:00:00 /usr/local/bin/beanstalkd -b /appdata/beanstalkd -f 1000 -u beanstalkd
+root         115     110  0 03:56 pts/0    00:00:00 /usr/bin/Xvfb :0.0 -screen 0 800x600x16 -dpi 75 -nolisten tcp -audit 4 -ac -auth /root/.Xauthority
+root         125     110  0 03:56 pts/0    00:00:00 /usr/bin/aria2c --enable-rpc --rpc-listen-all --rpc-allow-origin-all --rpc-secret=************ --rpc-listen-po
+root         128     110  0 03:56 pts/0    00:00:00 sshd: /usr/sbin/sshd -p 2223 -D [listener] 0 of 10-100 startups
+root         129     110  0 03:56 pts/0    00:00:00 /usr/sbin/cron -f
+root         462     110  1 03:58 pts/0    00:01:43 /appdata/apps/t2d_dsc_tool
+root         484     110  0 03:58 pts/0    00:00:10 /appdata/apps/t2d_blc_tool
+root        1846     110  0 04:06 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-kernel-worker
+root        1858     110  0 04:06 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-kernel-worker
+root        1867     110  0 04:06 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-kernel-worker
+root        1880     110  0 04:06 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-kernel-worker
+root        1881     110  0 04:06 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-kernel-worker
+root        1882     110  0 04:06 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-kernel-worker
+root        1883     110  0 04:06 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-kernel-worker
+root        1884     110  0 04:06 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-kernel-worker
+root        1885     110  0 04:06 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-kernel-worker
+root        1886     110  0 04:06 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-kernel-worker
+root        1887     110  0 04:06 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-kernel-worker
+root        1888     110  0 04:06 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-kernel-worker
+root        1889     110  0 04:06 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-kernel-worker
+root        1890     110  0 04:06 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-kernel-worker
+root        1891     110  0 04:06 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-kernel-worker
+root        1957     110  0 04:08 pts/0    00:00:00 /bin/bash /start.sh
+root        1958    1957  0 04:08 pts/0    00:00:04 /miniconda/user/bin/python3.10 /miniconda/user/bin/jupyterhub --config /configs/hub/etc/config.py --ip 0.0.0.0
+root        1965    1958  0 04:08 ?        00:00:01 node /miniconda/user/bin/configurable-http-proxy --ip 0.0.0.0 --port 18000 --api-ip 127.0.0.1 --api-port 18001
+root        1975    1958  0 04:08 ?        00:00:00 /miniconda/user/bin/python3.10 -m jupyterhub_idle_culler --timeout=36000
+root        2021     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2022     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2023     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2024     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2025     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2026     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2027     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2028     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2029     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2030     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2031     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2032     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2033     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2034     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2035     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2036     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2037     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2038     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2039     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2040     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker
+root        2094     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-pack-notebook-worker
+root        2095     110  0 04:08 pts/0    00:00:00 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-pack-notebook-worker
+root        2107     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2108     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2109     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2110     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2111     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2112     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2113     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2114     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2115     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2116     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2117     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2118     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2119     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2120     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2121     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2122     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2123     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2124     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2125     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2126     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2127     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2128     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2129     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2130     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        2131     110  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-setup-notebook-worker
+root        5607       0  1 05:34 pts/1    00:00:00 /bin/bash
+root        5619    5607  0 05:34 pts/1    00:00:00 ps -ef
+root@b1a226ccc20a:/home#
+```
 ### curl command testing
 
 ```R
 curl <localhost>
 curl <localhost>:<http port>
 curl <localhost>:<application port>
+curl <localhost>:<nginx port>
 ```
 
 :bell: **NOTE** : BioStudio is running on http (80) and https (443)
@@ -2030,7 +2419,7 @@ curl <localhost>:<application port>
 **Curl with host**
 
 ```R
-root@ip-172-31-39-182:/biocolab/installation-2.0.51# curl localhost 
+root@ip-172-31-39-182:/biocolab/installation-2.0.53# curl localhost 
 <html lang="en">
 
 <head>
@@ -2071,7 +2460,7 @@ or bioinformaticians" />
 
 -------
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.51# curl localhost:80
+root@ip-172-31-39-182:/biocolab/installation-2.0.53# curl localhost:80
 
 <head>
     <meta charset="UTF-8">
@@ -2111,7 +2500,7 @@ or bioinformaticians" />
 
 -------
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.51# curl localhost:11123
+root@ip-172-31-39-182:/biocolab/installation-2.0.53# curl localhost:11123
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -2149,9 +2538,10 @@ or bioinformaticians" />
 **Curl inside the container**
 
 ```R
+
 # BioProxy container 
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.51# docker exec -it bioproxy /bin/bash
+root@ip-172-31-39-182:/biocolab/installation-2.0.53# docker exec -it bioproxy /bin/bash
 root@6c1fca69acf1:/home# curl localhost
 <html lang="en">
 
@@ -2244,7 +2634,7 @@ or bioinformaticians" />
 ```R
 nslookup <Domain name>
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.51# nslookup test-lalit-biocolab.bioturing.com
+root@ip-172-31-39-182:/biocolab/installation-2.0.53# nslookup test-lalit-biocolab.bioturing.com
 Server:         127.0.0.53
 Address:        127.0.0.53#53
 
@@ -2252,7 +2642,7 @@ Non-authoritative answer:
 Name:   test-lalit-biocolab.bioturing.com
 Address: 54.203.5.109
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.51# 
+root@ip-172-31-39-182:/biocolab/installation-2.0.53# 
 ```
 
 ### check whiltelist of domian
@@ -2267,7 +2657,7 @@ root@ip-172-31-39-182:/biocolab/installation-2.0.51#
 -- wget https://cdn.bioturing.com/documentation/adm.png
 
 - curl https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com
--- wget wget https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com/colab/apps/0w-byh0iNCWigGEjbZybU.92ae1dec-6bf9-4041-9d06-330e0fe7b564.zip
+-- wget https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com/colab/apps/0w-byh0iNCWigGEjbZybU.92ae1dec-6bf9-4041-9d06-330e0fe7b564.zip
 
 - curl https://s3.us-west-2.amazonaws.com/cdn.bioturing.com
 -- wget https://s3.us-west-2.amazonaws.com/cdn.bioturing.com/documentation/adm.png
@@ -2310,7 +2700,7 @@ root@ip-172-31-39-182:/biocolab/installation-2.0.51#
 # ps -ef | grep postgres
 
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.51/test# ps -ef | grep 'docker'
+root@ip-172-31-39-182:/biocolab/installation-2.0.53/test# ps -ef | grep 'docker'
 root        4243       1  1 03:24 ?        00:02:54 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
 root        9893    4243  0 04:04 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 32767 -container-ip 172.17.0.2 -container-port 32767
 root        9900    4243  0 04:04 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 32767 -container-ip 172.17.0.2 -container-port 32767
@@ -2341,13 +2731,13 @@ root       10829    4243  0 04:08 ?        00:00:00 /usr/bin/docker-proxy -proto
 root       10842    4243  0 04:08 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 1883 -container-ip 172.17.0.3 -container-port 1883
 root       10849    4243  0 04:08 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 1883 -container-ip 172.17.0.3 -container-port 1883
 root       46489    1507  0 07:54 pts/1    00:00:00 grep --color=auto docker
-root@ip-172-31-39-182:/biocolab/installation-2.0.51/test# 
+root@ip-172-31-39-182:/biocolab/installation-2.0.53/test# 
 
 -------
 
 -------
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.51/test# ps -ef | grep 'miniconda'
+root@ip-172-31-39-182:/biocolab/installation-2.0.53/test# ps -ef | grep 'miniconda'
 root       11186   11035  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker      
 root       11187   11035  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker      
 root       11188   11035  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker      
@@ -2414,27 +2804,27 @@ root       11264   11263  0 04:08 pts/0    00:00:10 /miniconda/user/bin/python3.
 root       11422   11264  0 04:08 ?        00:00:02 node /miniconda/user/bin/configurable-http-proxy --ip 0.0.0.0 --port 18000 --api-ip 127.0.0.1 --api-port 18001 --error-target http://5fc5db8bc5cf:18081/hub/error --log-level info
 root       11436   11264  0 04:08 ?        00:00:00 /miniconda/user/bin/python3.10 -m jupyterhub_idle_culler --timeout=36000
 root       46573    1507  0 07:54 pts/1    00:00:00 grep --color=auto miniconda
-root@ip-172-31-39-182:/biocolab/installation-2.0.51/test#
+root@ip-172-31-39-182:/biocolab/installation-2.0.53/test#
 
 -------
 
 -------
 
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.51/test# ps -ef | grep nginx
+root@ip-172-31-39-182:/biocolab/installation-2.0.53/test# ps -ef | grep nginx
 root       10327   10312  0 04:04 pts/0    00:00:00 nginx: master process /usr/sbin/nginx -g daemon off;
 www-data   10374   10327  0 04:04 pts/0    00:00:00 nginx: worker process
 www-data   10375   10327  0 04:04 pts/0    00:00:00 nginx: worker process
 www-data   10376   10327  0 04:04 pts/0    00:00:00 nginx: worker process
 www-data   10377   10327  0 04:04 pts/0    00:00:00 nginx: worker process
 root       46627    1507  0 07:54 pts/1    00:00:00 grep --color=auto nginx
-root@ip-172-31-39-182:/biocolab/installation-2.0.51/test# 
+root@ip-172-31-39-182:/biocolab/installation-2.0.53/test# 
 
 -------
 
 -------
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.51/test# ps -ef | grep postgres
+root@ip-172-31-39-182:/biocolab/installation-2.0.53/test# ps -ef | grep postgres
 ubuntu     10315   10312  0 04:04 pts/0    00:00:00 /opt/bitnami/postgresql/bin/postgres -D /bitnami/postgresql/data --config-file=/opt/bitnami/postgresql/conf/postgresql.conf --external_pid_file=/opt/bitnami/postgresql/tmp/postgresql.pid --hba_file=/opt/bitnami/postgresql/conf/pg_hba.conf
 ubuntu     10384   10315  0 04:04 ?        00:00:00 postgres: checkpointer
 ubuntu     10385   10315  0 04:04 ?        00:00:00 postgres: background writer
@@ -2446,13 +2836,13 @@ ubuntu     11336   10315  0 04:08 ?        00:00:00 postgres: postgres biocolab 
 ubuntu     11421   10315  0 04:08 ?        00:00:00 postgres: postgres biocohub 172.17.0.1(38936) idle
 ubuntu     11516   10315  0 04:09 ?        00:00:00 postgres: postgres biocolab 172.17.0.1(55506) idle
 root       46638    1507  0 07:55 pts/1    00:00:00 grep --color=auto postgres
-root@ip-172-31-39-182:/biocolab/installation-2.0.51/test#
+root@ip-172-31-39-182:/biocolab/installation-2.0.53/test#
 ```
 
 **Check process with BioProxy container**
 
 ```R
-root@ip-172-31-39-182:/biocolab/installation-2.0.51/test# docker exec -it  bioproxy /bin/bash
+root@ip-172-31-39-182:/biocolab/installation-2.0.53/test# docker exec -it  bioproxy /bin/bash
 root@6c1fca69acf1:/home# ps -ef
 UID          PID    PPID  C STIME TTY          TIME CMD
 root           1       0  0 04:04 pts/0    00:00:00 /bin/bash /super.sh
@@ -2771,6 +3161,130 @@ now you would have test_chained.pem and test.p7b file.
 ```
 
 above command will show the detail and validation.
+
+## BioStudio Supervior services
+
+All supervisior service configured in below location.
+
+```R
+/etc/supervisor/supervisord.conf
+```
+
+**Restart t2d services inside BioColab**
+
+```R
+root@b1a226ccc20a:/etc/supervisor# supervisorctl restart colabblc:*
+colabblc:colabblc_00: stopped
+colabblc:colabblc_00: started
+```
+
+**Restart haproxy services inside BioColab**
+
+```R
+root@507cd2637a97:/home# supervisorctl restart haproxy:*
+haproxy:haproxy_00: stopped
+haproxy:haproxy_00: started
+```
+
+# Installing Nginx Proxy
+
+[Nginx installation : 1](https://ubuntu.com/tutorials/install-and-configure-nginx#1-overview)
+
+[Nginx installation : 2](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/)
+
+```R
+# sudo apt install nginx
+
+root@ip-172-31-39-123:/biocolab/installation-2.0.53/biocolab# curl -I 127.0.0.1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 18 Dec 2023 07:09:02 GMT
+Content-Type: text/html
+Content-Length: 612
+Last-Modified: Mon, 18 Dec 2023 07:08:18 GMT
+Connection: keep-alive
+ETag: "657fefe2-264"
+Accept-Ranges: bytes
+
+```
+
+:bell: NOTE: Unti, we will not post vhost entry with Nginx, You can see browser window was Nginx s running well.
+
+
+## Nginx Configuration
+
+[vhost setup](https://serverspace.io/support/help/nginx-virtual-hosts-on-ubuntu-20-04/)
+
+```R
+# In case of we are not having SSL
+
+server {
+    listen 0.0.0.0:80;
+    server_name <Your Domain>.com www.<Your Domain>.com;
+    #return 301 https:<Your Domain>.com$request_uri;
+
+    ignore_invalid_headers off;
+    client_max_body_size 0;
+    client_body_timeout 1d;
+    proxy_buffering off;
+    proxy_read_timeout 1d;
+    proxy_connect_timeout 1d;
+    proxy_send_timeout 1d;
+    location / {
+        proxy_pass http://127.0.0.1:8081;
+        proxy_http_version 1.1;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        add_header X-Host $host;
+        proxy_set_header X-Forwarded-Host $http_host;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+    }
+    location ~ /\.ht {
+        deny all;
+    }
+}
+
+server {
+    listen 0.0.0.0:443;
+#       ssl http2;
+    server_name <Your Domain>.com www.<Your Domain>.com;
+    if ($host = 'www.<Your Domain>.com' ) {
+        rewrite  ^/(.*)$  https://<Your Domain>.com/$1  permanent;
+    }
+    #ssl_certificate /etc/ssl/certs/testdomain.pem;
+    #ssl_certificate_key /etc/pki/tls/private/testdomain.key;
+    #ssl_session_timeout 1d;
+    #ssl_session_cache shared:SSL:20m;
+    #ssl_prefer_server_ciphers on;
+    #ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    #ssl_ciphers EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH;
+    ignore_invalid_headers off;
+    client_max_body_size 0;
+    client_body_timeout 1d;
+    proxy_buffering off;
+    proxy_read_timeout 1d;
+    proxy_connect_timeout 1d;
+    proxy_send_timeout 1d;
+    location / {
+        proxy_pass http://127.0.0.1:8081;
+        proxy_http_version 1.1;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        add_header X-Host $host;
+        proxy_set_header X-Forwarded-Host $http_host;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+    }
+    location ~ /\.ht {
+        deny all;
+    }
+}
+```
 
 # Troubleshoot
 

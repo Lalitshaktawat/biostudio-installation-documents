@@ -368,13 +368,13 @@ cd /biocolab
 # Note: Installation script version would be changed based on updates.
 # Our Team will get you updates and keep in touch with you during installation.
 
-wget https://github.com/bioturing/installation/archive/refs/tags/v2.0.51.tar.gz
+wget https://github.com/bioturing/installation/archive/refs/tags/V2.0.53.tar.gz
 
 # uncompressed .gz
-tar xvf v2.0.51.tar.gz
+tar xvf V2.0.53.tar.gz
 
 # Switch to installation folder
-cd installation-2.0.51/
+cd installation-2.0.53/
 
 # Execute installation script
 bash install.biocolab.docker.sh
@@ -386,7 +386,7 @@ docker ps -a
 http://<Your Domain>/dashboard/
 ```
 
-:large_orange_diamond: Download **v2.0.51.tar.gz**, which content script to install **BioStudio.**
+:large_orange_diamond: Download **V2.0.53.tar.gz**, which content script to install **BioStudio.**
 
 <br><img alt="wget-script" src="https://cdn.bioturing.com/documentation/idiag/install-step1.png" class="lazy" width="100%"><br>
 
