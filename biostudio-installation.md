@@ -1861,6 +1861,69 @@ helm search repo bioturing
 # biocolab-preprod-biocolab-colab.bioturing-preprod.svc.cluster.local
 ```
 
+# BioStudio Checklist
+
+:bell: **Note**:  Ensure that the BioProxy container **doesn't** have HTTP_PROXY, HTTPS_PROXY, and NO_PROXY settings configured
+
+```R
+1] Process running with host.
+ps -ef
+netstat -nltup
+
+2] Process running with Bioproxy container	
+ps -ef
+netstat -nltup
+				
+3] Process running with BioColab container
+ps -ef
+netstat -nltup		
+				
+4] Check application up and running and connectivity.
+				
+curl command testing				
+				
+	curl <localhost>			
+	curl <localhost>:<http port>			
+	curl <localhost>:<application port>			
+	curl <localhost>:<nginx port>			
+				
+5] check whiltelist of domain with Host and both containers.		
+				
+- curl https://colab.biotruing.com
+-- Should show contents
+
+- curl https://cdn.biotruing.com
+-- wget https://cdn.bioturing.com/documentation/adm.png
+
+- curl https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com
+-- wget https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com/colab/apps/0w-byh0iNCWigGEjbZybU.92ae1dec-6bf9-4041-9d06-330e0fe7b564.zip
+
+- curl https://s3.us-west-2.amazonaws.com/cdn.bioturing.com
+-- wget https://s3.us-west-2.amazonaws.com/cdn.bioturing.com/documentation/adm.png
+
+- curl https://studio.bioturing.com
+-- Should show contents				
+				
+		
+				
+6] Check application varification processes
+with Host machine
+
+# ps -ef | grep 'docker'
+# ps -ef | grep 'miniconda'
+# ps -ef | grep nginx
+# ps -ef | grep postgres			
+				
+7] Check dashboard setting
+
+8] Check websocket
+
+9] Check to download notebook and running
+
+10] Guide for SSO login
+
+```
+
 # Test and verification
 
 Before start installation below is the status:
@@ -2057,7 +2120,7 @@ ENABLE_HTTPS=false
 TZ=UTC
 POSTGRESQL_DATABASE=biocohub
 NFS_T4_PORT=32767
-APP_DOMAIN=test-lalit-biocolab.bioturing.com
+APP_DOMAIN=<Client BioStudio Domain>
 HOME=/
 LANG=en_US.UTF-8
 POSTGRESQL_VOLUME_DIR=/bitnami/postgresql
@@ -2232,7 +2295,7 @@ DISPLAY=:0.0
 GOMAXPROCS=
 CRAN_URL=https://cloud.r-project.org/
 SHLVL=1
-APP_DOMAIN_URL=https://test-lalit-biocolab.bioturing.com
+APP_DOMAIN_URL=https://<Client BioStudio Domain>
 SSHD_SERVER_PORT=2223
 NV_CUDA_LIB_VERSION=11.8.0-1
 NVARCH=x86_64
@@ -2448,7 +2511,7 @@ or bioinformaticians" />
     />
     <script lang="javascript">
         window.BIOCOLAB_NEED_MQTT = true;
-        window.CURRENT_DOMAIN = "https://test-lalit-biocolab.bioturing.com";
+        window.CURRENT_DOMAIN = "https://<Client BioStudio Domain>";
         window.CURRENT_FULL_HOST = "https://localhost";
         window.DSC_DOMAIN = window.location.origin;
         window.CURRENT_URI = "/";
@@ -2488,7 +2551,7 @@ or bioinformaticians" />
     />
     <script lang="javascript">
         window.BIOCOLAB_NEED_MQTT = true;
-        window.CURRENT_DOMAIN = "https://test-lalit-biocolab.bioturing.com";
+        window.CURRENT_DOMAIN = "https://<Client BioStudio Domain>";
         window.CURRENT_FULL_HOST = "https://localhost";
         window.DSC_DOMAIN = window.location.origin;
         window.CURRENT_URI = "/";
@@ -2527,7 +2590,7 @@ or bioinformaticians" />
     />
     <script lang="javascript">
         window.BIOCOLAB_NEED_MQTT = true;
-        window.CURRENT_DOMAIN = "https://test-lalit-biocolab.bioturing.com";
+        window.CURRENT_DOMAIN = "https://<Client BioStudio Domain>";
         window.CURRENT_FULL_HOST = "https://localhost:11123";
         window.DSC_DOMAIN = window.location.origin;
         window.CURRENT_URI = "/";
@@ -2571,7 +2634,7 @@ or bioinformaticians" />
     />
     <script lang="javascript">
         window.BIOCOLAB_NEED_MQTT = true;
-        window.CURRENT_DOMAIN = "https://test-lalit-biocolab.bioturing.com";
+        window.CURRENT_DOMAIN = "https://<Client BioStudio Domain>";
         window.CURRENT_FULL_HOST = "https://localhost";
         window.DSC_DOMAIN = window.location.origin;
         window.CURRENT_URI = "/";
@@ -2619,7 +2682,7 @@ or bioinformaticians" />
     />
     <script lang="javascript">
         window.BIOCOLAB_NEED_MQTT = true;
-        window.CURRENT_DOMAIN = "https://test-lalit-biocolab.bioturing.com";
+        window.CURRENT_DOMAIN = "https://<Client BioStudio Domain>";
         window.CURRENT_FULL_HOST = "https://localhost:11123";
         window.DSC_DOMAIN = window.location.origin;
         window.CURRENT_URI = "/";
@@ -2634,12 +2697,12 @@ or bioinformaticians" />
 ```R
 nslookup <Domain name>
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.53# nslookup test-lalit-biocolab.bioturing.com
+root@ip-172-31-39-182:/biocolab/installation-2.0.53# nslookup <Client BioStudio Domain>
 Server:         127.0.0.53
 Address:        127.0.0.53#53
 
 Non-authoritative answer:
-Name:   test-lalit-biocolab.bioturing.com
+Name:   <Client BioStudio Domain>
 Address: 54.203.5.109
 
 root@ip-172-31-39-182:/biocolab/installation-2.0.53# 
@@ -2650,19 +2713,19 @@ root@ip-172-31-39-182:/biocolab/installation-2.0.53#
 **Check with host**
 
 ```R
-- curl https://colab.biotruing.com
+# curl https://colab.biotruing.com
 -- Should show contents
 
-- curl https://cdn.biotruing.com
--- wget https://cdn.bioturing.com/documentation/adm.png
+# curl https://cdn.biotruing.com
+# wget https://cdn.bioturing.com/documentation/adm.png
 
-- curl https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com
--- wget https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com/colab/apps/0w-byh0iNCWigGEjbZybU.92ae1dec-6bf9-4041-9d06-330e0fe7b564.zip
+# curl https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com
+# wget https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com/colab/apps/0w-byh0iNCWigGEjbZybU.92ae1dec-6bf9-4041-9d06-330e0fe7b564.zip
 
-- curl https://s3.us-west-2.amazonaws.com/cdn.bioturing.com
--- wget https://s3.us-west-2.amazonaws.com/cdn.bioturing.com/documentation/adm.png
+# curl https://s3.us-west-2.amazonaws.com/cdn.bioturing.com
+# wget https://s3.us-west-2.amazonaws.com/cdn.bioturing.com/documentation/adm.png
 
-- curl https://studio.bioturing.com
+# curl https://studio.bioturing.com
 -- Should show contents
 ```
 
@@ -2672,19 +2735,19 @@ root@ip-172-31-39-182:/biocolab/installation-2.0.53#
 
 # Both container should show the same output and all would have the result.
 
-- curl https://colab.bioturing.com
+# curl https://colab.biotruing.com
 -- Should show contents
 
-- curl https://cdn.biotruing.com
--- wget https://cdn.bioturing.com/documentation/adm.png
+# curl https://cdn.biotruing.com
+# wget https://cdn.bioturing.com/documentation/adm.png
 
-- curl https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com
--- wget wget https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com/colab/apps/0w-byh0iNCWigGEjbZybU.92ae1dec-6bf9-4041-9d06-330e0fe7b564.zip
+# curl https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com
+# wget https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com/colab/apps/0w-byh0iNCWigGEjbZybU.92ae1dec-6bf9-4041-9d06-330e0fe7b564.zip
 
-- curl https://s3.us-west-2.amazonaws.com/cdn.bioturing.com
--- wget https://s3.us-west-2.amazonaws.com/cdn.bioturing.com/documentation/adm.png
+# curl https://s3.us-west-2.amazonaws.com/cdn.bioturing.com
+# wget https://s3.us-west-2.amazonaws.com/cdn.bioturing.com/documentation/adm.png
 
-- curl https://studio.bioturing.com
+# curl https://studio.bioturing.com
 -- Should show contents
 
 ```
