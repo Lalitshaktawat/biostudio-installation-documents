@@ -7,13 +7,16 @@ Once **K8s** Cluster is ready. We can follow to install BioStudio using the helm
 **Network requirements:**
 Access to these domains is required for the machine with the BioStudio software installed, as we need to retrieve data from the BioTuring ecosystem server.
 
-| Domain             | Explain                                                            |
-|--------------------|--------------------------------------------------------------------|
-| *.bioturing.com    | We need to retrieve data from the BioTuring ecosystem server.      |
-| *.anaconda.org     | We need to retrieve packages from the Anaconda server.             |
-| *repo.anaconda.com | We need to retrieve packages from the Anaconda repo server.        |
-| Amazon S3          | We need to retrieve resources from the BioTuring ecosystem server. |
-| github.com         | We need to retrieve packages from the Github. |
+| Domain                                                           | Explain                                                            |
+|------------------------------------------------------------------|--------------------------------------------------------------------|
+| *.bioturing.com                                                  | We need to retrieve data from the BioTuring ecosystem server.      |
+| *.anaconda.org                                                   | We need to retrieve packages from the Anaconda server.             |
+| *repo.anaconda.com                                               | We need to retrieve packages from the Anaconda repo server.        |
+| Amazon S3                                                        | We need to retrieve resources from the BioTuring ecosystem server. |
+| github.com                                                       | We need to retrieve packages from the Github.                      |
+| cdn-eu-west-1.s3.eu-west-1.amazonaws.com (euro -west1)           | We need to retrieve packages from the CDN.                         |
+| s3.us-west-2.amazonaws.com/cdn.bioturing.com (us -west2)         | We need to retrieve packages from the CDN.                         |
+| cdn.bioturing.com (us -west2)                                    | We need to retrieve packages from the CDN.                         |
 
 **BioStudio Partition details:**
 

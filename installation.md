@@ -859,11 +859,11 @@ set up SSO at the same time.
 
 :large_orange_diamond: **Select Configuration Tab and get all required values.**
 
-:one: **Issuer ID**
+:one: **Issuer ID** = **IDP Issuer URL**
 
-:two: **Initiate Single Sign-On URL**
+:two: **Initiate Single Sign-On URL** = **IDP SSO URL**
 
-:three: **Download singing certificate**
+:three: **Download singing certificate** = **IDP x509 Public Cert**
 
 
 <br><img alt="BioColab-img" src="https://cdn.bioturing.com/documentation/SSO_IMG/pingidc.png" class="lazy" width="100%"><br>
@@ -1889,22 +1889,20 @@ curl command testing
 				
 5] check whiltelist of domain with Host and both containers.		
 				
-- curl https://colab.biotruing.com
--- Should show contents
+# curl https://colab.biotruing.com
+Should show contents
 
-- curl https://cdn.biotruing.com
--- wget https://cdn.bioturing.com/documentation/adm.png
+# curl https://cdn.biotruing.com
+# wget https://cdn.bioturing.com/documentation/adm.png
 
-- curl https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com
--- wget https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com/colab/apps/0w-byh0iNCWigGEjbZybU.92ae1dec-6bf9-4041-9d06-330e0fe7b564.zip
+# curl https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com
+# wget https://cdn-eu-west-1.s3.eu-west-1.amazonaws.com/colab/apps/0w-byh0iNCWigGEjbZybU.92ae1dec-6bf9-4041-9d06-330e0fe7b564.zip
 
-- curl https://s3.us-west-2.amazonaws.com/cdn.bioturing.com
--- wget https://s3.us-west-2.amazonaws.com/cdn.bioturing.com/documentation/adm.png
+# curl https://s3.us-west-2.amazonaws.com/cdn.bioturing.com
+# wget https://s3.us-west-2.amazonaws.com/cdn.bioturing.com/documentation/adm.png
 
-- curl https://studio.bioturing.com
--- Should show contents				
-				
-		
+# curl https://studio.bioturing.com
+Should show contents				
 				
 6] Check application varification processes
 with Host machine
@@ -3215,6 +3213,9 @@ When ever you would have bundle , pem, p7b three files then you must combine pem
 
 ```R
 cat test.pem test_bundle.pem > test_chained.pem
+
+test_chained.pem --> denoted as a certificate
+test.pem --> denoted as a key
 ```
 
 now you would have test_chained.pem and test.p7b file.
@@ -3844,7 +3845,7 @@ server {
         # For HTTP/HTTPS
         client_max_body_size 5000m;
         client_header_buffer_size 16k;
-          large_client_header_buffers  4 32k;
+        large_client_header_buffers  4 32k;
 
         # For websocket
         proxy_http_version 1.1;

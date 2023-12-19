@@ -7,7 +7,7 @@
 
 **To access this features:**
 
-:high_brightness: Click on **Package Environments** icon on the left side menu. 
+:high_brightness: Click on **Package Environments** icon on the left side menu.
 
 -- **OR** --
 
