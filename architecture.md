@@ -95,7 +95,7 @@ flowchart TD
     B --> C{Business Logic}
     C -->|Licenses| D[*.bioturing.com]
     C -->|Notebooks| E[*.bioturing.com]
-    C -->|Packages| F[*.bioturing.com \n *.anaconada.org \n *.anaconda.com \n Amazon S3 \n github.com]
+    C -->|Packages| F[*.bioturing.com \n *.anaconada.org \n *.anaconda.com \n Amazon S3 \n github.com \n BioTuring CDN]
     C -->|In-house Data| G[NFS \n S3 \n GlusterFS]
     C -->|Databases| H[PostgreSQL \n MySQL \n MariaDB]
     C -->|Ecosystem| J[BBrowserX \n Talk2Data]

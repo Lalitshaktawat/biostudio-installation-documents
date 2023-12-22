@@ -3230,10 +3230,27 @@ All supervisior service configured in below location.
 ```R
 /etc/supervisor/supervisord.conf
 ```
+**Download t2d services inside BioColab**
+
+```R
+
+# cd /appdata/apps/download
+# wget "https://colablocal.bioturing.com/content/t2d_blc_tool"
+# wget "https://colablocal.bioturing.com/content/t2d_dsc_tool"
+# chmod 700 t2d_blc_tool t2d_dsc_tool
+# mv t2d_* ../
+# 
+# supervisorctl restart colabblc:*
+# supervisorctl restart colab:*
+```
 
 **Restart t2d services inside BioColab**
 
 ```R
+
+# supervisorctl restart colabblc:*
+# supervisorctl restart colab:*
+
 root@b1a226ccc20a:/etc/supervisor# supervisorctl restart colabblc:*
 colabblc:colabblc_00: stopped
 colabblc:colabblc_00: started
