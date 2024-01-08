@@ -368,13 +368,13 @@ cd /biocolab
 # Note: Installation script version would be changed based on updates.
 # Our Team will get you updates and keep in touch with you during installation.
 
-wget https://github.com/bioturing/installation/archive/refs/tags/V2.0.53.tar.gz
+wget https://github.com/bioturing/installation/archive/refs/tags/v2.0.54.tar.gz
 
 # uncompressed .gz
-tar xvf V2.0.53.tar.gz
+tar xvf v2.0.54.tar.gz
 
 # Switch to installation folder
-cd installation-2.0.53/
+cd installation-2.0.54/
 
 # Execute installation script
 bash install.biocolab.docker.sh
@@ -386,7 +386,7 @@ docker ps -a
 http://<Your Domain>/dashboard/
 ```
 
-:large_orange_diamond: Download **V2.0.53.tar.gz**, which content script to install **BioStudio.**
+:large_orange_diamond: Download **v2.0.54.tar.gz**, which content script to install **BioStudio.**
 
 <br><img alt="wget-script" src="https://cdn.bioturing.com/documentation/idiag/install-step1.png" class="lazy" width="100%"><br>
 
@@ -1927,7 +1927,7 @@ with Host machine
 Before start installation below is the status:
 
 ```R
-root@ip-172-31-39-182:/biocolab/installation-2.0.53# netstat -nltup
+root@ip-172-31-39-182:/biocolab/installation-2.0.54# netstat -nltup
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
 tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      2892/systemd-resolv
@@ -1938,9 +1938,9 @@ udp        0      0 172.31.39.182:68        0.0.0.0:*                           
 udp        0      0 127.0.0.1:323           0.0.0.0:*                           2808/chronyd
 udp6       0      0 ::1:323                 :::*                                2808/chronyd
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.53# env
+root@ip-172-31-39-182:/biocolab/installation-2.0.54# env
 SHELL=/bin/bash
-PWD=/biocolab/installation-2.0.53
+PWD=/biocolab/installation-2.0.54
 LOGNAME=root
 HOME=/root
 LANG=C.UTF-8
@@ -1975,7 +1975,7 @@ Below are the port should be in as status.
 `netstat -nltup # from host`
 
 ```R
-root@ip-172-31-39-182:/biocolab/installation-2.0.53# netstat -nltup
+root@ip-172-31-39-182:/biocolab/installation-2.0.54# netstat -nltup
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
 tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      2892/systemd-resolv
@@ -2018,7 +2018,7 @@ udp6       0      0 ::1:323                 :::*                                
 `netstat -nltup # inside the container`
 
 ```R
-root@ip-172-31-39-182:/biocolab/installation-2.0.53# docker exec -it bioproxy /bin/bash
+root@ip-172-31-39-182:/biocolab/installation-2.0.54# docker exec -it bioproxy /bin/bash
 root@6c1fca69acf1:/home# netstat -nltup
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
@@ -2040,7 +2040,7 @@ root@6c1fca69acf1:/home#
 
 -------
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.53# docker exec -it bioproxy /bin/bash
+root@ip-172-31-39-182:/biocolab/installation-2.0.54# docker exec -it bioproxy /bin/bash
 root@6c1fca69acf1:/home# netstat -nltup
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
@@ -2062,7 +2062,7 @@ root@6c1fca69acf1:/home#
 
 -------
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.53# docker exec -it biocolab /bin/bash
+root@ip-172-31-39-182:/biocolab/installation-2.0.54# docker exec -it biocolab /bin/bash
 root@5fc5db8bc5cf:/home# netstat -nltup
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
@@ -2349,7 +2349,7 @@ no_proxy="kubernetes,.svc,.default,localhost,0.0.0.0,.cluster.local,172.17.0.0/1
 **Process running with Bioproxy container**
 
 ```R
-root@ip-172-31-39-123:/biocolab/installation-2.0.53/biocolab# docker exec -it bioproxy /bin/bash
+root@ip-172-31-39-123:/biocolab/installation-2.0.54/biocolab# docker exec -it bioproxy /bin/bash
 root@507cd2637a97:/home# ps -ef
 UID          PID    PPID  C STIME TTY          TIME CMD
 root           1       0  0 03:50 pts/0    00:00:00 /bin/bash /super.sh
@@ -2383,7 +2383,7 @@ root@507cd2637a97:/home#
 **Process running with BioColab container**
 
 ```R
-root@ip-172-31-39-123:/biocolab/installation-2.0.53/biocolab# docker exec -it biocolab /bin/bash
+root@ip-172-31-39-123:/biocolab/installation-2.0.54/biocolab# docker exec -it biocolab /bin/bash
 root@b1a226ccc20a:/home# ps -ef
 UID          PID    PPID  C STIME TTY          TIME CMD
 root           1       0  0 03:56 pts/0    00:00:00 /bin/bash /super.sh
@@ -2480,7 +2480,7 @@ curl <localhost>:<nginx port>
 **Curl with host**
 
 ```R
-root@ip-172-31-39-182:/biocolab/installation-2.0.53# curl localhost 
+root@ip-172-31-39-182:/biocolab/installation-2.0.54# curl localhost 
 <html lang="en">
 
 <head>
@@ -2521,7 +2521,7 @@ or bioinformaticians" />
 
 -------
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.53# curl localhost:80
+root@ip-172-31-39-182:/biocolab/installation-2.0.54# curl localhost:80
 
 <head>
     <meta charset="UTF-8">
@@ -2561,7 +2561,7 @@ or bioinformaticians" />
 
 -------
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.53# curl localhost:11123
+root@ip-172-31-39-182:/biocolab/installation-2.0.54# curl localhost:11123
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -2602,7 +2602,7 @@ or bioinformaticians" />
 
 # BioProxy container 
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.53# docker exec -it bioproxy /bin/bash
+root@ip-172-31-39-182:/biocolab/installation-2.0.54# docker exec -it bioproxy /bin/bash
 root@6c1fca69acf1:/home# curl localhost
 <html lang="en">
 
@@ -2695,7 +2695,7 @@ or bioinformaticians" />
 ```R
 nslookup <Domain name>
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.53# nslookup <Client BioStudio Domain>
+root@ip-172-31-39-182:/biocolab/installation-2.0.54# nslookup <Client BioStudio Domain>
 Server:         127.0.0.53
 Address:        127.0.0.53#53
 
@@ -2703,7 +2703,7 @@ Non-authoritative answer:
 Name:   <Client BioStudio Domain>
 Address: 54.203.5.109
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.53# 
+root@ip-172-31-39-182:/biocolab/installation-2.0.54# 
 ```
 
 ### check whiltelist of domian
@@ -2761,7 +2761,7 @@ root@ip-172-31-39-182:/biocolab/installation-2.0.53#
 # ps -ef | grep postgres
 
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.53/test# ps -ef | grep 'docker'
+root@ip-172-31-39-182:/biocolab/installation-2.0.54/test# ps -ef | grep 'docker'
 root        4243       1  1 03:24 ?        00:02:54 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
 root        9893    4243  0 04:04 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 32767 -container-ip 172.17.0.2 -container-port 32767
 root        9900    4243  0 04:04 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 32767 -container-ip 172.17.0.2 -container-port 32767
@@ -2792,13 +2792,13 @@ root       10829    4243  0 04:08 ?        00:00:00 /usr/bin/docker-proxy -proto
 root       10842    4243  0 04:08 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 1883 -container-ip 172.17.0.3 -container-port 1883
 root       10849    4243  0 04:08 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 1883 -container-ip 172.17.0.3 -container-port 1883
 root       46489    1507  0 07:54 pts/1    00:00:00 grep --color=auto docker
-root@ip-172-31-39-182:/biocolab/installation-2.0.53/test# 
+root@ip-172-31-39-182:/biocolab/installation-2.0.54/test# 
 
 -------
 
 -------
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.53/test# ps -ef | grep 'miniconda'
+root@ip-172-31-39-182:/biocolab/installation-2.0.54/test# ps -ef | grep 'miniconda'
 root       11186   11035  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker      
 root       11187   11035  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker      
 root       11188   11035  0 04:08 pts/0    00:00:01 /miniconda/user/bin/python3.10 /miniconda/user/bin/bhub-create-custom-task-worker      
@@ -2865,27 +2865,27 @@ root       11264   11263  0 04:08 pts/0    00:00:10 /miniconda/user/bin/python3.
 root       11422   11264  0 04:08 ?        00:00:02 node /miniconda/user/bin/configurable-http-proxy --ip 0.0.0.0 --port 18000 --api-ip 127.0.0.1 --api-port 18001 --error-target http://5fc5db8bc5cf:18081/hub/error --log-level info
 root       11436   11264  0 04:08 ?        00:00:00 /miniconda/user/bin/python3.10 -m jupyterhub_idle_culler --timeout=36000
 root       46573    1507  0 07:54 pts/1    00:00:00 grep --color=auto miniconda
-root@ip-172-31-39-182:/biocolab/installation-2.0.53/test#
+root@ip-172-31-39-182:/biocolab/installation-2.0.54/test#
 
 -------
 
 -------
 
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.53/test# ps -ef | grep nginx
+root@ip-172-31-39-182:/biocolab/installation-2.0.54/test# ps -ef | grep nginx
 root       10327   10312  0 04:04 pts/0    00:00:00 nginx: master process /usr/sbin/nginx -g daemon off;
 www-data   10374   10327  0 04:04 pts/0    00:00:00 nginx: worker process
 www-data   10375   10327  0 04:04 pts/0    00:00:00 nginx: worker process
 www-data   10376   10327  0 04:04 pts/0    00:00:00 nginx: worker process
 www-data   10377   10327  0 04:04 pts/0    00:00:00 nginx: worker process
 root       46627    1507  0 07:54 pts/1    00:00:00 grep --color=auto nginx
-root@ip-172-31-39-182:/biocolab/installation-2.0.53/test# 
+root@ip-172-31-39-182:/biocolab/installation-2.0.54/test# 
 
 -------
 
 -------
 
-root@ip-172-31-39-182:/biocolab/installation-2.0.53/test# ps -ef | grep postgres
+root@ip-172-31-39-182:/biocolab/installation-2.0.54/test# ps -ef | grep postgres
 ubuntu     10315   10312  0 04:04 pts/0    00:00:00 /opt/bitnami/postgresql/bin/postgres -D /bitnami/postgresql/data --config-file=/opt/bitnami/postgresql/conf/postgresql.conf --external_pid_file=/opt/bitnami/postgresql/tmp/postgresql.pid --hba_file=/opt/bitnami/postgresql/conf/pg_hba.conf
 ubuntu     10384   10315  0 04:04 ?        00:00:00 postgres: checkpointer
 ubuntu     10385   10315  0 04:04 ?        00:00:00 postgres: background writer
@@ -2897,13 +2897,13 @@ ubuntu     11336   10315  0 04:08 ?        00:00:00 postgres: postgres biocolab 
 ubuntu     11421   10315  0 04:08 ?        00:00:00 postgres: postgres biocohub 172.17.0.1(38936) idle
 ubuntu     11516   10315  0 04:09 ?        00:00:00 postgres: postgres biocolab 172.17.0.1(55506) idle
 root       46638    1507  0 07:55 pts/1    00:00:00 grep --color=auto postgres
-root@ip-172-31-39-182:/biocolab/installation-2.0.53/test#
+root@ip-172-31-39-182:/biocolab/installation-2.0.54/test#
 ```
 
 **Check process with BioProxy container**
 
 ```R
-root@ip-172-31-39-182:/biocolab/installation-2.0.53/test# docker exec -it  bioproxy /bin/bash
+root@ip-172-31-39-182:/biocolab/installation-2.0.54/test# docker exec -it  bioproxy /bin/bash
 root@6c1fca69acf1:/home# ps -ef
 UID          PID    PPID  C STIME TTY          TIME CMD
 root           1       0  0 04:04 pts/0    00:00:00 /bin/bash /super.sh
@@ -3256,7 +3256,7 @@ colabblc:colabblc_00: stopped
 colabblc:colabblc_00: started
 ```
 
-**Restart haproxy services inside BioColab**
+**Restart haproxy services**
 
 ```R
 root@507cd2637a97:/home# supervisorctl restart haproxy:*
@@ -3273,7 +3273,7 @@ haproxy:haproxy_00: started
 ```R
 # sudo apt install nginx
 
-root@ip-172-31-39-123:/biocolab/installation-2.0.53/biocolab# curl -I 127.0.0.1
+root@ip-172-31-39-123:/biocolab/installation-2.0.54/biocolab# curl -I 127.0.0.1
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
 Date: Mon, 18 Dec 2023 07:09:02 GMT
@@ -3839,9 +3839,9 @@ upstream bioturing_router_http {
 
 server {
     listen 443 ssl http2;
-    server_name biocolab.pass-yellow.astrazeneca.net;
-    ssl_certicate /etc/ssl/certs/pass-astrazeneca_net-yellow.crt;
-    ssl_certicate_key /etc/ssl/certs/pass-astrazeneca_net-yellow.key;
+    server_name biocolab.YOUR-DOMAIN;
+    ssl_certicate /etc/ssl/certs/YOUR-DOMAINyellow.crt;
+    ssl_certicate_key /etc/ssl/certs/YOUR-DOMAINyellow.key;
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
 
     location / {
