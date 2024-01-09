@@ -38,8 +38,12 @@ Admin dashboard can view and perform activities below.
 - **Overview**: provides a comprehensive view of all activities in your BioStudio system.
 
 - **SSO**: displays all current Single Sign-On (SSO) protocols supported in your BioStudio system. You can also add new SSO protocols to expand your options.
+  
+- **Installation:** The Installation tab is used to view all available installation apps as well as the installed ones.
 
 - **Users**: allows you to manage all users in your BioStudio system. When you enter this tab, you will see a table displaying the details of each user.
+  
+- **Group**: allow you to create a group that includes a number of users.
 
 - **Admin**: contains all accounts set as administrators. New accounts can be added to this tab to grant administrative privileges. Additionally, you can assign specific roles to each admin account, such as super administrator or content, user, technique, or security roles.
 
