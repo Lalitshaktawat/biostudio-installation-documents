@@ -4,7 +4,7 @@
 
 ## Introduction
 
-BioStudio workspace and other application has a feature that require email notification. If you wish to get email notification. Kindly configure SMTP.
+The BioStudio workspace and other applications have a feature that requires email notifications. If you wish to receive email notifications, please configure Email SMTP settings accordingly.
 
 Here are the steps to setup it.
 
