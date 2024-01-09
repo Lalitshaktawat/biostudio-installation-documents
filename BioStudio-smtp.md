@@ -4,7 +4,7 @@
 
 ## Introduction
 
-BioStudio has a fantastic feature that sends email notifications upon job completion and tasks.
+BioStudio workspace and other application has a feature that require email notification. If you wish to get email notification. Kindly configure SMTP.
 
 Here are the steps to setup it.
 
