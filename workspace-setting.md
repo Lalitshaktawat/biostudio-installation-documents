@@ -58,6 +58,8 @@ Allow you to create a group that includes a number of users.
 
 We can configure the ecosystem, AI assistant, and cloud storage settings for a specific group, making those settings available for the members of this group to use.
 
+#### Cloud storage global setting.
+
 :high_brightness: Click to Edit setting on Workspace Global Settings.
 
 <br><img alt="workspace setting" src="workspace_setting_img/edit_setting.png" class="lazy" width="100%"><br>
@@ -73,9 +75,22 @@ We can configure the ecosystem, AI assistant, and cloud storage settings for a s
 
 <br><img alt="workspace setting" src="workspace_setting_img/aws-setting.png" class="lazy" width="100%"><br>
 
+#### Ecosystem global setting.
+
+:high_brightness: Click to Edit setting on Workspace Global Settings.
+
+<br><img alt="workspace setting" src="workspace_setting_img/edit_setting.png" class="lazy" width="100%"><br>
+
+:high_brightness: Select Ecosystem.
+:high_brightness: Fill all mandatory values and click to **Save** button.
+
+<br><img alt="workspace setting" src="workspace_setting_img/ecosystem-se.png" class="lazy" width="100%"><br>
+
 ### Usage of Workspace settings
 
 Once Workspace settings ready. It can be utilized globally.
+
+#### Cloud storage global setting usage.
 
 <br><img alt="workspace setting" src="workspace_setting_img/cloud_s.png" class="lazy" width="100%"><br>
 :high_brightness: Click to new connection.
@@ -86,6 +101,18 @@ As the user is a member of the group we configured, those settings would be avai
 :high_brightness: Select appropriate setting from **Use Setting Preferences From**.
 :high_brightness: The settings will be applied, and editing is not allowed.
 <br><img alt="workspace setting" src="workspace_setting_img/G_setting_select.png" class="lazy" width="100%"><br>
+
+#### Ecosystem global setting usage.
+
+:high_brightness: Login to workspace.
+:high_brightness: Click to User Setting.
+
+<br><img alt="workspace setting" src="workspace_setting_img/user_se.png" class="lazy" width="100%"><br>
+
+:high_brightness: Select Administrator Setting from Use Setting Preferences settings.
+:high_brightness: Click to Update button.
+
+<br><img alt="workspace setting" src="workspace_setting_img/eco_set.png" class="lazy" width="100%"><br>
 
 :high_brightness: You can view activities on notification bell Icon.
 
